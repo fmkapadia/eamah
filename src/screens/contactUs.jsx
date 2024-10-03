@@ -1,0 +1,260 @@
+import React from "react";
+import styled from "styled-components";
+import contactus from "../assets/img/contactus.webp";
+import ServiceBox from "../components/Elements/ServiceBox";
+import TopNavbar from "../components/Nav/TopNavbar";
+import { Container, Row, Col } from "reactstrap";
+const ContactUs = () => {
+  return (
+    <Wrapper id="contact">
+      <div className="lightBg">
+        <div className="container">
+          <TopNavbar />
+          <HeaderInfo>
+            <section
+              className="bg-half-170 bg-primary d-table w-100"
+              style={{
+                backgroundImage: `url(${contactus})`,
+                height: "500px", // Set the desired height
+                overflow: "hidden",
+              }}
+            >
+              <Container>
+                <Row className="mt-5 justify-content-center">
+                  <Col lg={12} className="text-center">
+                    <div
+                      className="pages-heading"
+                      style={{
+                        position: "absolute", // Absolutely position to overlap the iframe
+                        top: "50%", // Align to the center vertically
+                        left: "50%", // Align to the center horizontally
+                        transform: "translate(-50%, -50%)", // Shift to true center
+                        zIndex: 2, // Ensure the content is above the iframe
+                        color: "#0b093b", // Text color
+                        textAlign: "center", // Center text horizontally
+                      }}
+                    >
+                      {/* <h2 className="font40 extraBold"> Careers </h2> */}
+                    </div>
+                  </Col>
+                </Row>
+
+                {/* <div className="position-breadcrumb">
+              <nav aria-label="breadcrumb" className="d-inline-block">
+                <ul className="breadcrumb bg-white rounded shadow mb-0 px-4 py-2">
+                  <li className="breadcrumb-item">
+                    <Link
+                      to="/"
+                      style={{ color: "#007bff", textDecoration: "none" }}
+                    >
+                      Landrick
+                    </Link>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <Link
+                      to="/index-job"
+                      style={{ color: "#007bff", textDecoration: "none" }}
+                    >
+                      Careers
+                    </Link>
+                  </li>
+                  <li
+                    className="breadcrumb-item active"
+                    aria-current="page"
+                    style={{ color: "#6c757d" }}
+                  >
+                    Jobs
+                  </li>
+                </ul>
+              </nav>
+            </div> */}
+              </Container>
+            </section>
+            <div
+              style={{
+                position: "relative", // Absolutely position to overlap the iframe
+                top: "50%", // Align to the center vertically
+                left: "50%", // Align to the center horizontally
+                transform: "translate(-50%, -50%)", // Shift to true center
+                zIndex: 2, // Ensure the content is above the iframe
+                color: "#0b093b", // Text color
+                textAlign: "center",
+                marginTop: "5rem",
+                paddingTop: "2rem",
+                marginBottom: "0", // Center text horizontally
+              }}
+            >
+              <h1>Contact Us</h1>
+              <p>Start working with EAMAH and unleash your potential</p>
+            </div>
+          </HeaderInfo>
+
+          <ServiceBoxRow className="flex">
+            <ServiceBoxWrapper>
+              <div style={{ textAlign: "center", padding: "20px" }}>
+                {/* SVG Icon */}
+                <div style={{ marginBottom: "15px" }}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="48" // Customize size
+                    height="48"
+                    fill="currentColor" // Use color based on your theme
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
+                  </svg>
+                </div>
+
+                {/* Title */}
+                <h3 style={{ fontSize: "24px", marginTop: "15px" }}>Phone</h3>
+
+                {/* Subtitle/Content */}
+                <p style={{ marginTop: "10px" }}>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat.
+                </p>
+              </div>
+            </ServiceBoxWrapper>
+            <ServiceBoxWrapper>
+              <div style={{ textAlign: "center", padding: "20px" }}>
+                {/* SVG Icon */}
+                <div style={{ marginBottom: "15px" }}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="48" // Customize size
+                    height="48"
+                    fill="currentColor" // Use color based on your theme
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
+                  </svg>
+                </div>
+
+                {/* Title */}
+                <h3 style={{ fontSize: "24px", marginTop: "15px" }}>Email</h3>
+
+                {/* Subtitle/Content */}
+                <p style={{ marginTop: "10px" }}>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat.
+                </p>
+              </div>
+            </ServiceBoxWrapper>
+            <ServiceBoxWrapper>
+              <div style={{ textAlign: "center", padding: "20px" }}>
+                {/* SVG Icon */}
+                <div style={{ marginBottom: "15px" }}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="48" // Customize size
+                    height="48"
+                    fill="currentColor" // Use color based on your theme
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
+                  </svg>
+                </div>
+
+                {/* Title */}
+                <h3 style={{ fontSize: "24px", marginTop: "15px" }}>
+                  Location
+                </h3>
+
+                {/* Subtitle/Content */}
+                <p style={{ marginTop: "10px" }}>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat.
+                </p>
+              </div>
+            </ServiceBoxWrapper>
+          </ServiceBoxRow>
+
+          <div className="row" style={{ paddingBottom: "30px" }}></div>
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
+const Wrapper = styled.section`
+  width: 100%;
+`;
+const HeaderInfo = styled.div`
+  padding: 70px 0 30px 0;
+  @media (max-width: 860px) {
+    text-align: center;
+  }
+`;
+const Form = styled.form`
+  padding: 70px 0 30px 0;
+  input,
+  textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #707070;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  textarea {
+    min-height: 100px;
+  }
+  @media (max-width: 860px) {
+    padding: 30px 0;
+  }
+`;
+const ButtonInput = styled.input`
+  border: 1px solid #7620ff;
+  background-color: #7620ff;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  color: #fff;
+  :hover {
+    background-color: #580cd2;
+    border: 1px solid #7620ff;
+    color: #fff;
+  }
+  @media (max-width: 991px) {
+    margin: 0 auto;
+  }
+`;
+const ContactImgBox = styled.div`
+  max-width: 180px;
+  align-self: flex-end;
+  margin: 100px 30px 10px 0;
+`;
+const SumbitWrapper = styled.div`
+  @media (max-width: 991px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+`;
+const ServiceBoxRow = styled.div`
+  display: flex;
+  justify-content: center; /* Center the boxes horizontally */
+  align-items: center; /* Vertically center content */
+  gap: 20px; /* Space between boxes */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+
+  @media (max-width: 860px) {
+    flex-direction: column; /* Stack the boxes on small screens */
+  }
+`;
+const ServiceBoxWrapper = styled.div`
+  width: 20%; /* Set a fixed width for larger screens */
+  margin-right: 5%; /* Add space between boxes */
+  // padding: 80px 0; /* Vertical padding */
+
+  @media (max-width: 860px) {
+    width: 100%; /* Full width on small screens */
+    margin-right: 0; /* Remove margin on smaller screens */
+    text-align: center; /* Center the content */
+    padding: 40px 0; /* Reduce padding on smaller screens */
+  }
+`;
+export default ContactUs;
