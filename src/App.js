@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from "./screens/Landing.jsx";
 import ContactUs from "./screens/contactUs.jsx";
 import Careers from "./screens/careers.jsx";
+import AboutUs from "./screens/aboutUs.jsx";
 export default function App() {
   return (
     <>
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/" element={<Landing />} /> {/* Landing page */}
           <Route path="/contactUs" element={<ContactUs />} /> {/* New page */}
           <Route path="/careers" element={<Careers />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
           {/* Route for Careers */}
         </Routes>
       </Router>

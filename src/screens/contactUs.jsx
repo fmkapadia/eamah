@@ -1,93 +1,79 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import contactus from "../assets/img/contactus.webp";
 import ServiceBox from "../components/Elements/ServiceBox";
 import TopNavbar from "../components/Nav/TopNavbar";
+import Footer from "../components/Sections/Footer";
 import { Container, Row, Col } from "reactstrap";
+import { useNavigate } from "react-router-dom";
 const ContactUs = () => {
   return (
     <Wrapper id="contact">
       <div className="lightBg">
-        <div className="container">
+        <div>
           <TopNavbar />
-          <HeaderInfo>
-            <section
-              className="bg-half-170 bg-primary d-table w-100"
-              style={{
-                backgroundImage: `url(${contactus})`,
-                height: "500px", // Set the desired height
-                overflow: "hidden",
-              }}
-            >
-              <Container>
-                <Row className="mt-5 justify-content-center">
-                  <Col lg={12} className="text-center">
-                    <div
-                      className="pages-heading"
-                      style={{
-                        position: "absolute", // Absolutely position to overlap the iframe
-                        top: "50%", // Align to the center vertically
-                        left: "50%", // Align to the center horizontally
-                        transform: "translate(-50%, -50%)", // Shift to true center
-                        zIndex: 2, // Ensure the content is above the iframe
-                        color: "#0b093b", // Text color
-                        textAlign: "center", // Center text horizontally
-                      }}
-                    >
-                      {/* <h2 className="font40 extraBold"> Careers </h2> */}
-                    </div>
-                  </Col>
-                </Row>
-
-                {/* <div className="position-breadcrumb">
-              <nav aria-label="breadcrumb" className="d-inline-block">
-                <ul className="breadcrumb bg-white rounded shadow mb-0 px-4 py-2">
-                  <li className="breadcrumb-item">
-                    <Link
-                      to="/"
-                      style={{ color: "#007bff", textDecoration: "none" }}
-                    >
-                      Landrick
-                    </Link>
-                  </li>
-                  <li className="breadcrumb-item">
-                    <Link
-                      to="/index-job"
-                      style={{ color: "#007bff", textDecoration: "none" }}
-                    >
-                      Careers
-                    </Link>
-                  </li>
-                  <li
-                    className="breadcrumb-item active"
-                    aria-current="page"
-                    style={{ color: "#6c757d" }}
+          {/* <HeaderInfo> */}
+          <section
+            className="bg-half-170 bg-primary d-table w-100"
+            style={{
+              backgroundImage: `url(${contactus})`,
+              height: "500px", // Set the desired height
+              overflow: "hidden",
+            }}
+          >
+            <Container>
+              <Row className="mt-5 justify-content-center">
+                <Col lg={12} className="text-center">
+                  <div
+                    className="pages-heading"
+                    style={{
+                      position: "absolute", // Absolutely position to overlap the iframe
+                      top: "50%", // Align to the center vertically
+                      left: "50%", // Align to the center horizontally
+                      transform: "translate(-50%, -50%)", // Shift to true center
+                      zIndex: 2, // Ensure the content is above the iframe
+                      color: "#0b093b", // Text color
+                      textAlign: "center", // Center text horizontally
+                    }}
                   >
-                    Jobs
-                  </li>
-                </ul>
-              </nav>
-            </div> */}
-              </Container>
-            </section>
-            <div
-              style={{
-                position: "relative", // Absolutely position to overlap the iframe
-                top: "50%", // Align to the center vertically
-                left: "50%", // Align to the center horizontally
-                transform: "translate(-50%, -50%)", // Shift to true center
-                zIndex: 2, // Ensure the content is above the iframe
-                color: "#0b093b", // Text color
-                textAlign: "center",
-                marginTop: "5rem",
-                paddingTop: "2rem",
-                marginBottom: "0", // Center text horizontally
-              }}
-            >
-              <h1>Contact Us</h1>
-              <p>Start working with EAMAH and unleash your potential</p>
-            </div>
-          </HeaderInfo>
+                    {/* <h2 className="font40 extraBold"> Contact Us </h2> */}
+                  </div>
+                </Col>
+              </Row>
+              <BreadcrumbContainer className="position-breadcrumb">
+                <nav>
+                  <ul>
+                    <li className="breadcrumb-item">
+                      <Link to="/">Eamah</Link>
+                    </li>{" "}
+                    <li className="breadcrumb-item">
+                      <>Pages</>
+                    </li>{" "}
+                    <li className="breadcrumb-item">Contact Us</li>
+                  </ul>
+                </nav>
+              </BreadcrumbContainer>
+            </Container>
+          </section>
+          <div
+            style={{
+              position: "relative", // Absolutely position to overlap the iframe
+              top: "50%", // Align to the center vertically
+              left: "50%", // Align to the center horizontally
+              transform: "translate(-50%, -50%)", // Shift to true center
+              zIndex: 2, // Ensure the content is above the iframe
+              color: "#0b093b", // Text color
+              textAlign: "center",
+              marginTop: "5rem",
+              paddingTop: "2rem",
+              marginBottom: "0", // Center text horizontally
+            }}
+          >
+            <h1>Contact Us</h1>
+            <p>Send your CV/Resume to careers@eamahent.com</p>
+          </div>
+          {/* </HeaderInfo> */}
 
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
@@ -173,11 +159,69 @@ const ContactUs = () => {
           </ServiceBoxRow>
 
           <div className="row" style={{ paddingBottom: "30px" }}></div>
+          <section
+            className="bg-half-170 bg-light d-flex align-items-center justify-content-center position-relative w-100"
+            style={{
+              height: "470px", // Set the desired height
+              overflow: "hidden", // Hide any overflow from iframe
+            }}
+          >
+            {/* Iframe as Background */}
+            <iframe
+              title="test"
+              src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+              style={{
+                position: "relative",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%", // Full height of section
+                zIndex: 1, // Ensure the iframe is behind the content
+                border: 0,
+              }}
+              allowFullScreen=""
+              className="rounded"
+            ></iframe>
+          </section>
+
+          <Footer />
         </div>
       </div>
     </Wrapper>
   );
 };
+const BreadcrumbContainer = styled.div`
+  position: absolute;
+  bottom: 110px; /* Adjust this value to control the distance from the bottom */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center; /* Centers breadcrumb horizontally */
+  nav {
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+  }
+
+  ul {
+    display: flex; /* Makes breadcrumb items inline */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  li + li::before {
+    content: "/";
+    padding: 0 10px;
+    color: #999;
+  }
+`;
 const Wrapper = styled.section`
   width: 100%;
 `;

@@ -67,7 +67,7 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Services
+                About Us
               </RouterLink>
             </li>
             <li className="semiBold font15 pointer">
@@ -86,12 +86,24 @@ export default function TopNavbar() {
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Clients
+              </RouterLink>
+            </li>
+            <li className="semiBold font15 pointer">
+              <RouterLink
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
                 to="blog"
                 spy={true}
                 smooth={true}
                 offset={-80}
               >
-                Blog
+                Blogs
               </RouterLink>
             </li>
             <li className="semiBold font15 pointer">
@@ -106,18 +118,6 @@ export default function TopNavbar() {
                 Careers
               </RouterLink>
             </li>
-            <li className="semiBold font15 pointer">
-              <RouterLink
-                activeClass="active"
-                style={{ padding: "10px 15px" }}
-                to="/contactUs"
-                spy={true}
-                smooth={true}
-                offset={-80}
-              >
-                Contact
-              </RouterLink>
-            </li>
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
             {/* <li className="semiBold font15 pointer">
@@ -127,11 +127,11 @@ export default function TopNavbar() {
             </li> */}
             <li className="semiBold font15 pointer flexCenter">
               <a
-                href="/"
+                href="/contactUs"
                 className="radius8 lightBg"
                 style={{ padding: "10px 15px" }}
               >
-                Get Started
+                Contact Us
               </a>
             </li>
           </UlWrapperRight>
