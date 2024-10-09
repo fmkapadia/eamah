@@ -62,7 +62,7 @@ export default function TopNavbar() {
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
-                to="services"
+                to="/aboutUs"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -74,7 +74,7 @@ export default function TopNavbar() {
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
-                to="projects"
+                to="/products"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -98,7 +98,7 @@ export default function TopNavbar() {
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
-                to="blog"
+                to="/blogs"
                 spy={true}
                 smooth={true}
                 offset={-80}

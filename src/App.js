@@ -7,6 +7,8 @@ import Landing from "./screens/Landing.jsx";
 import ContactUs from "./screens/contactUs.jsx";
 import Careers from "./screens/careers.jsx";
 import AboutUs from "./screens/aboutUs.jsx";
+import Products from "./screens/products.jsx";
+import Blogs from "./screens/blogs.jsx";
 export default function App() {
   return (
     <>
@@ -36,6 +38,8 @@ export default function App() {
           <Route path="/contactUs" element={<ContactUs />} /> {/* New page */}
           <Route path="/careers" element={<Careers />} />
           <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/blogs" element={<Blogs />} />
           {/* Route for Careers */}
         </Routes>
       </Router>

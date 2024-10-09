@@ -37,11 +37,17 @@ const ContactUs = () => {
                       textAlign: "center", // Center text horizontally
                     }}
                   >
-                    {/* <h2 className="font40 extraBold"> Contact Us </h2> */}
+                    <h2 style={{ fontSize: "3.75rem", color: "#0397DD" }}>
+                      {" "}
+                      Contact Us{" "}
+                    </h2>
                   </div>
                 </Col>
               </Row>
-              <BreadcrumbContainer className="position-breadcrumb">
+              <BreadcrumbContainer
+                className="position-breadcrumb"
+                style={{ color: "#000", fontWeight: "bold" }}
+              >
                 <nav>
                   <ul>
                     <li className="breadcrumb-item">
@@ -63,15 +69,18 @@ const ContactUs = () => {
               left: "50%", // Align to the center horizontally
               transform: "translate(-50%, -50%)", // Shift to true center
               zIndex: 2, // Ensure the content is above the iframe
-              color: "#0b093b", // Text color
+              color: "#0397DD", // Text color
               textAlign: "center",
               marginTop: "5rem",
               paddingTop: "2rem",
               marginBottom: "0", // Center text horizontally
             }}
           >
-            <h1>Contact Us</h1>
-            <p>Send your CV/Resume to careers@eamahent.com</p>
+            {/* <h1>Contact Us</h1> */}
+            <p style={{ fontSize: "1.8rem", color: "#0b093b" }}>
+              Connect with us regarding job or need assistance with your
+              products Get In Touch with us
+            </p>
           </div>
           {/* </HeaderInfo> */}
 
@@ -92,13 +101,80 @@ const ContactUs = () => {
                 </div>
 
                 {/* Title */}
-                <h3 style={{ fontSize: "24px", marginTop: "15px" }}>Phone</h3>
+                <h3
+                  style={{
+                    fontSize: "1.8rem",
+                    marginTop: "15px",
+                    color: "#0397DD",
+                  }}
+                >
+                  Phone
+                </h3>
 
                 {/* Subtitle/Content */}
                 <p style={{ marginTop: "10px" }}>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat.
+                  Connect with us and get your queries solved
+                </p>
+                <span
+                  style={{
+                    marginTop: "10px",
+                    color: "#000",
+                    fontSize: "1.2rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  1234567890
+                </span>
+              </div>
+            </ServiceBoxWrapper>
+            <ServiceBoxWrapper>
+              <div style={{ textAlign: "center", padding: "20px" }}>
+                {/* SVG Icon */}
+                <div style={{ marginBottom: "15px" }}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="48" // Customize size
+                    height="48"
+                    fill="currentColor" // Use color based on your theme
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
+                  </svg>
+                </div>
+
+                {/* Title */}
+                <h3
+                  style={{
+                    fontSize: "1.8rem",
+                    marginTop: "15px",
+                    color: "#0397DD",
+                  }}
+                >
+                  Email
+                </h3>
+
+                {/* Subtitle/Content */}
+                <p style={{ marginTop: "10px" }}>
+                  Send Your CV/RESUME on{" "}
+                  <span
+                    style={{
+                      color: "#000",
+                      fontWeight: "bold",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    careers@eamah.com{" "}
+                  </span>
+                  and Product Enquiry on{" "}
+                  <span
+                    style={{
+                      color: "#000",
+                      fontWeight: "bold",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    enquiries@eamah.com
+                  </span>
                 </p>
               </div>
             </ServiceBoxWrapper>
@@ -118,41 +194,19 @@ const ContactUs = () => {
                 </div>
 
                 {/* Title */}
-                <h3 style={{ fontSize: "24px", marginTop: "15px" }}>Email</h3>
-
-                {/* Subtitle/Content */}
-                <p style={{ marginTop: "10px" }}>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat.
-                </p>
-              </div>
-            </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
-              <div style={{ textAlign: "center", padding: "20px" }}>
-                {/* SVG Icon */}
-                <div style={{ marginBottom: "15px" }}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="48" // Customize size
-                    height="48"
-                    fill="currentColor" // Use color based on your theme
-                  >
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
-                  </svg>
-                </div>
-
-                {/* Title */}
-                <h3 style={{ fontSize: "24px", marginTop: "15px" }}>
+                <h3
+                  style={{
+                    fontSize: "1.8rem",
+                    marginTop: "15px",
+                    color: "#0397DD",
+                  }}
+                >
                   Location
                 </h3>
 
                 {/* Subtitle/Content */}
                 <p style={{ marginTop: "10px" }}>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat.
+                  Visit us and meet our amazing team and built with us
                 </p>
               </div>
             </ServiceBoxWrapper>
