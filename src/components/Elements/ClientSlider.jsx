@@ -24,7 +24,7 @@ export default function ClientSlider() {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 2,
     arrows: false,
     autoplay: true, // Enable autoplay

@@ -6,7 +6,7 @@ import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
 import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
 import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
 
-export default function ServiceBox({icon, title, subtitle}) {
+export default function ServiceBox({ icon, title, subtitle }) {
   let getIcon;
 
   switch (icon) {
@@ -26,7 +26,6 @@ export default function ServiceBox({icon, title, subtitle}) {
       getIcon = <RollerIcon />;
       break;
   }
-
 
   return (
     <Wrapper className="flex flexColumn">
@@ -49,7 +48,7 @@ const TitleStyle = styled.h2`
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0;
   @media (max-width: 860px) {
     padding: 20px 0;
   }
@@ -58,4 +57,6 @@ const SubtitleStyle = styled.p`
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
+  font-size: 1rem;
+  color: #000;
 `;

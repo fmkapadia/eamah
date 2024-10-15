@@ -12,6 +12,9 @@ import ClientSlider from "../components/Elements/ClientSlider";
 
 //Import images
 import contactus from "../assets/img/contactus.webp";
+import p1 from "../assets/img/products/Compression/p1.png";
+import p2 from "../assets/img/products/Compression/p2.png";
+
 import header from "../assets/img/header.png";
 import { useNavigate } from "react-router-dom";
 import { NavItem, NavLink, TabContent, TabPane } from "reactstrap";
@@ -23,14 +26,14 @@ const AboutUs = () => {
   };
   const tabContent = {
     1: {
-      img: contactus,
-      title: "Web Developing",
+      img: p1,
+      title: "Cadmach 8mm-D tooling",
       description:
         "This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.",
     },
     2: {
-      img: contactus,
-      title: "Database Analysis",
+      img: p2,
+      title: "Cadmach 12mm-D-BI layer",
       description:
         "Database analysis helps improve data integrity and efficiency. Dummy text is also known as 'fill text'.",
     },
@@ -174,17 +177,11 @@ const AboutUs = () => {
                     className="text-muted"
                     style={{ color: "#6c757d", fontSize: "1.2rem" }}
                   >
-                    Start working with{" "}
-                    <span
-                      className="text-primary fw-bold"
-                      style={{ color: "#007bff", fontWeight: "bold" }}
-                    >
-                      Landrick
-                    </span>{" "}
-                    that can provide everything you need to generate awareness,
-                    drive traffic, and connect. Dummy text is text that is used
-                    in the publishing industry or by web designers to occupy the
-                    space which will later be filled with 'real' content.
+                    Driven by a deep commitment to healthcare and
+                    pharmaceuticals, we've offered a comprehensive range of
+                    services for years, impacting countless lives. Our
+                    commitment extends beyond cutting-edge technology; it's
+                    about the people
                   </p>
                   <Link
                     to="/contactUs"
@@ -222,26 +219,22 @@ const AboutUs = () => {
         </Row>
       </Container> */}
       </section>
-      <div className="lightBg" style={{ padding: "50px 0" }}>
+      <div className="whiteBg" style={{ padding: "50px 0" }}>
         <div className="container">
           <ClientSlider />
         </div>
       </div>
 
-      <div style={{ marginTop: "60px", padding: "20px" }}>
+      <div style={{ marginTop: "60px", padding: "20px" }} className="lightBg">
         {/* Header Row */}
         <div style={{ marginBottom: "40px", textAlign: "center" }}>
           <h6 style={{ color: "#007bff", fontSize: "40px" }}>Products</h6>
           <h4 style={{ fontSize: "1.75rem", fontWeight: "600" }}>
             What we Offer?
           </h4>
-          <p style={{ color: "#6c757d", fontSize: "1.2rem" }}>
-            Start working with{" "}
-            <span style={{ color: "#007bff", fontWeight: "bold" }}>
-              Landrick
-            </span>{" "}
-            that can provide everything you need to generate awareness, drive
-            traffic, and connect.
+          <p style={{ color: "#000", fontSize: "1.2rem" }}>
+            Explore what it's like to be part of our dynamic workforce and make
+            a difference with us.
           </p>
         </div>
 
@@ -271,7 +264,7 @@ const AboutUs = () => {
                 onClick={() => setActiveTab("1")}
                 style={{
                   padding: "10px",
-                  backgroundColor: activeTab === "1" ? "#007bff" : "#ffffff",
+                  backgroundColor: activeTab === "1" ? "#7ACAEB" : "#ffffff",
                   color: activeTab === "1" ? "#ffffff" : "#000000",
                   border: "1px solid gray",
                   borderRadius: "5px",
@@ -279,13 +272,13 @@ const AboutUs = () => {
                   fontSize: "1rem",
                 }}
               >
-                Web Developing
+                Product Category By Equipments
               </button>
               <button
                 onClick={() => setActiveTab("2")}
                 style={{
                   padding: "10px",
-                  backgroundColor: activeTab === "2" ? "#007bff" : "#ffffff",
+                  backgroundColor: activeTab === "2" ? "#7ACAEB" : "#ffffff",
                   color: activeTab === "2" ? "#ffffff" : "#000000",
                   border: "1px solid gray",
                   borderRadius: "5px",
@@ -293,9 +286,9 @@ const AboutUs = () => {
                   fontSize: "1rem",
                 }}
               >
-                Database Analysis
+                Product Category by Company
               </button>
-              <button
+              {/* <button
                 onClick={() => setActiveTab("3")}
                 style={{
                   padding: "10px",
@@ -322,7 +315,7 @@ const AboutUs = () => {
                 }}
               >
                 Web Designing
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -341,17 +334,33 @@ const AboutUs = () => {
                 borderRadius: "10px",
                 marginBottom: "20px",
                 height: "500px",
+                backgroundColor: "#fff",
               }}
             />
             <h4 style={{ fontWeight: "600", fontSize: "1.2rem" }}>
               {tabContent[activeTab].title}
             </h4>
-            <p style={{ color: "#6c757d", fontSize: "1rem" }}>
+            <p style={{ color: "#6c757d", fontSize: "1.1rem" }}>
               {tabContent[activeTab].description}
             </p>
-            <Link to="/products" style={{ color: "#007bff" }}>
-              See More <i className="uil uil-angle-right-b align-middle"></i>
-            </Link>
+            {activeTab == "1" ? (
+              <>
+                <Link
+                  to="/products/equipments"
+                  style={{ color: "#007bff", fontSize: "1.1rem" }}
+                >
+                  See More{" "}
+                  <i className="uil uil-angle-right-b align-middle"></i>
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link to="/products/company" style={{ color: "#007bff" }}>
+                  See More{" "}
+                  <i className="uil uil-angle-right-b align-middle"></i>
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -362,7 +371,7 @@ const AboutUs = () => {
           height: "450px", // Adjust the height as needed
           overflow: "hidden",
           justifyContent: "top",
-          background: "linear-gradient(to bottom, transparent 50%,#2b56f5 50%)",
+          background: "linear-gradient(to bottom, transparent 50%,#7ACAEB 50%)",
         }}
       >
         <div style={{ padding: "0 15px" }}>
@@ -449,7 +458,7 @@ const AboutUs = () => {
           padding: "2rem",
 
           marginTop: "00px", // Adjust to position the text below the image
-          backgroundColor: "#2b56f5",
+          backgroundColor: "#7ACAEB",
         }}
       >
         <div style={{}}>
@@ -468,10 +477,9 @@ const AboutUs = () => {
           </h4>
         </div>
         <div style={{ color: "#ccc", marginBottom: "1.5rem" }}>
-          <p style={{ color: "#ccc", fontSize: "20px" }}>
-            Start working with Landrick, a team that can provide
-            <br /> everything you need to generate awareness, drive traffic, and
-            connect.
+          <p style={{ color: "#fff", fontSize: "20px" }}>
+            A team of dedicated engineers, creative designers,
+            <br /> and skilled technicians propel this company forward.
           </p>
           <Link
             to="#"
@@ -480,7 +488,7 @@ const AboutUs = () => {
               fontWeight: "normal",
               textDecoration: "none",
               borderBottom: "2px solid #fff",
-              fontSize: "24px",
+              fontSize: "20px",
             }}
           >
             Contact Us

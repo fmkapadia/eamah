@@ -112,9 +112,7 @@ const ContactUs = () => {
                 </h3>
 
                 {/* Subtitle/Content */}
-                <p style={{ marginTop: "10px" }}>
-                  Connect with us and get your queries solved
-                </p>
+                <p style={{ marginTop: "10px" }}>Connect with us</p>
                 <span
                   style={{
                     marginTop: "10px",
@@ -155,17 +153,7 @@ const ContactUs = () => {
 
                 {/* Subtitle/Content */}
                 <p style={{ marginTop: "10px" }}>
-                  Send Your CV/RESUME on{" "}
-                  <span
-                    style={{
-                      color: "#000",
-                      fontWeight: "bold",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    careers@eamah.com{" "}
-                  </span>
-                  and Product Enquiry on{" "}
+                  Send Your Product Enquiry on{" "}
                   <span
                     style={{
                       color: "#000",

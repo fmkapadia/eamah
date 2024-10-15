@@ -6,7 +6,29 @@ import "react-image-lightbox/style.css";
 
 //Import Images
 import contactus from "../../assets/img/contactus.webp";
-
+import p1 from "../../assets/img/products/Compression/p1.png";
+import p2 from "../../assets/img/products/Compression/p2.png";
+import p3 from "../../assets/img/products/Compression/p3.PNG";
+import p4 from "../../assets/img/products/Compression/p4.jpg";
+import p5 from "../../assets/img/products/Compression/p5.jpg";
+import p6 from "../../assets/img/products/Compression/p6.png";
+import p7 from "../../assets/img/products/Compression/p7.jpg";
+import p8 from "../../assets/img/products/Compression/p8.jpg";
+import p9 from "../../assets/img/products/Compression/p9.png";
+import p10 from "../../assets/img/products/Encapsulation/p10.jpeg";
+import p11 from "../../assets/img/products/Encapsulation/p11.jpg";
+import p12 from "../../assets/img/products/Encapsulation/p12.png";
+import p13 from "../../assets/img/products/Encapsulation/p13.jpg";
+import p14 from "../../assets/img/products/Encapsulation/p14.png";
+import p15 from "../../assets/img/products/Encapsulation/p15.jpg";
+import p16 from "../../assets/img/products/Encapsulation/p16.jpg";
+import p25 from "../../assets/img/products/Encapsulation/p25.jpg";
+import p17 from "../../assets/img/products/Other/p17.jpg";
+import p18 from "../../assets/img/products/Other/p18.jpg";
+import p19 from "../../assets/img/products/Other/p19.PNG";
+import p20 from "../../assets/img/products/Other/p20.jpg";
+import p21 from "../../assets/img/products/Packaging/p21.jpeg";
+import p22 from "../../assets/img/products/Packaging/p22.jpg";
 // Styled Components
 const SectionWrapper = styled.section`
   padding: 60px 0;
@@ -48,7 +70,7 @@ const CardBody = styled.div`
 
 const ImageWrapper = styled.img`
   width: 100%;
-  height: auto;
+  height: 200px;
 `;
 
 const Content = styled.div`
@@ -121,14 +143,29 @@ const CTAButton = styled(Link)`
 
 //creating array of images for image portfolio
 const images = [
-  contactus,
-  contactus,
-  contactus,
-  contactus,
-  contactus,
-  contactus,
-  contactus,
-  contactus,
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7,
+  p8,
+  p9,
+  p10,
+  p11,
+  p12,
+  p13,
+  p14,
+  p15,
+  p16,
+  p17,
+  p18,
+  p19,
+  p20,
+  p21,
+  p22,
+  p25,
 ];
 
 class Work extends Component {
@@ -137,52 +174,142 @@ class Work extends Component {
     this.state = {
       projects: [
         {
-          image: contactus,
-          title: "Iphone mockup",
-          subtitle: "Capsule Filling",
-          category: "Capsule Filling",
+          image: p1,
+          title: "Cadmach 8mm-D tooling",
+          subtitle: "Compression",
+          category: "Compression",
         },
         {
-          image: contactus,
-          title: "Mockup Collection",
-          subtitle: "Mockup",
-          category: "Tablet Press",
+          image: p2,
+          title: "Cadmach 12mm-D-BI layer",
+          subtitle: "Compression",
+          category: "Compression",
         },
         {
-          image: contactus,
-          title: "Abstract images",
-          subtitle: "Abstract",
-          category: "Tablet Press",
+          image: p3,
+          title: "Cam track",
+          subtitle: "Compression",
+          category: "Compression",
         },
         {
-          image: contactus,
-          title: "Yellow bg with Books",
-          subtitle: "Company V-card",
-          category: "Tablet Press",
+          image: p4,
+          title: "Fette 3111200_EU1_1350_5",
+          subtitle: "Compression",
+          category: "Compression",
         },
         {
-          image: contactus,
-          title: "Company V-card",
-          subtitle: "V-card",
-          category: "Capsule Filling",
+          image: p5,
+          title: "Fette 3117562 EU19",
+          subtitle: "Compression",
+          category: "Compression",
         },
         {
-          image: contactus,
-          title: "Mockup box with paints",
-          subtitle: "Photography",
-          category: "Capsule Filling",
+          image: p6,
+          title: "IMA Kilian 248359-1",
+          subtitle: "Compression",
+          category: "Compression",
         },
         {
-          image: contactus,
-          title: "Coffee cup",
-          subtitle: "Cups",
-          category: "General",
+          image: p7,
+          title: "Picture1",
+          subtitle: "Compression",
+          category: "Compression",
         },
         {
-          image: contactus,
-          title: "Pen and article",
-          subtitle: "Article",
-          category: "General",
+          image: p8,
+          title: "Picture2",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p9,
+          title: "Picture3",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p10,
+          title: "Capsule filling finger",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
+        },
+        {
+          image: p11,
+          title: "Capsule sorter",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
+        },
+        {
+          image: p12,
+          title: "Dosing disc",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
+        },
+        {
+          image: p13,
+          title: "Drum sorter",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
+        },
+        {
+          image: p14,
+          title: "Exit chut",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
+        },
+        {
+          image: p15,
+          title: "Magzine assembly",
+          subtitle: "Encapsulation",
+          category: "Encapsulation66",
+        },
+        {
+          image: p16,
+          title: "Rectifier block",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
+        },
+        {
+          image: p17,
+          title: "IMG_20201028_174701",
+          subtitle: "Other",
+          category: "Other",
+        },
+        {
+          image: p18,
+          title: "IMG_20201028_181419",
+          subtitle: "Other",
+          category: "Other",
+        },
+        {
+          image: p19,
+          title: "Punch seals",
+          subtitle: "Other",
+          category: "Other",
+        },
+        {
+          image: p20,
+          title: "WA0000",
+          subtitle: "Other",
+          category: "Other",
+        },
+        {
+          image: p21,
+          title: "disc image",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+        {
+          image: p22,
+          title: "Picture1",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+        {
+          image: p25,
+          title: "Vertical finger",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
         },
       ],
       displayCategory: "All",
@@ -207,22 +334,26 @@ class Work extends Component {
             <Row>
               <FilterGroup>
                 <ul className="filter-options">
-                  {["All", "Capsule Filling", "General", "Tablet Press"].map(
-                    (category) => (
-                      <FilterItem
-                        key={category}
-                        onClick={() => this.setCategory(category)}
-                        active={this.state.displayCategory === category}
-                      >
-                        {category}
-                      </FilterItem>
-                    )
-                  )}
+                  {[
+                    "All",
+                    "Compression",
+                    "Encapsulation",
+                    "Other",
+                    "Packaging",
+                  ].map((category) => (
+                    <FilterItem
+                      key={category}
+                      onClick={() => this.setCategory(category)}
+                      active={this.state.displayCategory === category}
+                    >
+                      {category}
+                    </FilterItem>
+                  ))}
                 </ul>
               </FilterGroup>
             </Row>
 
-            <Row>
+            <Row style={{ paddingBottom: "10px" }}>
               {this.state.projects
                 .filter(
                   ({ category }) =>
@@ -300,7 +431,7 @@ class Work extends Component {
               <CTAButton
                 to="/contactUs"
                 style={{
-                  fontSize: "13px",
+                  fontSize: "1rem",
                   backgroundColor: "#0397DD",
                   borderRadius: "1rem",
                   color: "#fff",

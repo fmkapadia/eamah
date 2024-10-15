@@ -45,7 +45,7 @@ const Overlay2 = styled.div`
 `;
 
 const TitleLink = styled(Link)`
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: bold;
   color: #000;
   text-decoration: none;
@@ -108,7 +108,7 @@ class Blog extends Component {
       {
         id: 1,
         image: contactus,
-        title: "Design your apps in your own way",
+        title: "Factors influence a neuro-interventionalists (NI) decision ",
         desc: "Due to its widespread use as filler text for layouts, non-readability",
         like: "33",
         comment: "08",
@@ -201,8 +201,66 @@ class Blog extends Component {
                             <h5>
                               <TitleLink to="#">{blog.title}</TitleLink>
                             </h5>
-                            <p>{blog.desc}</p>
-                            <PostMeta>
+                            {/* <p>{blog.desc}</p> */}
+                            <p style={{ paddingTop: "1rem", fontSize: "1rem" }}>
+                              <b>
+                                1. Dimensions of a flow diverter (diameter &
+                                length):
+                              </b>{" "}
+                              NIs try to match the diameter of the parent vessel
+                              and neck length (for full coverage of neck) with
+                              the diameter and length of a FD in their toolkit.
+                              Attention is thus given to the location of
+                              aneurysm – because that will determine the
+                              diameter of the parent vessel e.g., internal
+                              carotid artery (proximal) is larger than anterior
+                              communicating artery (distal). Surpass Streamline
+                              (SS) could be up to 5.3-mm diameter and Flow
+                              Redirection Endoluminal Device could be around
+                              3-mm. To measure the length, software like
+                              AneuGuide could be used. [Reference:
+                              Vivanco-Suarez, <br />
+                              <b>2. Porosity: </b>Porosity of the FD
+                              (measurement of how closely packed its mesh)
+                              determines how efficiently it ‘diverts the flow’
+                              away from the aneurysm sac without blocking
+                              (jailing) nearby perforating arteries. So low
+                              porosity will lead to quicker aneurysm occlusion
+                              but may cause jailing and high porosity leads to
+                              reduced risk of jailing but slower aneurysm
+                              occlusion e.g., PED? <br />
+                              <b>3. Flexibility:</b> A flexible flow diverter
+                              can be fit to conform to tortuous, curved vessels
+                              – e.g., PED Flex? What is the relationship with
+                              porosity? <br />
+                              <b>
+                                4. Preference for a delivery system/deployment
+                                technique:
+                              </b>{" "}
+                              This might be the most important factor out of the
+                              5 listed factors. An NI may prefer an FD solely
+                              because they may prefer self-expanding FD over a
+                              balloon expandable FD. The goal is to achieve
+                              precise positioning of FD across an aneurysm neck
+                              and its ease of adjustment if needed.
+                              <br />
+                              <b>5. Compatibility:</b> Some aneurysms are
+                              giant-sized (&gt;25mm in a single dimension) or
+                              irregularly shaped or both and may require an
+                              embolic to be placed inside the sac like metal
+                              coils or even a liquid embolic. The compatibility
+                              of a given FD with these adjuvant devices becomes
+                              critical at that point. As of now, Stryker’s SS,
+                              Microvention Terumo’s FRED and Medtronic’s PED
+                              have approval to treat giant-sized aneurysms.
+                              There’s much to learn about this treatment
+                              technique, I did not include cost and immediate
+                              availability of FDs for this post, but I imagine
+                              they are a factor as well in decision making and
+                              planning. What do you think? Is there something I
+                              missed?
+                            </p>
+                            {/* <PostMeta>
                               <MetaLink to="#">
                                 <i className="uil uil-heart"></i> {blog.like}
                               </MetaLink>
@@ -214,7 +272,7 @@ class Blog extends Component {
                                 Read More{" "}
                                 <i className="uil uil-angle-right-b"></i>
                               </MetaLink>
-                            </PostMeta>
+                            </PostMeta> */}
                           </CardBody>
                         </Col>
                       </Row>
@@ -314,6 +372,6 @@ const Author = styled.div`
 const CardBody = styled.div`
   padding: 1rem;
   position: relative;
-  cursor: pointer;
+  // cursor: pointer;
 `;
 export default Blog;

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
+import { Link } from "react-router-dom";
 // Assets
 import AddImage1 from "../../assets/img/add/1.png";
 import AddImage2 from "../../assets/img/add/2.png";
@@ -14,7 +15,7 @@ import Dots from "../../assets/svg/Dots";
 export default function Services() {
   return (
     <Wrapper id="services">
-      <div className="whiteBg" style={{ padding: "50px 0" }}>
+      <div className="whiteBg" style={{ padding: "50px 0", marginTop: "60px" }}>
         <div className="container">
           <ClientSlider />
         </div>
@@ -22,8 +23,10 @@ export default function Services() {
       <div className="lightBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
-            <p className="font13">
+            <h1 style={{ color: "#007bff", fontSize: "40px" }}>
+              Engineering Innovation for Seamless Production.
+            </h1>
+            <p style={{ color: "#000", fontSize: "1.1rem" }}>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut
               <br />
@@ -34,28 +37,31 @@ export default function Services() {
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                title=" Quality Assurance
+"
+                subtitle=" Our state-of-the-art facilities utilize top-tier machinery, enabling us to deliver premium quality replacement parts for your pharmaceutical equipment.
+.
+."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                title="Competitive Prices"
+                subtitle="Our in-depth knowledge and experience translate into exceptional spare parts that rival OEM standards at competitive prices."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
-                title="Development"
+                title="Reliability"
                 subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="printer"
-                title="Print"
+                title="Packaging"
                 subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
               />
             </ServiceBoxWrapper>
@@ -65,31 +71,55 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
-                <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum.
+                <h4 style={{ color: "#007bff", fontSize: "40px" }}>
+                  A few words about company
+                </h4>
+                {/* <h2 className="font40 extraBold">A Study of Creativity</h2> */}
+                <p style={{ color: "#000", fontSize: "1.1rem" }}>
+                  We are a leading manufacturer of spare parts for
+                  pharmaceutical machinery, specializing in tablet press and
+                  capsule filling technologies. Our expertise empowers our
+                  pharmaceutical clients to optimize their production processes.
+                  We collaborate closely with our customers, ensuring we stay
+                  one step ahead in a competitive landscape.
                 </p>
                 <ButtonsRow
-                  className="flexNullCenter"
+                  // className="flexNullCenter"
                   style={{ margin: "30px 0" }}
                 >
-                  <div style={{ width: "190px" }}>
-                    <FullButton
-                      title="Get Started"
-                      action={() => alert("clicked")}
-                    />
-                  </div>
-                  <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton
-                      title="Contact Us"
-                      action={() => alert("clicked")}
-                      border
-                    />
-                  </div>
+                  {/* <Link
+                    to="#"
+                    style={{
+                      color: "#000",
+                      fontWeight: "normal",
+                      textDecoration: "none",
+                      borderBottom: "2px solid #fff",
+                      fontSize: "20px",
+                    }}
+                  >
+                    Explore Our Products
+                    <i
+                      className="uil uil-angle-right-b align-middle"
+                      style={{ marginLeft: "5px" }}
+                    ></i>
+                  </Link> */}
+
+                  <CTAButton
+                    to="/contactUs"
+                    style={{
+                      fontSize: "1rem",
+                      backgroundColor: "#0397DD",
+                      borderRadius: "1rem",
+                      color: "#fff",
+                      // margin: "3rem",
+                    }}
+                  >
+                    Contact Us{" "}
+                    <i
+                      className="uil uil-angle-right-b align-middle"
+                      style={{ marginLeft: "5px" }}
+                    ></i>
+                  </CTAButton>
                 </ButtonsRow>
               </AddLeft>
               <AddRight>
@@ -119,7 +149,18 @@ export default function Services() {
     </Wrapper>
   );
 }
-
+const CTAButton = styled(Link)`
+  display: inline-block;
+  background-color: #2b56f5;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: #1a3dbf;
+    color: "#fff" !important;
+  }
+`;
 const Wrapper = styled.section`
   width: 100%;
 `;

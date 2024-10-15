@@ -102,8 +102,11 @@ export default function Header() {
                 <ImageSlide>
                   <Img className="radius8" src={image.src} alt={image.alt} />
                   <TextOverlay>
-                    <h2>Your Title Here</h2>
-                    <p>Your description here.</p>
+                    <h2>Eamah Entrepreneur</h2>
+                    <p>
+                      Your Trusted Partner for Pharmaceutical Equipment
+                      Components(Machinery Spare Parts)
+                    </p>
                   </TextOverlay>
                 </ImageSlide>
               </div>

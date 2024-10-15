@@ -3,6 +3,8 @@ import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 import FullButton from "../Buttons/FullButton";
+
+import { Link } from "react-router-dom";
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
 import ProjectImg2 from "../../assets/img/projects/2.png";
@@ -10,6 +12,14 @@ import ProjectImg3 from "../../assets/img/projects/3.png";
 import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
+import p1 from "../../assets/img/products/Compression/p1.png";
+import p2 from "../../assets/img/products/Compression/p2.png";
+import p3 from "../../assets/img/products/Compression/p3.PNG";
+import p4 from "../../assets/img/products/Compression/p4.jpg";
+import p5 from "../../assets/img/products/Compression/p5.jpg";
+import p6 from "../../assets/img/products/Compression/p6.png";
+import p7 from "../../assets/img/products/Compression/p7.jpg";
+import p8 from "../../assets/img/products/Compression/p8.jpg";
 import AddImage2 from "../../assets/img/add/add2.png";
 
 export default function Projects() {
@@ -18,70 +28,79 @@ export default function Projects() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Projects</h1>
-            <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+            <h1 style={{ color: "#007bff", fontSize: "40px" }}>Our Products</h1>
+            <p style={{ color: "#6c757d", fontSize: "1.2rem" }}>
+              Our unwavering commitment to quality guarantees a perfect fit for
+              European and Indian machines. Over the years, we've earned our
+              customers' trust by providing them with reliable, long-lasting
+              products.
             </p>
           </HeaderInfo>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg1}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                img={p1}
+                title="Cadmach 8mm-D tooling"
+                text="Lorem ipsum dolor sit amet."
+                // action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg2}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                img={p2}
+                title="Cadmach 12mm-D-BI layer"
+                text="Lorem ipsum dolor sit amet."
+                // action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg3}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                img={p3}
+                title="Cam track"
+                text="Lorem ipsum dolor sit amet."
+                // action={() => alert("clicked")}
               />
             </div>
           </div>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg4}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                img={p4}
+                title="Fette 3111200_EU1_1350_5"
+                text="Lorem ipsum dolor sit amet, "
+                // action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg5}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                img={p5}
+                title="Fette 3117562 EU19"
+                text="Lorem ipsum dolor sit amet, "
+                // action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg6}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                img={p6}
+                title="IMA Kilian 248359-1"
+                text="Lorem ipsum dolor sit amet, "
+                // action={() => alert("clicked")}
               />
             </div>
           </div>
           <div className="row flexCenter">
-            <div style={{ margin: "50px 0", width: "200px" }}>
-              <FullButton title="Load More" action={() => alert("clicked")} />
-            </div>
+            <CTAButton
+              to="/products/equipments"
+              style={{
+                fontSize: "1rem",
+                backgroundColor: "#0397DD",
+                borderRadius: "1rem",
+                color: "#fff",
+                margin: "3rem",
+              }}
+            >
+              Load More...
+            </CTAButton>
           </div>
         </div>
       </div>
@@ -122,6 +141,7 @@ const Wrapper = styled.section`
   width: 100%;
 `;
 const HeaderInfo = styled.div`
+  padding: 40px 0;
   @media (max-width: 860px) {
     text-align: center;
   }
@@ -197,5 +217,17 @@ const ImgWrapper = styled.div`
   }
   @media (max-width: 400px) {
     padding: 0;
+  }
+`;
+const CTAButton = styled(Link)`
+  display: inline-block;
+  background-color: #2b56f5;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: #1a3dbf;
+    color: "#fff" !important;
   }
 `;

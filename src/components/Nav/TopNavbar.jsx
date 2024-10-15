@@ -8,6 +8,7 @@ import Backdrop from "../Elements/Backdrop";
 // Assets
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
+import Eamah_logo from "../../assets/img/Eamah_logo.png";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
@@ -34,9 +35,17 @@ export default function TopNavbar() {
             to="home"
             smooth={true}
           >
-            <LogoIcon />
-            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              fanatic
+            {/* <LogoIcon />
+             */}
+            <Img src={Eamah_logo} alt="Eamah Entreprenure" />
+            <h1
+              style={{
+                marginLeft: "15px",
+                fontWeight: "bold",
+                color: "#0397DD",
+              }}
+            >
+              Eamah Entrepreneur
             </h1>
           </RouterLink>
           <BurderWrapper
@@ -71,7 +80,7 @@ export default function TopNavbar() {
               </RouterLink>
             </li>
             <DropdownWrapper className="semiBold font15 pointer">
-              <RouterLink to="/products" style={{ padding: "10px 15px" }}>
+              <RouterLink to="" style={{ padding: "10px 15px" }}>
                 Products
               </RouterLink>
               <DropdownContent>
@@ -144,7 +153,11 @@ export default function TopNavbar() {
               <a
                 href="/contactUs"
                 className="radius8 lightBg"
-                style={{ padding: "10px 15px" }}
+                style={{
+                  padding: "10px 15px",
+                  backgroundColor: "#0397DD",
+                  color: "#fff",
+                }}
               >
                 Contact Us
               </a>
@@ -155,7 +168,11 @@ export default function TopNavbar() {
     </>
   );
 }
-
+const Img = styled.img`
+  width: 4rem;
+  height: 40px;
+  border-radius: 10px;
+`;
 const Wrapper = styled.nav`
   width: 100%;
   position: fixed;
