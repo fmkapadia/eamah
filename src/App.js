@@ -7,8 +7,13 @@ import Landing from "./screens/Landing.jsx";
 import ContactUs from "./screens/contactUs.jsx";
 import Careers from "./screens/careers.jsx";
 import AboutUs from "./screens/aboutUs.jsx";
-import Products from "./screens/products.jsx";
+import Products from "./screens/productsEquipments.jsx";
 import Blogs from "./screens/blogs.jsx";
+import ProductsCompany from "./screens/productsCompany.jsx";
+import ProductsEquipments from "./screens/productsEquipments.jsx";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export default function App() {
   return (
     <>
@@ -40,6 +45,8 @@ export default function App() {
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/products" element={<Products />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/products/equipments" element={<ProductsEquipments />} />
+          <Route path="/products/company" element={<ProductsCompany />} />
           {/* Route for Careers */}
         </Routes>
       </Router>

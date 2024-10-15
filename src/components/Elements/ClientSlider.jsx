@@ -2,12 +2,23 @@ import React from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
 // Assets
-import ClientLogo01 from "../../assets/img/clients/logo01.svg"
-import ClientLogo02 from "../../assets/img/clients/logo02.svg";
-import ClientLogo03 from "../../assets/img/clients/logo03.svg";
-import ClientLogo04 from "../../assets/img/clients/logo04.svg";
-import ClientLogo05 from "../../assets/img/clients/logo05.svg";
-import ClientLogo06 from "../../assets/img/clients/logo06.svg";
+import Picture1 from "../../assets/img/clients/Picture1.jpg";
+import Picture6 from "../../assets/img/clients/Picture6.png";
+import Picture2 from "../../assets/img/clients/Picture2.png";
+import Picture3 from "../../assets/img/clients/Picture3.jpg";
+import Picture4 from "../../assets/img/clients/Picture4.jpg";
+import Picture5 from "../../assets/img/clients/Picture5.jpg";
+import Picture7 from "../../assets/img/clients/Picture7.png";
+import Picture8 from "../../assets/img/clients/Picture8.jpg";
+import Picture9 from "../../assets/img/clients/Picture9.png";
+import Picture10 from "../../assets/img/clients/Picture10.png";
+import Picture11 from "../../assets/img/clients/Picture11.png";
+import Picture12 from "../../assets/img/clients/Picture12.png";
+import Picture13 from "../../assets/img/clients/Picture13.jpg";
+import Picture14 from "../../assets/img/clients/Picture14.png";
+import Picture15 from "../../assets/img/clients/Picture15.png";
+import Picture16 from "../../assets/img/clients/Picture16.png";
+import Picture17 from "../../assets/img/clients/Picture17.jpg";
 
 export default function ClientSlider() {
   const settings = {
@@ -16,6 +27,8 @@ export default function ClientSlider() {
     slidesToShow: 6,
     slidesToScroll: 2,
     arrows: false,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -42,36 +55,57 @@ export default function ClientSlider() {
   };
   return (
     <div>
-      <Slider {...settings}>
+      <Slider der {...settings}>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo01} alt="client logo" />
+          <ImgStyle src={Picture1} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo02} alt="client logo" />
+          <ImgStyle src={Picture2} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo03} alt="client logo" />
+          <ImgStyle src={Picture3} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo04} alt="client logo" />
+          <ImgStyle src={Picture4} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo05} alt="client logo" />
+          <ImgStyle src={Picture5} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo06} alt="client logo" />
+          <ImgStyle src={Picture6} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo03} alt="client logo" />
+          <ImgStyle src={Picture7} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo04} alt="client logo" />
+          <ImgStyle src={Picture8} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo01} alt="client logo" />
+          <ImgStyle src={Picture9} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo02} alt="client logo" />
+          <ImgStyle src={Picture10} alt="client logo" />
+        </LogoWrapper>
+        <LogoWrapper className="flexCenter">
+          <ImgStyle src={Picture11} alt="client logo" />
+        </LogoWrapper>
+        <LogoWrapper className="flexCenter">
+          <ImgStyle src={Picture12} alt="client logo" />
+        </LogoWrapper>
+        <LogoWrapper className="flexCenter">
+          <ImgStyle src={Picture13} alt="client logo" />
+        </LogoWrapper>
+        <LogoWrapper className="flexCenter">
+          <ImgStyle src={Picture14} alt="client logo" />
+        </LogoWrapper>
+        <LogoWrapper className="flexCenter">
+          <ImgStyle src={Picture15} alt="client logo" />
+        </LogoWrapper>
+        <LogoWrapper className="flexCenter">
+          <ImgStyle src={Picture16} alt="client logo" />
+        </LogoWrapper>
+        <LogoWrapper className="flexCenter">
+          <ImgStyle src={Picture17} alt="client logo" />
         </LogoWrapper>
       </Slider>
     </div>

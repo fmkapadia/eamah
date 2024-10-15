@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Slider from "react-slick";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
@@ -8,7 +9,21 @@ import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 import { useNavigate } from "react-router-dom";
 // import { Button } from "react-scroll";
+const sliderImages = [
+  { src: headerImage, alt: "Image 1" },
+  { src: headerImage, alt: "Image 2" },
+  { src: headerImage, alt: "Image 3" },
+];
 export default function Header() {
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -16,8 +31,8 @@ export default function Header() {
     navigate("/contactUs"); // Navigate to the AnotherPage
   };
   return (
-    <Wrapper id="home" className="container flexSpaceCenter">
-      <LeftSide className="flexCenter">
+    <Wrapper>
+      {/* <LeftSide className="flexCenter">
         <div>
           <h1 className="extraBold font60">We are Digital Agency.</h1>
           <HeaderP className="font13 semiBold">
@@ -26,51 +41,105 @@ export default function Header() {
           <BtnWrapper>
             <FullButton title="Get Started" action={handleClick} />
           </BtnWrapper>
-          {/* <button onClick={handleClick}>Get Started</button> */}
+          {/* <button onClick={handleClick}>Get Started</button>
         </div>
       </LeftSide>
       <RightSide>
         <ImageWrapper>
-          <Img
+          {/* <Img
             className="radius8"
             src={headerImage}
             alt="office"
             style={{ zIndex: 9 }}
-          />
-          {/* <img src="HeaderImage" alt="" /> */}
-          <QuoteWrapper className="flexCenter darkBg radius8">
-            <QuotesWrapper>
-              <QuotesIcon />
-            </QuotesWrapper>
-            <div>
-              <p className="font15 whiteColor">
-                <em>
-                  Friends, such as we desire, are dreams and fables. Friendship
-                  demands the ability to do without it.
-                </em>
-              </p>
-              <p
-                className="font13 orangeColor textRight"
-                style={{ marginTop: "10px" }}
-              >
-                Ralph Waldo Emerson
-              </p>
-            </div>
-          </QuoteWrapper>
-          <DotsWrapper>
-            <Dots />
-          </DotsWrapper>
+          /> 
+          <SliderWrapper>
+            <Slider {...sliderSettings}>
+              {sliderImages.map((image, index) => (
+                <div key={index}>
+                  <ImageSlide>
+                    <Img className="radius8" src={image.src} alt={image.alt} />
+                    <TextOverlay>
+                      <h2>Your Title Here</h2>
+                      <p>Your description here.</p>
+                    </TextOverlay>
+                  </ImageSlide>
+                </div>
+              ))}
+            </Slider>
+
+            {/* <img src="HeaderImage" alt="" /> 
+            <QuoteWrapper className="flexCenter darkBg radius8">
+              <QuotesWrapper>
+                <QuotesIcon />
+              </QuotesWrapper>
+              <div>
+                <p className="font15 whiteColor">
+                  <em>
+                    Friends, such as we desire, are dreams and fables.
+                    Friendship demands the ability to do without it.
+                  </em>
+                </p>
+                <p
+                  className="font13 orangeColor textRight"
+                  style={{ marginTop: "10px" }}
+                >
+                  Ralph Waldo Emerson
+                </p>
+              </div>
+            </QuoteWrapper>
+            <DotsWrapper>
+              <Dots />
+            </DotsWrapper>
+          </SliderWrapper>
         </ImageWrapper>
         <GreyDiv className="lightBg"></GreyDiv>
+      </RightSide> */}
+      <RightSide>
+        <SliderWrapper>
+          <Slider {...sliderSettings}>
+            {sliderImages.map((image, index) => (
+              <div key={index}>
+                <ImageSlide>
+                  <Img className="radius8" src={image.src} alt={image.alt} />
+                  <TextOverlay>
+                    <h2>Your Title Here</h2>
+                    <p>Your description here.</p>
+                  </TextOverlay>
+                </ImageSlide>
+              </div>
+            ))}
+          </Slider>
+        </SliderWrapper>
+        {/* <QuoteWrapper className="flexCenter darkBg radius8">
+          <QuotesWrapper>
+            <QuotesIcon />
+          </QuotesWrapper> */}
+        {/* <div>
+            <p className="font15 whiteColor">
+              <em>
+                Friends, such as we desire, are dreams and fables. Friendship
+                demands the ability to do without it.
+              </em>
+            </p>
+            <p
+              className="font13 orangeColor textRight"
+              style={{ marginTop: "10px" }}
+            >
+              Ralph Waldo Emerson
+            </p>
+          </div>
+        </QuoteWrapper> */}
+        {/* <GreyDiv className="lightBg"></GreyDiv> */}
       </RightSide>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section`
-  padding-top: 80px;
-  width: 100%;
-  min-height: 840px;
+  // padding-top: 80px;
+  width: 100vw;
+  // border: 1px solid black;
+  // min-height: 840px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -89,8 +158,12 @@ const LeftSide = styled.div`
   }
 `;
 const RightSide = styled.div`
-  width: 50%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  object-fit: cover;
+  // padding: 20px;
+  // border: 1px solid black;
   @media (max-width: 960px) {
     width: 100%;
     order: 1;
@@ -134,12 +207,12 @@ const ImageWrapper = styled.div`
     justify-content: center;
   }
 `;
-const Img = styled.img`
-  @media (max-width: 560px) {
-    width: 80%;
-    height: auto;
-  }
-`;
+// const Img = styled.img`
+//   @media (max-width: 560px) {
+//     width: 80%;
+//     height: auto;
+//   }
+// `;
 const QuoteWrapper = styled.div`
   position: absolute;
   left: 0;
@@ -169,5 +242,46 @@ const DotsWrapper = styled.div`
   }
   @media (max-width: 560px) {
     display: none;
+  }
+`;
+const SliderWrapper = styled.div`
+  width: 100%;
+`;
+
+const ImageSlide = styled.div`
+  position: relative;
+  width: 100vw;
+  height: auto;
+`;
+
+const Img = styled.img`
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+`;
+
+const TextOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.4); // Semi-transparent black overlay
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px;
+  z-index: 10;
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 10px;
   }
 `;

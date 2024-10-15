@@ -115,66 +115,66 @@ class Blog extends Component {
         autor: "Calvin Carlo",
         date: "13th August, 2019",
       },
-      {
-        id: 2,
-        image: contactus,
-        title: "How apps is changing the IT world",
-        desc: "Due to its widespread use as filler text for layouts, non-readability",
-        like: "33",
-        comment: "08",
-        autor: "Calvin Carlo",
-        date: "13th August, 2019",
-      },
-      {
-        id: 3,
-        image: contactus,
-        title: "Smartest Applications for Business",
-        desc: "Due to its widespread use as filler text for layouts, non-readability",
-        like: "33",
-        comment: "08",
-        autor: "Calvin Carlo",
-        date: "13th August, 2019",
-      },
-      {
-        id: 4,
-        image: contactus,
-        title: "Design your apps in your own way",
-        desc: "Due to its widespread use as filler text for layouts, non-readability",
-        like: "33",
-        comment: "08",
-        autor: "Calvin Carlo",
-        date: "13th August, 2019",
-      },
-      {
-        id: 5,
-        image: contactus,
-        title: "How apps is changing the IT world",
-        desc: "Due to its widespread use as filler text for layouts, non-readability",
-        like: "33",
-        comment: "08",
-        autor: "Calvin Carlo",
-        date: "13th August, 2019",
-      },
-      {
-        id: 6,
-        image: contactus,
-        title: "Smartest Applications for Business",
-        desc: "Due to its widespread use as filler text for layouts, non-readability",
-        like: "33",
-        comment: "08",
-        autor: "Calvin Carlo",
-        date: "13th August, 2019",
-      },
-      {
-        id: 7,
-        image: contactus,
-        title: "Design your apps in your own way",
-        desc: "Due to its widespread use as filler text for layouts, non-readability",
-        like: "33",
-        comment: "08",
-        autor: "Calvin Carlo",
-        date: "13th August, 2019",
-      },
+      // {
+      //   id: 2,
+      //   image: contactus,
+      //   title: "How apps is changing the IT world",
+      //   desc: "Due to its widespread use as filler text for layouts, non-readability",
+      //   like: "33",
+      //   comment: "08",
+      //   autor: "Calvin Carlo",
+      //   date: "13th August, 2019",
+      // },
+      // {
+      //   id: 3,
+      //   image: contactus,
+      //   title: "Smartest Applications for Business",
+      //   desc: "Due to its widespread use as filler text for layouts, non-readability",
+      //   like: "33",
+      //   comment: "08",
+      //   autor: "Calvin Carlo",
+      //   date: "13th August, 2019",
+      // },
+      // {
+      //   id: 4,
+      //   image: contactus,
+      //   title: "Design your apps in your own way",
+      //   desc: "Due to its widespread use as filler text for layouts, non-readability",
+      //   like: "33",
+      //   comment: "08",
+      //   autor: "Calvin Carlo",
+      //   date: "13th August, 2019",
+      // },
+      // {
+      //   id: 5,
+      //   image: contactus,
+      //   title: "How apps is changing the IT world",
+      //   desc: "Due to its widespread use as filler text for layouts, non-readability",
+      //   like: "33",
+      //   comment: "08",
+      //   autor: "Calvin Carlo",
+      //   date: "13th August, 2019",
+      // },
+      // {
+      //   id: 6,
+      //   image: contactus,
+      //   title: "Smartest Applications for Business",
+      //   desc: "Due to its widespread use as filler text for layouts, non-readability",
+      //   like: "33",
+      //   comment: "08",
+      //   autor: "Calvin Carlo",
+      //   date: "13th August, 2019",
+      // },
+      // {
+      //   id: 7,
+      //   image: contactus,
+      //   title: "Design your apps in your own way",
+      //   desc: "Due to its widespread use as filler text for layouts, non-readability",
+      //   like: "33",
+      //   comment: "08",
+      //   autor: "Calvin Carlo",
+      //   date: "13th August, 2019",
+      // },
     ],
   };
   render() {
@@ -182,7 +182,7 @@ class Blog extends Component {
       <Section>
         <StyledContainer>
           <Row>
-            <Col lg={8}>
+            <Col lg={12}>
               <Row>
                 {this.data.blogs.map((blog, key) => (
                   <Col key={key} lg={12}>
@@ -225,7 +225,7 @@ class Blog extends Component {
             </Col>
 
             {/* Sidebar */}
-            <Col lg={4}>
+            {/* <Col lg={4}>
               <Sidebar>
                 <CardBody>
                   <SidebarItem>
@@ -283,7 +283,7 @@ class Blog extends Component {
                   </SidebarItem>
                 </CardBody>
               </Sidebar>
-            </Col>
+            </Col> */}
           </Row>
         </StyledContainer>
       </Section>

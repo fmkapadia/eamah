@@ -70,7 +70,22 @@ export default function TopNavbar() {
                 About Us
               </RouterLink>
             </li>
-            <li className="semiBold font15 pointer">
+            <DropdownWrapper className="semiBold font15 pointer">
+              <RouterLink to="/products" style={{ padding: "10px 15px" }}>
+                Products
+              </RouterLink>
+              <DropdownContent>
+                <DropdownItem>
+                  <RouterLink to="/products/equipments">
+                    by Equipments
+                  </RouterLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <RouterLink to="/products/company">by Company</RouterLink>
+                </DropdownItem>
+              </DropdownContent>
+            </DropdownWrapper>
+            {/* <li className="semiBold font15 pointer">
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -81,8 +96,8 @@ export default function TopNavbar() {
               >
                 Products
               </RouterLink>
-            </li>
-            <li className="semiBold font15 pointer">
+            </li> */}
+            {/* <li className="semiBold font15 pointer">
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -93,7 +108,7 @@ export default function TopNavbar() {
               >
                 Clients
               </RouterLink>
-            </li>
+            </li> */}
             <li className="semiBold font15 pointer">
               <RouterLink
                 activeClass="active"
@@ -106,7 +121,7 @@ export default function TopNavbar() {
                 Blogs
               </RouterLink>
             </li>
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -117,7 +132,7 @@ export default function TopNavbar() {
               >
                 Careers
               </RouterLink>
-            </li>
+            </li> */}
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
             {/* <li className="semiBold font15 pointer">
@@ -172,5 +187,35 @@ const UlWrapper = styled.ul`
 const UlWrapperRight = styled.ul`
   @media (max-width: 760px) {
     display: none;
+  }
+`;
+const DropdownWrapper = styled.li`
+  position: relative;
+  display: inline-block;
+
+  &:hover > div {
+    display: block;
+  }
+`;
+
+const DropdownContent = styled.div`
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+`;
+
+const DropdownItem = styled.div`
+  padding: 12px 16px;
+  white-space: nowrap;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #f1f1f1;
   }
 `;

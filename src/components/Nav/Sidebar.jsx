@@ -4,7 +4,8 @@ import { Link } from "react-scroll";
 // Assets
 import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
-
+import AboutUs from "../../screens/aboutUs";
+import { Link as RouterLink } from "react-router-dom";
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
@@ -15,109 +16,128 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             fanatic
           </h1>
         </div>
-        <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
+        <CloseBtn
+          onClick={() => toggleSidebar(!sidebarOpen)}
+          className="animate pointer"
+        >
           <CloseIcon />
         </CloseBtn>
       </SidebarHeader>
 
       <UlStyle className="flexNullCenter flexColumn">
         <li className="semiBold font15 pointer">
-          <Link
+          {/* <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="home"
+            to="/"
             spy={true}
             smooth={true}
             offset={-60}
           >
             Home
-          </Link>
-        </li>
-        <li className="semiBold font15 pointer">
-          <Link
+          </Link> */}
+          <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="services"
+            to="/"
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Services
-          </Link>
+            Home
+          </RouterLink>
         </li>
         <li className="semiBold font15 pointer">
-          <Link
+          <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="projects"
+            to="/aboutUs"
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Projects
-          </Link>
+            About Us
+          </RouterLink>
         </li>
-        <li className="semiBold font15 pointer">
-          <Link
+
+        <DropdownWrapper className="semiBold font15 pointer">
+          <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="blog"
+            to=""
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Blog
-          </Link>
-        </li>
+            Products
+          </RouterLink>
+          <DropdownContent>
+            <DropdownItem>
+              <RouterLink to="/products/equipments">by Equipments</RouterLink>
+            </DropdownItem>
+            <DropdownItem>
+              <RouterLink to="/products/company">by Company</RouterLink>
+            </DropdownItem>
+          </DropdownContent>
+        </DropdownWrapper>
         <li className="semiBold font15 pointer">
-          <Link
+          <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="pricing"
+            to="/blogs"
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Pricing
-          </Link>
+            Blogs
+          </RouterLink>
         </li>
+
         <li className="semiBold font15 pointer">
-          <Link
+          <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="contact"
+            to="/contactUs"
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Contact
-          </Link>
+            Contact Us
+          </RouterLink>
         </li>
       </UlStyle>
-      <UlStyle className="flexSpaceCenter">
+      {/* <UlStyle className="flexSpaceCenter">
         <li className="semiBold font15 pointer">
-          <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
+          <a
+            href="/"
+            style={{ padding: "10px 30px 10px 0" }}
+            className="whiteColor"
+          >
             Log in
           </a>
         </li>
         <li className="semiBold font15 pointer flexCenter">
-          <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
+          <a
+            href="/"
+            className="radius8 lightBg"
+            style={{ padding: "10px 15px" }}
+          >
             Get Started
           </a>
         </li>
-      </UlStyle>
+      </UlStyle> */}
     </Wrapper>
   );
 }
@@ -147,5 +167,35 @@ const UlStyle = styled.ul`
   padding: 40px;
   li {
     margin: 20px 0;
+  }
+`;
+const DropdownWrapper = styled.li`
+  position: relative;
+  display: inline-block;
+
+  &:hover > div {
+    display: block;
+  }
+`;
+
+const DropdownContent = styled.div`
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+`;
+
+const DropdownItem = styled.div`
+  padding: 12px 16px;
+  white-space: nowrap;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #f1f1f1;
   }
 `;

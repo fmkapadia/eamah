@@ -20,7 +20,8 @@ export default function Projects() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Our Awesome Projects</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut
               <br />
               labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
@@ -84,7 +85,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="lightBg">
+      {/* <div className="lightBg">
         <div className="container">
           <Advertising className="flexSpaceCenter">
             <AddLeft>
@@ -112,7 +113,7 @@ export default function Projects() {
             </AddRight>
           </Advertising>
         </div>
-      </div>
+      </div> */}
     </Wrapper>
   );
 }

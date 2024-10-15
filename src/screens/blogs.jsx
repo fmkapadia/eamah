@@ -74,7 +74,12 @@ const Blogs = () => {
             }}
           >
             <h1>Blog-Listing</h1>
-            <p>Send your CV/Resume to careers@eamahent.com</p>
+            <p>
+              I was interested in understanding what factors influence a
+              neuro-interventionalists (NI) decision to pick a particular Flow
+              Diverter (FD) for treating a given aneurysm.
+              <br /> Here are some of the factors that stood out, hope it helps:
+            </p>
           </div>
         </div>
       </div>

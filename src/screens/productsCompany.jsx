@@ -60,7 +60,7 @@ const Shape = styled.svg`
   width: 100%;
 `;
 
-const Products = () => {
+const ProductsCompany = () => {
   return (
     <React.Fragment>
       <TopNavbar />
@@ -93,4 +93,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductsCompany;

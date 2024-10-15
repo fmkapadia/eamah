@@ -9,21 +9,23 @@ import AddImage1 from "../../assets/img/add/1.png";
 import AddImage2 from "../../assets/img/add/2.png";
 import AddImage3 from "../../assets/img/add/3.png";
 import AddImage4 from "../../assets/img/add/4.png";
+import Dots from "../../assets/svg/Dots";
 
 export default function Services() {
   return (
     <Wrapper id="services">
-      <div className="lightBg" style={{ padding: "50px 0" }}>
+      <div className="whiteBg" style={{ padding: "50px 0" }}>
         <div className="container">
           <ClientSlider />
         </div>
       </div>
-      <div className="whiteBg" style={{ padding: "60px 0" }}>
+      <div className="lightBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Our Awesome Services</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut
               <br />
               labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
@@ -51,7 +53,11 @@ export default function Services() {
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox
+                icon="printer"
+                title="Print"
+                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+              />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -62,15 +68,27 @@ export default function Services() {
                 <h4 className="font15 semiBold">A few words about company</h4>
                 <h2 className="font40 extraBold">A Study of Creativity</h2>
                 <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
+                <ButtonsRow
+                  className="flexNullCenter"
+                  style={{ margin: "30px 0" }}
+                >
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
+                    <FullButton
+                      title="Get Started"
+                      action={() => alert("clicked")}
+                    />
                   </div>
                   <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                    <FullButton
+                      title="Contact Us"
+                      action={() => alert("clicked")}
+                      border
+                    />
                   </div>
                 </ButtonsRow>
               </AddLeft>
@@ -222,5 +240,17 @@ const AddImgWrapp4 = styled.div`
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  }
+`;
+const DotsWrapper = styled.div`
+  position: absolute;
+  right: -100px;
+  bottom: 100px;
+  z-index: 2;
+  @media (max-width: 960px) {
+    right: 100px;
+  }
+  @media (max-width: 560px) {
+    display: none;
   }
 `;
