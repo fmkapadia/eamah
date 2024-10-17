@@ -6,6 +6,7 @@ import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
 
 export default function Contact() {
+  const handleSubmit = () => {};
   return (
     <Wrapper id="contact">
       <div className="lightBg">
@@ -14,7 +15,8 @@ export default function Contact() {
             <h1 style={{ color: "#007bff", fontSize: "40px" }}>
               Let's get in touch
             </h1>
-            <p className="font13">
+            {/* 6c757d */}
+            <p style={{ color: "#000", fontSize: "1.2rem" }}>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut
               <br />
@@ -23,22 +25,28 @@ export default function Contact() {
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <Form>
-                <label className="font13">First name:</label>
+              <Form onSubmit={handleSubmit}>
+                <label style={{ color: "#000", fontSize: "1.2rem" }}>
+                  First name:
+                </label>
                 <input
                   type="text"
                   id="fname"
                   name="fname"
                   className="font20 extraBold"
                 />
-                <label className="font13">Email:</label>
+                <label style={{ color: "#000", fontSize: "1.2rem" }}>
+                  Email:
+                </label>
                 <input
                   type="text"
                   id="email"
                   name="email"
                   className="font20 extraBold"
                 />
-                <label className="font13">Subject:</label>
+                <label style={{ color: "#000", fontSize: "1.2rem" }}>
+                  Subject:
+                </label>
                 <input
                   type="text"
                   id="subject"
@@ -59,7 +67,12 @@ export default function Contact() {
                   type="submit"
                   value="Send Message"
                   className="pointer animate radius8"
-                  style={{ maxWidth: "220px" }}
+                  style={{
+                    maxWidth: "220px",
+                    color: "#fff",
+                    fontSize: "1.1rem",
+                    backgroundColor: "#007bff",
+                  }}
                 />
               </SumbitWrapper>
             </div>

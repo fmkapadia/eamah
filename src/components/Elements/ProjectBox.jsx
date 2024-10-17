@@ -11,7 +11,7 @@ export default function ProjectBox({ img, title, text, action }) {
         <img className="radius8" src={img} alt="project"></img>
       </ImgBtn>
       <h3 className="font20 extraBold">{title}</h3>
-      <p style={{ color: "#000", fontSize: "1rem" }}>{text}</p>
+      <p style={{ color: "#6c757d", fontSize: "1.2rem" }}>{text}</p>
     </Wrapper>
   );
 }

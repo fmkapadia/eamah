@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
@@ -107,6 +108,20 @@ export default function Header() {
                       Your Trusted Partner for Pharmaceutical Equipment
                       Components(Machinery Spare Parts)
                     </p>
+                    <div className="row flexCenter">
+                      <CTAButton
+                        to="/products/equipments"
+                        style={{
+                          fontSize: "1rem",
+                          backgroundColor: "#0397DD",
+                          borderRadius: "1rem",
+                          color: "#fff",
+                          margin: "1rem",
+                        }}
+                      >
+                        Explore Our Products...
+                      </CTAButton>
+                    </div>
                   </TextOverlay>
                 </ImageSlide>
               </div>
@@ -171,6 +186,18 @@ const RightSide = styled.div`
     width: 100%;
     order: 1;
     margin-top: 30px;
+  }
+`;
+const CTAButton = styled(Link)`
+  display: inline-block;
+  background-color: #2b56f5;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: #1a3dbf;
+    color: "#fff" !important;
   }
 `;
 const HeaderP = styled.div`
