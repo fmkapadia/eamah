@@ -29,7 +29,7 @@ const Col = styled.div`
 
 const Img = styled.img`
   width: 100%;
-  height: auto;
+  height: 450px;
   border-radius: 10px;
 `;
 
@@ -182,13 +182,13 @@ class Blog extends Component {
       <Section>
         <StyledContainer>
           <Row>
-            <Col lg={12}>
+            <Col lg={8}>
               <Row>
                 {this.data.blogs.map((blog, key) => (
                   <Col key={key} lg={12}>
                     <Card>
                       <Row>
-                        <Col lg={6}>
+                        <Col lg={12}>
                           <Img src={blog.image} alt={blog.title} />
                           {/* <Overlay2 /> */}
                           <Author>
@@ -196,7 +196,7 @@ class Blog extends Component {
                             <small>{blog.date}</small>
                           </Author>
                         </Col>
-                        <Col lg={6}>
+                        <Col lg={12}>
                           <CardBody>
                             <h5>
                               <TitleLink to="#">{blog.title}</TitleLink>
@@ -283,23 +283,33 @@ class Blog extends Component {
             </Col>
 
             {/* Sidebar */}
-            {/* <Col lg={4}>
+            <Col lg={4}>
               <Sidebar>
                 <CardBody>
-                  <SidebarItem>
+                  <SidebarItem style={{ textAlign: "center" }}>
                     <img
                       src={contactus}
                       className="rounded-circle"
                       alt="Author"
-                      style={{ width: "100px", height: "100px" }}
+                      style={{
+                        width: "100px",
+                        height: "100px",
+                        borderRadius: "4rem",
+                      }}
                     />
-                    <Link to="/blog-about" className="d-block mt-3">
-                      Cristina Jota
-                    </Link>
-                    <small>Photographer & Blogger</small>
+                    <div style={{ marginTop: "1rem" }}>
+                      <Link to="#" className="d-block mt-3">
+                        Husaain SodaWala
+                      </Link>
+                    </div>
+                    <div style={{ marginTop: "1rem" }}>
+                      <small>
+                        Device development manager, Eamah Entrepreneur
+                      </small>
+                    </div>
                   </SidebarItem>
 
-                  <SidebarItem>
+                  {/* <SidebarItem>
                     <h6>Recent Posts</h6>
                     <div>
                       <Link to="#">Consultant Business</Link>
@@ -313,18 +323,18 @@ class Blog extends Component {
                       <Link to="#">Look On The Glorious Balance</Link>
                       <small>15th April 2021</small>
                     </div>
-                  </SidebarItem>
+                  </SidebarItem> */}
 
                   <SidebarItem>
                     <h6>Tagcloud</h6>
                     <Tagcloud>
                       <Link to="#">Business</Link>
-                      <Link to="#">Finance</Link>
-                      <Link to="#">Marketing</Link>
+                      <Link to="#">Pharmacueticals</Link>
+                      <Link to="#">SpareParts</Link>
                     </Tagcloud>
                   </SidebarItem>
 
-                  <SidebarItem>
+                  {/* <SidebarItem>
                     <h6>Social Media</h6>
                     <SocialList>
                       <li>
@@ -338,10 +348,10 @@ class Blog extends Component {
                         </Link>
                       </li>
                     </SocialList>
-                  </SidebarItem>
+                  </SidebarItem> */}
                 </CardBody>
               </Sidebar>
-            </Col> */}
+            </Col>
           </Row>
         </StyledContainer>
       </Section>

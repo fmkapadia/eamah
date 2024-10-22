@@ -4,6 +4,7 @@ import Portfolio from "../assets/img/bg-portfolio.jpg";
 import Work from "../components/Elements/gallery";
 import TopNavbar from "../components/Nav/TopNavbar";
 import Footer from "../components/Sections/Footer";
+import FooterSection from "../components/Sections/FooterSection";
 // Styled components
 const SectionWrapper = styled.section`
   position: relative;
@@ -88,7 +89,7 @@ const ProductsEquipments = () => {
         </Shape>
       </SvgWrapper>
       <Work />
-      <Footer />
+      <FooterSection />
     </React.Fragment>
   );
 };

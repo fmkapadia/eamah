@@ -9,7 +9,7 @@ import Backdrop from "../Elements/Backdrop";
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 import Eamah_logo from "../../assets/img/Eamah_logo.png";
-
+import eamahText from "../../assets/img/eamahText.jpeg";
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
   const [sidebarOpen, toggleSidebar] = useState(false);
@@ -38,7 +38,8 @@ export default function TopNavbar() {
             {/* <LogoIcon />
              */}
             <Img src={Eamah_logo} alt="Eamah Entreprenure" />
-            <h1
+            <Img1 src={eamahText} alt="Eamah Entreprenure" />
+            {/* <h1
               style={{
                 marginLeft: "15px",
                 fontWeight: "bold",
@@ -46,7 +47,7 @@ export default function TopNavbar() {
               }}
             >
               Eamah Entrepreneur
-            </h1>
+            </h1> */}
           </RouterLink>
           <BurderWrapper
             className="pointer"
@@ -172,6 +173,10 @@ const Img = styled.img`
   width: 4rem;
   height: 40px;
   border-radius: 10px;
+`;
+const Img1 = styled.img`
+  width: 16rem;
+  height: 3rem;
 `;
 const Wrapper = styled.nav`
   width: 100%;

@@ -7,6 +7,7 @@ import TopNavbar from "../components/Nav/TopNavbar";
 import Footer from "../components/Sections/Footer";
 import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
+import FooterSection from "../components/Sections/FooterSection";
 const ContactUs = () => {
   return (
     <Wrapper id="contact">
@@ -121,7 +122,7 @@ const ContactUs = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  1234567890
+                  +91-22-23744952/+91-9870601200
                 </span>
               </div>
             </ServiceBoxWrapper>
@@ -153,7 +154,8 @@ const ContactUs = () => {
 
                 {/* Subtitle/Content */}
                 <p style={{ marginTop: "10px" }}>
-                  Send Your Product Enquiry on{" "}
+                  Purchase Inquiry:
+                  <br />
                   <span
                     style={{
                       color: "#000",
@@ -161,7 +163,20 @@ const ContactUs = () => {
                       fontSize: "1rem",
                     }}
                   >
-                    enquiries@eamah.com
+                    purchase@eamahent.com
+                  </span>
+                </p>
+                <p style={{ marginTop: "10px" }}>
+                  Sales Inquiry:
+                  <br />
+                  <span
+                    style={{
+                      color: "#000",
+                      fontWeight: "bold",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    sales@eamahent.com
                   </span>
                 </p>
               </div>
@@ -194,7 +209,7 @@ const ContactUs = () => {
 
                 {/* Subtitle/Content */}
                 <p style={{ marginTop: "10px" }}>
-                  Visit us and meet our amazing team and built with us
+                  A-032, 04th Floor, Dosa, Sandhurst Road (West), Mumbai 400 009
                 </p>
               </div>
             </ServiceBoxWrapper>
@@ -226,7 +241,7 @@ const ContactUs = () => {
             ></iframe>
           </section>
 
-          <Footer />
+          <FooterSection />
         </div>
       </div>
     </Wrapper>

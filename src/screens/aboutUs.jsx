@@ -14,10 +14,15 @@ import ClientSlider from "../components/Elements/ClientSlider";
 import contactus from "../assets/img/contactus.webp";
 import p1 from "../assets/img/products/Compression/p1.png";
 import p2 from "../assets/img/products/Compression/p2.png";
-
+import mustansir from "../assets/img/founder/mustansir.jpg";
+import abizer from "../assets/img/founder/abizer.jpg";
+import husain from "../assets/img/founder/husain.jpg";
+import rehana from "../assets/img/founder/rehana.jpg";
 import header from "../assets/img/header.png";
 import { useNavigate } from "react-router-dom";
 import { NavItem, NavLink, TabContent, TabPane } from "reactstrap";
+import ImageTextComponent from "../components/Elements/ImageTextComponent";
+import FooterSection from "../components/Sections/FooterSection";
 
 const AboutUs = () => {
   const [activeTab, setActiveTab] = useState("1");
@@ -219,6 +224,52 @@ const AboutUs = () => {
         </Row>
       </Container> */}
       </section>
+      <ImageTextComponent
+        image={mustansir}
+        text="With a vision for excellence in pharmaceutical machine manufacturing, Mustansir Sodawalla founded Eamah Entrepreneur in 2011. Under his leadership, Eamah has become a reliable name in the pharmaceutical sector, delivering precise, cost-effective, and time-efficient solutions to leading pharma and nutraceutical companies across the globe. 
+
+Prior to founding Eamah, he served in a leadership role at ACG World, where he spearheaded key projects with Theegarten-Pactec GmbH & Co. KG and Volpack, gaining invaluable insights into the intricacies of industrial machinery. His tenure at Pet Tools further honed his skills in brand building and sales, setting the stage for his entrepreneurial venture. 
+
+A trained Mechanical Engineer from Mumbai, Mustansir has continually sought to enhance his expertise in areas like Effective Personal Productivity, SAP System, and 5S Kaizen. This blend of technical knowledge and managerial acumen has enabled him to lead Eamah Entrepreneur with a focus on product innovation, service excellence, and global market expansion. His leadership style is rooted in integrity, dedication, and a customer-first mindset, reflecting the values that have driven Eamah Entrepreneur to its current success. "
+        heading="Mustansir Sodawalla "
+        subHeading="Founder & Director, Eamah Entrepreneur "
+        isImageRight={false}
+        bgStyle="dark"
+      />
+      <ImageTextComponent
+        image={rehana}
+        text=" Rehana brings a strategic vision and a people-first approach to her role as Co-Founder at Eamah. Leading the Recruiting and Administration functions, she has been instrumental in building the Sales and Logistics teams that drive Eamah’s global operations. Known for her recruiting, Rehana continues to identify top talent ensuring Eamah is driven by a workforce as passionate about business growth as she is. "
+        heading="Rehana Sodawalla "
+        subHeading="Co-Director, Eamah Entrepreneur  "
+        isImageRight={true}
+        bgStyle="light"
+      />
+
+      <ImageTextComponent
+        image={husain}
+        text=" Dr. Husain is a bioengineer working on advancing medical device development by building neurovascular devices. His research on aneurysm modeling has shown potential to significantly impact neurovascular treatments enabling effective long-term testing and clinical adoption of life-saving devices. At Eamah, Husain leads delivery of pharmaceutical accessories and precision equipment to global markets, building cGMP-compliant practices and providing essential logistical support. His ability to identify production challenges and implement solutions during market shifts, including the global pandemic, has been critical to Eamah's success.  
+
+He also leads product development efforts to bring medical devices from concept to clinical use. He is skilled in navigating the complex regulatory landscape, including ISO 13485 and 10993 standards, and 21 CFR 820 medical device regulations. Husain’s expertise in ISO standards and dedication to improving clinical outcomes position him as a driving force in both pharmaceutical and medical device manufacturing. "
+        heading="Dr. Husain Sodawalla  "
+        subHeading="Device development manager, Eamah Entrepreneur   "
+        isImageRight={false}
+        bgStyle="dark"
+      />
+      <ImageTextComponent
+        image={abizer}
+        text=" A person in a suit smiling
+
+Description automatically generatedBy training, Abizer is a Chemical engineer with a passion for operational efficiency. At Eamah, he has been instrumental in improving production workflow while maintaining the highest standards of quality. His team focuses on improving operational efficiency by reducing lead times and maximizing client satisfaction. 
+Having worked in small molecule formulation development, he has experience in diagnosing and troubleshooting granulation, compression and encapsulation machine issues to resolve critical production bottlenecks.  
+
+Abizer’s commitment to operational excellence extends to his role in customer relations. He has driven business development efforts in Western and Central India, drawing new clients and securing recurring revenue.  
+
+With a master's degree specializing in biotechnology and biopharmaceuticals, Abizer has experience in drug process and product development in the pharmaceutical industry. His work on formulation of biologics for rare diseases demonstrates his dedication to advancing pharmaceutical innovation."
+        heading="Abizer Sodawalla  "
+        subHeading="Operations engineer, Eamah Entrepreneur"
+        isImageRight={true}
+        bgStyle="light"
+      />
       <div className="whiteBg" style={{ padding: "50px 0" }}>
         <div className="container">
           <ClientSlider />
@@ -499,7 +550,7 @@ const AboutUs = () => {
           </Link>
         </div>
       </div>
-      <Footer />
+      <FooterSection />
     </>
   );
 };

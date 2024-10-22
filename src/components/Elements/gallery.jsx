@@ -29,6 +29,35 @@ import p19 from "../../assets/img/products/Other/p19.PNG";
 import p20 from "../../assets/img/products/Other/p20.jpg";
 import p21 from "../../assets/img/products/Packaging/p21.jpeg";
 import p22 from "../../assets/img/products/Packaging/p22.jpg";
+import p29 from "../../assets/img/products/Packaging/p29.jpg";
+import p30 from "../../assets/img/products/Packaging/p30.jpg";
+import p31 from "../../assets/img/products/Packaging/p31.jpg";
+import p32 from "../../assets/img/products/Packaging/p32.jpg";
+import p33 from "../../assets/img/products/Packaging/p33.jpg";
+import p34 from "../../assets/img/products/Packaging/p34.jpg";
+import p23 from "../../assets/img/products/Other/p23.jpg";
+import p24 from "../../assets/img/products/Other/p24.jpg";
+import p26 from "../../assets/img/products/Other/p26.jpg";
+import p27 from "../../assets/img/products/Other/p27.jpg";
+import p28 from "../../assets/img/products/Other/p28.jpg";
+import p35 from "../../assets/img/products/Encapsulation/p35.PNG";
+import p36 from "../../assets/img/products/Encapsulation/p36.PNG";
+import p37 from "../../assets/img/products/Compression/p37.jpg";
+import p38 from "../../assets/img/products/Compression/p38.jpg";
+import p39 from "../../assets/img/products/Compression/p39.jpg";
+import p40 from "../../assets/img/products/Compression/p40.jpg";
+import p41 from "../../assets/img/products/Compression/p41.jpg";
+import p42 from "../../assets/img/products/Compression/p42.jpg";
+import p43 from "../../assets/img/products/Compression/p43.jpg";
+import p44 from "../../assets/img/products/Compression/p44.jpg";
+import p45 from "../../assets/img/products/Compression/p45.jpg";
+import p46 from "../../assets/img/products/Compression/p46.jpg";
+import p47 from "../../assets/img/products/Compression/p47.PNG";
+import p48 from "../../assets/img/products/Compression/p48.PNG";
+import p49 from "../../assets/img/products/Compression/p49.PNG";
+import p50 from "../../assets/img/products/Compression/p50.PNG";
+import p51 from "../../assets/img/products/Compression/p51.PNG";
+import p52 from "../../assets/img/products/Compression/p52.PNG";
 // Styled Components
 const SectionWrapper = styled.section`
   padding: 60px 0;
@@ -80,7 +109,7 @@ const Content = styled.div`
 
 const Title = styled.h5`
   color: #0b093b;
-  font-family: "Khula", sans-serif;
+  font-family: "Brush Script MT", sans-serif;
   font-weight: bold;
   margin-bottom: 0.5rem;
 `;
@@ -166,6 +195,35 @@ const images = [
   p21,
   p22,
   p25,
+  p23,
+  p24,
+  p26,
+  p27,
+  p28,
+  p29,
+  p30,
+  p31,
+  p32,
+  p33,
+  p34,
+  p35,
+  p36,
+  p37,
+  p38,
+  p39,
+  p40,
+  p41,
+  p42,
+  p43,
+  p44,
+  p45,
+  p46,
+  p47,
+  p48,
+  p49,
+  p50,
+  p51,
+  p52,
 ];
 
 class Work extends Component {
@@ -193,7 +251,7 @@ class Work extends Component {
         },
         {
           image: p4,
-          title: "Fette 3111200_EU1_1350_5",
+          title: "Grip Ledge(Fette)",
           subtitle: "Compression",
           category: "Compression",
         },
@@ -211,19 +269,19 @@ class Work extends Component {
         },
         {
           image: p7,
-          title: "Picture1",
+          title: "Cam 1",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p8,
-          title: "Picture2",
+          title: "Cam 2",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p9,
-          title: "Picture3",
+          title: "Cam 3(Natoli)",
           subtitle: "Compression",
           category: "Compression",
         },
@@ -310,6 +368,180 @@ class Work extends Component {
           title: "Vertical finger",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+        },
+        {
+          image: p23,
+          title: " Fill-O-Matic Intermediate plate (Fette)",
+          subtitle: "Other",
+          category: "Other",
+        },
+        {
+          image: p24,
+          title: "  Tight punch control (Fette)",
+          subtitle: "Other",
+          category: "Other",
+        },
+        {
+          image: p26,
+          title: "  Sorter container",
+          subtitle: "Other",
+          category: "Other",
+        },
+        {
+          image: p27,
+          title: " Tablet and Capsule counter magazine (CVC Countec)",
+          subtitle: "Other",
+          category: "Other",
+        },
+        {
+          image: p28,
+          title: " Pneumatic spring (Fette)",
+          subtitle: "Other",
+          category: "Other",
+        },
+        {
+          image: p29,
+          title: " Draw-off roller (Romaco)",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+        {
+          image: p30,
+          title: "Servo drives and punch blocks (Romaco)",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+        {
+          image: p31,
+          title: " Press table and conveyor (Romaco)",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+        {
+          image: p32,
+          title: "Rolling drum with cavity (Romaco)",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+        {
+          image: p33,
+          title: "Filling block assembly and railing",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+        {
+          image: p34,
+          title: " Heating plates",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+        {
+          image: p35,
+          title: "Dosing disk (Bosch)",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
+        },
+        {
+          image: p36,
+          title: "Air intake filter (IMA)",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
+        },
+        {
+          image: p37,
+          title: "Fill-O-Matic base plate with scraper (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p38,
+          title: "Die lock screw (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p39,
+          title: " Dosing wheel for Fill-O-Matic (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p40,
+          title: "Lube felt (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p41,
+          title: "Fill-O-Matic Intermediate plate (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p42,
+          title: "Filling wheel for Fill-O-Matic (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p43,
+          title: "Pneumatic spring (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p44,
+          title: "Scraper bar (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p45,
+          title: "Sealing segment (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p46,
+          title: "Tight punch control (Fette)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p47,
+          title: "Feeder paddle (Korsch)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p48,
+          title: "Feeder sole plate (Manesty)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p49,
+          title: "Feed frame (Manesty)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p50,
+          title: "Bronze fill CAM (Manesty)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p51,
+          title: "Fill CAM B tooling (Manesty)",
+          subtitle: "Compression",
+          category: "Compression",
+        },
+        {
+          image: p52,
+          title: "Upper lowering CAM (Manesty)",
+          subtitle: "Compression",
+          category: "Compression",
         },
       ],
       displayCategory: "All",

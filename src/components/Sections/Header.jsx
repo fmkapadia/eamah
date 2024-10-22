@@ -6,14 +6,19 @@ import { Link } from "react-router-dom";
 import FullButton from "../Buttons/FullButton";
 // Assets
 import headerImage from "../../assets/img/headerImage.png";
+import banner1 from "../../assets/img/banner1.png";
+import banner2 from "../../assets/img/banner2.png";
+import banner3 from "../../assets/img/banner3.png";
+import banner4 from "../../assets/img/banner4.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 import { useNavigate } from "react-router-dom";
 // import { Button } from "react-scroll";
 const sliderImages = [
-  { src: headerImage, alt: "Image 1" },
-  { src: headerImage, alt: "Image 2" },
-  { src: headerImage, alt: "Image 3" },
+  { src: banner1, alt: "Image 1" },
+  { src: banner2, alt: "Image 2" },
+  { src: banner3, alt: "Image 3" },
+  { src: banner4, alt: "Image 4" },
 ];
 export default function Header() {
   const sliderSettings = {
@@ -102,7 +107,7 @@ export default function Header() {
               <div key={index}>
                 <ImageSlide>
                   <Img className="radius8" src={image.src} alt={image.alt} />
-                  <TextOverlay>
+                  {/* <TextOverlay>
                     <h2>Eamah Entrepreneur</h2>
                     <p>
                       Your Trusted Partner for Pharmaceutical Equipment
@@ -122,7 +127,7 @@ export default function Header() {
                         Explore Our Products...
                       </CTAButton>
                     </div>
-                  </TextOverlay>
+                  </TextOverlay> */}
                 </ImageSlide>
               </div>
             ))}
@@ -281,13 +286,13 @@ const SliderWrapper = styled.div`
 const ImageSlide = styled.div`
   position: relative;
   width: 100vw;
-  height: auto;
+  height: 100vh;
 `;
 
 const Img = styled.img`
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
+  object-fit: fill;
 `;
 
 const TextOverlay = styled.div`

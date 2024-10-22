@@ -9,6 +9,9 @@ import Pricing from "../components/Sections/Pricing";
 import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
 import FAQSection from "../components/Sections/FAQSection";
+import ImageTextComponent from "../components/Elements/ImageTextComponent";
+import header from "../assets/img/header.png";
+import FooterSection from "../components/Sections/FooterSection";
 export default function Landing() {
   return (
     <>
@@ -20,8 +23,17 @@ export default function Landing() {
       {/* <Blog /> */}
       {/* <Pricing /> */}
       <Contact />
+
+      <ImageTextComponent
+        image={header}
+        text="USA company description."
+        heading=""
+        subHeading=""
+        isImageRight="true"
+        bgStyle="dark"
+      />
       <FAQSection />
-      <Footer />
+      <FooterSection />
     </>
   );
 }
