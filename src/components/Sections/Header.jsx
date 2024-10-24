@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import FullButton from "../Buttons/FullButton";
 // Assets
 import headerImage from "../../assets/img/headerImage.png";
-import banner1 from "../../assets/img/banner1.png";
-import banner2 from "../../assets/img/banner2.png";
-import banner3 from "../../assets/img/banner3.png";
-import banner4 from "../../assets/img/banner4.png";
+import banner1 from "../../assets/img/banner7.png";
+import banner2 from "../../assets/img/banner6.png";
+import banner3 from "../../assets/img/banner7.png";
+import banner4 from "../../assets/img/banner5.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 import { useNavigate } from "react-router-dom";
@@ -106,7 +106,7 @@ export default function Header() {
             {sliderImages.map((image, index) => (
               <div key={index}>
                 <ImageSlide>
-                  <Img className="radius8" src={image.src} alt={image.alt} />
+                  <Img className="radius8"  src={image.src} alt={image.alt} />
                   {/* <TextOverlay>
                     <h2>Eamah Entrepreneur</h2>
                     <p>
@@ -182,7 +182,7 @@ const LeftSide = styled.div`
 `;
 const RightSide = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 500px;
   position: relative;
   object-fit: cover;
   // padding: 20px;
@@ -286,12 +286,12 @@ const SliderWrapper = styled.div`
 const ImageSlide = styled.div`
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 500px;
 `;
 
 const Img = styled.img`
   width: 100vw;
-  height: 100vh;
+  height: 500px;
   object-fit: fill;
 `;
 

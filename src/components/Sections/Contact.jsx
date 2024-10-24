@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 // Assets
-import ContactImg1 from "../../assets/img/contact-1.png";
-import ContactImg2 from "../../assets/img/contact-2.png";
-import ContactImg3 from "../../assets/img/contact-3.png";
+import ContactImg1 from "../../assets/img/filling-cam-track.png";
+import ContactImg2 from "../../assets/img/p33.png";
+import ContactImg3 from "../../assets/img/TURRET.jpg";
 
 export default function Contact() {
   const handleSubmit = () => {};

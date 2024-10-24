@@ -11,7 +11,9 @@ import ClientSlider from "../components/Elements/ClientSlider";
 // import NavBar from "./NavBar";
 
 //Import images
-import contactus from "../assets/img/contactus.webp";
+import contactus from "../assets/img/banner7.png";
+import contactus1 from "../assets/img/products/Packaging/p34.jpg";
+
 import p1 from "../assets/img/products/Compression/p1.png";
 import p2 from "../assets/img/products/Compression/p2.png";
 import mustansir from "../assets/img/founder/mustansir.jpg";
@@ -115,7 +117,7 @@ const AboutUs = () => {
               }}
             >
               <img
-                src={contactus}
+                src={contactus1}
                 className="img-fluid"
                 alt="About Us"
                 style={{ width: "100%", height: "auto", borderRadius: "8px" }}

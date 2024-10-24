@@ -6,10 +6,10 @@ import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 import { Link } from "react-router-dom";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+import AddImage1 from "../../assets/img/p45.jpg";
+import AddImage2 from "../../assets/img/p44.jpg";
+import AddImage3 from "../../assets/img/products/Compression/p39.jpg";
+import AddImage4 from "../../assets/img/products/Packaging/p30.jpg";
 import Dots from "../../assets/svg/Dots";
 
 export default function Services() {
@@ -189,7 +189,7 @@ const Advertising = styled.div`
   padding: 100px 0;
   position: relative;
   @media (max-width: 1160px) {
-    padding: 100px 0 40px 0;
+    padding: 0px 0 40px 0;
   }
   @media (max-width: 860px) {
     flex-direction: column;
@@ -223,7 +223,7 @@ const AddLeft = styled.div`
 const AddRight = styled.div`
   width: 50%;
   position: absolute;
-  top: -70px;
+  top: 70px;
   right: 0;
   @media (max-width: 860px) {
     width: 80%;

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 // Assets
-import RollerIcon from "../../assets/svg/Services/RollerIcon";
-import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
-import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
-import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
+import RollerIcon from "../../assets/svg/Services/Quality";
+import MonitorIcon from "../../assets/svg/Services/Price";
+import BrowserIcon from "../../assets/svg/Services/Reliable";
+import PrinterIcon from "../../assets/svg/Services/Packaging";
 
 export default function ServiceBox({ icon, title, subtitle }) {
   let getIcon;
