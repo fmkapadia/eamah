@@ -8,6 +8,7 @@ import Footer from "../components/Sections/Footer";
 import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 import Blog from "../components/Elements/allBlogs";
+import FooterSection from "../components/Sections/FooterSection";
 const Blogs = () => {
   return (
     <Wrapper id="contact">
@@ -84,7 +85,7 @@ const Blogs = () => {
         </div>
       </div>
       <Blog />
-      <Footer />
+      <FooterSection />
     </Wrapper>
   );
 };

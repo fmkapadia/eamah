@@ -1,12 +1,48 @@
 import React from "react";
 import styled from "styled-components";
+import { useState } from "react";
+import emailjs from "emailjs-com";
 // Assets
 import ContactImg1 from "../../assets/img/filling-cam-track.png";
 import ContactImg2 from "../../assets/img/p33.png";
 import ContactImg3 from "../../assets/img/TURRET.jpg";
 
 export default function Contact() {
-  const handleSubmit = () => {};
+  const [formData, setFormData] = useState({
+    fname: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    emailjs
+      .send(
+        "service_eb6zzz9", // Replace with your EmailJS service ID
+        "template_pd6zg4e", // Replace with your EmailJS template ID
+        formData, // Form data to send
+        "R8lahl78KsGy5i6Mj" // Replace with your EmailJS user ID
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message successfully sent!");
+        },
+        (err) => {
+          console.log("FAILED...", err);
+          alert("Failed to send message, please try again.");
+        }
+      );
+  };
+
   return (
     <Wrapper id="contact">
       <div className="lightBg">
@@ -33,7 +69,9 @@ export default function Contact() {
                   type="text"
                   id="fname"
                   name="fname"
-                  className="font20 extraBold"
+                  value={formData.fname}
+                  onChange={handleChange}
+                  className="font20 "
                 />
                 <label style={{ color: "#000", fontSize: "1.2rem" }}>
                   Email:
@@ -42,7 +80,9 @@ export default function Contact() {
                   type="text"
                   id="email"
                   name="email"
-                  className="font20 extraBold"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="font20 "
                 />
                 <label style={{ color: "#000", fontSize: "1.2rem" }}>
                   Subject:
@@ -51,15 +91,22 @@ export default function Contact() {
                   type="text"
                   id="subject"
                   name="subject"
-                  className="font20 extraBold"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="font20 "
                 />
+                <label style={{ color: "#000", fontSize: "1.2rem" }}>
+                  Message:
+                </label>
                 <textarea
                   rows="4"
                   cols="50"
                   type="text"
                   id="message"
                   name="message"
-                  className="font20 extraBold"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="font20 "
                 />
               </Form>
               <SumbitWrapper className="flex">
@@ -67,6 +114,7 @@ export default function Contact() {
                   type="submit"
                   value="Send Message"
                   className="pointer animate radius8"
+                  onClick={handleSubmit}
                   style={{
                     maxWidth: "220px",
                     color: "#fff",

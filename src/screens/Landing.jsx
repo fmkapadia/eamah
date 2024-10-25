@@ -24,14 +24,14 @@ export default function Landing() {
       {/* <Pricing /> */}
       <Contact />
 
-      <ImageTextComponent
+      {/* <ImageTextComponent
         image={header}
         text="USA company description."
         heading=""
         subHeading=""
         isImageRight="true"
         bgStyle="dark"
-      />
+      /> */}
       <FAQSection />
       <FooterSection />
     </>

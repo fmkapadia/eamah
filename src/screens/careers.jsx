@@ -11,6 +11,7 @@ import FullButton from "../components/Buttons/FullButton";
 //Import images
 import contactus from "../assets/img/contactus.webp";
 import { useNavigate } from "react-router-dom";
+import FooterSection from "../components/Sections/FooterSection";
 
 const Careers = () => {
   const navigate = useNavigate();
@@ -252,7 +253,7 @@ const Careers = () => {
           </Col>
         </Row>
       </div>
-      <Footer />
+      <FooterSection />
     </React.Fragment>
   );
 };
