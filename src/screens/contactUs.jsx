@@ -47,7 +47,7 @@ const ContactUs = () => {
               </Row>
               <BreadcrumbContainer
                 className="position-breadcrumb"
-                style={{ color: "#000", fontWeight: "bold" }}
+                style={{ color: "#000" }}
               >
                 <nav>
                   <ul>

@@ -399,7 +399,7 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
             {activeTab == "1" ? (
               <>
                 <Link
-                  to="/products/equipments"
+                  to="/products"
                   style={{ color: "#007bff", fontSize: "1.1rem" }}
                 >
                   See More{" "}
@@ -408,7 +408,7 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
               </>
             ) : (
               <>
-                <Link to="/products/company" style={{ color: "#007bff" }}>
+                <Link to="/products" style={{ color: "#007bff" }}>
                   See More{" "}
                   <i className="uil uil-angle-right-b align-middle"></i>
                 </Link>
@@ -535,7 +535,7 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
             <br /> and skilled technicians propel this company forward.
           </p>
           <Link
-            to="#"
+            to="/contactUs"
             style={{
               color: "#000",
               fontWeight: "normal",

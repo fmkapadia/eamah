@@ -10,7 +10,7 @@ const FooterWrapper = styled.div`
   background-color: #f8f9fa;
   padding: 2rem 0;
   border-top: 1px solid #e9ecef;
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 4rem;
   }
 
@@ -115,15 +115,17 @@ class FooterSection extends Component {
                 awareness, drive traffic, and connect.
               </p>
               <SocialIconList>
-                {["facebook", "instagram", "twitter", "linkedin"].map(
-                  (icon, index) => (
-                    <li key={index}>
-                      <Link to="#" className="rounded me-1">
-                        <FeatherIcon icon={icon} className="icon-sm" />
-                      </Link>
-                    </li>
-                  )
-                )}
+                {/* "facebook", "instagram", "twitter", */}
+                {["linkedin"].map((icon, index) => (
+                  <li key={index}>
+                    <Link
+                      to="https://www.linkedin.com/company/eamah-entrepreneur/"
+                      className="rounded me-1"
+                    >
+                      <FeatherIcon icon={icon} className="icon-sm" />
+                    </Link>
+                  </li>
+                ))}
               </SocialIconList>
             </Col>
 

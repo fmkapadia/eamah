@@ -30,11 +30,7 @@ export default function TopNavbar() {
         style={y > 100 ? { height: "60px" } : { height: "80px" }}
       >
         <NavInner className="container flexSpaceCenter">
-          <RouterLink
-            className="pointer flexNullCenter"
-            to="home"
-            smooth={true}
-          >
+          <RouterLink className="pointer flexNullCenter" to="/" smooth={true}>
             {/* <LogoIcon />
              */}
             <Img src={Eamah_logo} alt="Eamah Entreprenure" />
@@ -80,7 +76,7 @@ export default function TopNavbar() {
                 About Us
               </RouterLink>
             </li>
-            <DropdownWrapper className="semiBold font15 pointer">
+            {/* <DropdownWrapper className="semiBold font15 pointer">
               <RouterLink to="" style={{ padding: "10px 15px" }}>
                 Products
               </RouterLink>
@@ -94,8 +90,8 @@ export default function TopNavbar() {
                   <RouterLink to="/products/company">by Company</RouterLink>
                 </DropdownItem>
               </DropdownContent>
-            </DropdownWrapper>
-            {/* <li className="semiBold font15 pointer">
+            </DropdownWrapper> */}
+            <li className="semiBold font15 pointer">
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -106,7 +102,7 @@ export default function TopNavbar() {
               >
                 Products
               </RouterLink>
-            </li> */}
+            </li>
             {/* <li className="semiBold font15 pointer">
               <RouterLink
                 activeClass="active"
