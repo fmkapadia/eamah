@@ -10,6 +10,13 @@ const FooterWrapper = styled.div`
   background-color: #f8f9fa;
   padding: 2rem 0;
   border-top: 1px solid #e9ecef;
+   @media (max-width: 768px) {
+    padding: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem;
+  }
 `;
 
 const FooterHead = styled.h5`

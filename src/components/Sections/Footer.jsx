@@ -54,6 +54,13 @@ export default function Contact() {
 
 const Wrapper = styled.div`
   width: 100%;
+   @media (max-width: 768px) {
+    padding: 4rem 4rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 2rem;
+  }
 `;
 const InnerWrapper = styled.div`
   @media (max-width: 550px) {

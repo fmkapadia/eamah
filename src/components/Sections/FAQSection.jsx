@@ -109,6 +109,14 @@ const FAQWrapper = styled.div`
   padding: 8rem;
   text-align: left;
 
+   @media (max-width: 768px) {
+    padding: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem;
+  }
+
   h2 {
     text-align: center;
     margin-bottom: 1.5rem;

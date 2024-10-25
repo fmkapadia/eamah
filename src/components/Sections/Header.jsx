@@ -181,16 +181,24 @@ const LeftSide = styled.div`
   }
 `;
 const RightSide = styled.div`
-  width: 100vw;
-  height: 500px;
+ 
   position: relative;
   object-fit: cover;
   // padding: 20px;
   // border: 1px solid black;
   @media (max-width: 960px) {
-    width: 100%;
-    order: 1;
+   width:auto;
+  height: auto;
     margin-top: 30px;
+  }
+     @media (max-width: 768px) {
+    height :auto;
+    width:auto;
+  }
+
+  @media (max-width: 480px) {
+    height :auto;
+    width:auto;
   }
 `;
 const CTAButton = styled(Link)`
@@ -287,12 +295,30 @@ const ImageSlide = styled.div`
   position: relative;
   width: 100vw;
   height: 500px;
+    @media (max-width: 768px) {
+    height :auto;
+    width:auto;
+  }
+
+  @media (max-width: 480px) {
+    height :auto;
+    width:auto;
+  }
 `;
 
 const Img = styled.img`
   width: 100vw;
   height: 500px;
   object-fit: fill;
+    @media (max-width: 768px) {
+    height :auto;
+    width:auto;
+  }
+
+  @media (max-width: 480px) {
+    height :auto;
+    width:auto;
+  }
 `;
 
 const TextOverlay = styled.div`
