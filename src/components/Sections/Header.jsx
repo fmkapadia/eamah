@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import FullButton from "../Buttons/FullButton";
 // Assets
 import headerImage from "../../assets/img/headerImage.png";
-import banner1 from "../../assets/img/banner7.png";
-import banner2 from "../../assets/img/banner6.png";
+import banner1 from "../../assets/img/banner9.png";
+import banner2 from "../../assets/img/banner8.png";
 import banner3 from "../../assets/img/banner7.png";
 import banner4 from "../../assets/img/banner5.png";
 import QuotesIcon from "../../assets/svg/Quotes";

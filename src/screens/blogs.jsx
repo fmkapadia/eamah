@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import contactus from "../assets/img/contactus.webp";
+import contactus from "../assets/img/banner12.png";
 import ServiceBox from "../components/Elements/ServiceBox";
 import TopNavbar from "../components/Nav/TopNavbar";
 import Footer from "../components/Sections/Footer";

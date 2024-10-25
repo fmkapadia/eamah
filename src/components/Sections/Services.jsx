@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useEffect, useRef, useState } from "react";
+import styled, {css, keyframes} from "styled-components";
 // Components
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
@@ -13,6 +13,56 @@ import AddImage4 from "../../assets/img/products/Packaging/p30.jpg";
 import Dots from "../../assets/svg/Dots";
 
 export default function Services() {
+  const [isVisibleServiceBox, setIsVisibleServiceBox] = useState(false);
+  const [isVisibleAdvertising, setIsVisibleAdvertising] = useState(false);
+  
+  const serviceBoxRef = useRef();
+  const advertisingRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisibleServiceBox(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (serviceBoxRef.current) {
+      observer.observe(serviceBoxRef.current);
+    }
+
+    return () => {
+      if (serviceBoxRef.current) {
+        observer.unobserve(serviceBoxRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisibleAdvertising(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (advertisingRef.current) {
+      observer.observe(advertisingRef.current);
+    }
+
+    return () => {
+      if (advertisingRef.current) {
+        observer.unobserve(advertisingRef.current);
+      }
+    };
+  }, []);
+
   return (
     <Wrapper id="services">
       <div className="whiteBg" style={{ padding: "50px 0", marginTop: "60px" }}>
@@ -33,8 +83,8 @@ export default function Services() {
               labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
           </HeaderInfo>
-          <ServiceBoxRow className="flex">
-            <ServiceBoxWrapper>
+          <ServiceBoxRow ref={serviceBoxRef} isVisible={isVisibleServiceBox} className="flex">
+            <ServiceBoxWrapper  >
               <ServiceBox
                 icon="roller"
                 title=" Quality Assurance
@@ -69,7 +119,7 @@ export default function Services() {
         </div>
         <div className="lightBg">
           <div className="container">
-            <Advertising className="flexSpaceCenter">
+            <Advertising ref={advertisingRef} isVisible={isVisibleAdvertising} className="flexSpaceCenter">
               <AddLeft>
                 <h4 style={{ color: "#007bff", fontSize: "40px" }}>
                   A few words about company
@@ -149,6 +199,42 @@ export default function Services() {
     </Wrapper>
   );
 }
+
+
+
+const slideIn = keyframes`
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
+
+const slideOut = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(50px); // Slide out to the right
+  }
+`;
+
+
+
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 const CTAButton = styled(Link)`
   display: inline-block;
   background-color: #2b56f5;
@@ -156,15 +242,27 @@ const CTAButton = styled(Link)`
   padding: 10px 30px;
   text-decoration: none;
   border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
   &:hover {
     background-color: #1a3dbf;
     color: "#fff" !important;
+        transform: scale(1.05);
+
   }
 `;
 const Wrapper = styled.section`
   width: 100%;
+
 `;
 const ServiceBoxRow = styled.div`
+
+ opacity: ${props => (props.isVisible ? 1 : 0)};
+  ${props =>
+    props.isVisible &&
+    css`
+      animation: ${slideIn} 0.5s ease forwards;
+    `}
   @media (max-width: 860px) {
     flex-direction: column;
   }
@@ -173,6 +271,10 @@ const ServiceBoxWrapper = styled.div`
   width: 20%;
   margin-right: 5%;
   padding: 80px 0;
+ 
+  &:hover {
+    transform: translateY(-5px);
+  }
   @media (max-width: 860px) {
     width: 100%;
     text-align: center;
@@ -191,6 +293,13 @@ const Advertising = styled.div`
   @media (max-width: 1160px) {
     padding: 0px 0 40px 0;
   }
+ opacity: ${props => (props.isVisible ? 1 : 0)};
+  ${props =>
+    props.isVisible &&
+    css`
+      animation: ${slideOut} 0.5s ease forwards;
+    `}
+
   @media (max-width: 860px) {
     flex-direction: column;
     padding: 0 0 30px 0;

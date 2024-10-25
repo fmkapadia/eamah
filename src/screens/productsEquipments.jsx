@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Portfolio from "../assets/img/bg-portfolio.jpg";
+import Portfolio from "../assets/img/banner12.png";
 import Work from "../components/Elements/gallery";
 import TopNavbar from "../components/Nav/TopNavbar";
 import Footer from "../components/Sections/Footer";

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import FeatherIcon from "feather-icons-react"; // Assuming FeatherIcon is imported
-import contactus from "../../assets/img/contactus.webp";
+import contactus from "../../assets/img/products/Packaging/p29.jpg";
 // Styled Components
 const Section = styled.section`
   padding: 60px 0;
