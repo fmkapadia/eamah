@@ -85,11 +85,11 @@ class FooterSection extends Component {
     super(props);
     this.state = {
       companyLinks: [
-        { title: "About us", link: "#" },
-        { title: "Products", link: "#" },
+        { title: "About us", link: "/aboutUs" },
+        { title: "Products", link: "products" },
         // { title: "Team", link: "#" },
-        // { title: "Careers", link: "#" },
-        { title: "Blogs", link: "#" },
+        { title: "ContactUs", link: "/contactUs" },
+        { title: "Blogs", link: "blogs" },
       ],
       usefulLinks: [
         { title: "Terms of Services", link: "#" },
@@ -108,9 +108,13 @@ class FooterSection extends Component {
             {/* Company Info */}
             <Col lg={9} xs={12} className="mb-4">
               <Link to="#" className="logo-footer">
-                <img src={eamahText} height="24" alt="logo" />
+                <img
+                  src={eamahText}
+                  alt="logo"
+                  style={{ width: "10rem", height: "2rem" }}
+                />
               </Link>
-              <p className="mt-4">
+              <p style={{ color: "#6c757d", fontSize: "1.2rem" }}>
                 Start working with us to get everything you need to generate
                 awareness, drive traffic, and connect.
               </p>
