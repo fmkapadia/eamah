@@ -8,6 +8,9 @@ import Footer from "../components/Sections/Footer";
 import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 import FooterSection from "../components/Sections/FooterSection";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdMarkEmailRead } from "react-icons/md";
 const ContactUs = () => {
   return (
     <Wrapper id="contact">
@@ -87,8 +90,12 @@ const ContactUs = () => {
             <ServiceBoxWrapper>
               <div style={{ textAlign: "center", padding: "20px" }}>
                 {/* SVG Icon */}
-                <div style={{ marginBottom: "15px" }}>
-                  <svg
+                <div
+                  style={{
+                    marginBottom: "15px",
+                  }}
+                >
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     width="48" // Customize size
@@ -96,7 +103,8 @@ const ContactUs = () => {
                     fill="currentColor" // Use color based on your theme
                   >
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
-                  </svg>
+                  </svg> */}
+                  <FaPhoneVolume size={25} />
                 </div>
 
                 {/* Title */}
@@ -128,7 +136,7 @@ const ContactUs = () => {
               <div style={{ textAlign: "center", padding: "20px" }}>
                 {/* SVG Icon */}
                 <div style={{ marginBottom: "15px" }}>
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     width="48" // Customize size
@@ -136,7 +144,8 @@ const ContactUs = () => {
                     fill="currentColor" // Use color based on your theme
                   >
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
-                  </svg>
+                  </svg> */}
+                  <MdMarkEmailRead size={30} />
                 </div>
 
                 {/* Title */}
@@ -164,7 +173,7 @@ const ContactUs = () => {
                     purchase@eamahent.com
                   </span>
                 </p>
-                <p style={{ marginTop: "10px" }}>
+                <p style={{ marginTop: "1px" }}>
                   Sales Inquiry:
                   <br />
                   <span
@@ -174,7 +183,7 @@ const ContactUs = () => {
                       fontSize: "1rem",
                     }}
                   >
-                    sales@eamahent.com
+                    saleseamah@gmail.com
                   </span>
                 </p>
               </div>
@@ -183,7 +192,7 @@ const ContactUs = () => {
               <div style={{ textAlign: "center", padding: "20px" }}>
                 {/* SVG Icon */}
                 <div style={{ marginBottom: "15px" }}>
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     width="48" // Customize size
@@ -191,7 +200,8 @@ const ContactUs = () => {
                     fill="currentColor" // Use color based on your theme
                   >
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
-                  </svg>
+                  </svg> */}
+                  <FaLocationDot size={28} />
                 </div>
 
                 {/* Title */}

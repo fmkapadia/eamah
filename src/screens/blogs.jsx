@@ -77,7 +77,12 @@ const Blogs = () => {
             }}
           >
             <h1>Blog-Listing</h1>
-            <p>
+            <p
+              style={{
+                color: "#6c757d",
+                fontSize: "1.2rem",
+              }}
+            >
               I was interested in understanding what factors influence a
               neuro-interventionalists (NI) decision to pick a particular Flow
               Diverter (FD) for treating a given aneurysm.

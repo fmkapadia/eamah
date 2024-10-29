@@ -109,7 +109,7 @@ const Content = styled.div`
 
 const Title = styled.h5`
   color: #0b093b;
-  font-family: "Brush Script MT", sans-serif;
+  // font-family: "Brush Script MT", sans-serif;
   font-weight: bold;
   margin-bottom: 0.5rem;
 `;
