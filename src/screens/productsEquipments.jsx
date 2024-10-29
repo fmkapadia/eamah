@@ -5,7 +5,44 @@ import Work from "../components/Elements/gallery";
 import TopNavbar from "../components/Nav/TopNavbar";
 import Footer from "../components/Sections/Footer";
 import FooterSection from "../components/Sections/FooterSection";
+import { Container, Row, Col } from "reactstrap";
+import { Link } from "react-router-dom";
+import contactus from "../assets/img/banner/banner4.png";
+
+
 // Styled components
+const BreadcrumbContainer = styled.div`
+  position: absolute;
+  bottom: 30px; /* Adjust this value to control the distance from the bottom */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center; /* Centers breadcrumb horizontally */
+  nav {
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+  }
+
+  ul {
+    display: flex; /* Makes breadcrumb items inline */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  li + li::before {
+    content: "/";
+    padding: 0 10px;
+    color: #999;
+  }
+`;
 const SectionWrapper = styled.section`
   position: relative;
   display: table;
@@ -65,16 +102,44 @@ const ProductsEquipments = () => {
   return (
     <React.Fragment>
       <TopNavbar />
-      <SectionWrapper>
-        <Overlay />
-        <TitleHeading>
-          <Title>Our Products</Title>
-          <Description>
-            We consistently strive to be the best, and this is reflected in our
-            products.
-          </Description>
-        </TitleHeading>
-      </SectionWrapper>
+      <section
+        className="bg-half-170 d-table w-100"
+        style={{
+          background: `url(${contactus})`,
+          height: "500px",
+          overflow: "hidden",
+          marginTop: "80px",
+
+        }}
+      >
+        <div className="bg-overlay"></div>
+        <Container>
+          {/* <Row className="mt-5 justify-content-center">
+            <Col lg={12} className="text-center">
+              <div className="pages-heading title-heading">
+                <h2 className="text-white title-dark"> Aboutus </h2>
+                <p className="text-white-50 para-desc mb-0 mx-auto">
+                  Start working with Landrick that can provide everything you
+                  need to generate awareness, drive traffic, connect.
+                </p>
+              </div>
+            </Col>
+          </Row> */}
+          <BreadcrumbContainer className="position-breadcrumb">
+            <nav>
+              <ul>
+                <li className="breadcrumb-item">
+                  <Link to="/">Eamah</Link>
+                </li>{" "}
+                <li className="breadcrumb-item">
+                  <>Pages</>
+                </li>{" "}
+                <li className="breadcrumb-item">Products</li>
+              </ul>
+            </nav>
+          </BreadcrumbContainer>
+        </Container>
+      </section>
 
       <SvgWrapper>
         <Shape

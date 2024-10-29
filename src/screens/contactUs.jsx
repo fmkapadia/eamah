@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import contactus from "../assets/img/contactus.webp";
+import contactus from "../assets/img/banner/banner4.png";
 import ServiceBox from "../components/Elements/ServiceBox";
 import TopNavbar from "../components/Nav/TopNavbar";
 import Footer from "../components/Sections/Footer";
@@ -21,6 +21,7 @@ const ContactUs = () => {
               backgroundImage: `url(${contactus})`,
               height: "500px", // Set the desired height
               overflow: "hidden",
+              marginTop:"80px"
             }}
           >
             <Container>
@@ -38,10 +39,7 @@ const ContactUs = () => {
                       textAlign: "center", // Center text horizontally
                     }}
                   >
-                    <h2 style={{ fontSize: "3.75rem", color: "#0397DD" }}>
-                      {" "}
-                      Contact Us{" "}
-                    </h2>
+                  
                   </div>
                 </Col>
               </Row>
@@ -249,7 +247,7 @@ const ContactUs = () => {
 };
 const BreadcrumbContainer = styled.div`
   position: absolute;
-  bottom: 110px; /* Adjust this value to control the distance from the bottom */
+  bottom: 30px; /* Adjust this value to control the distance from the bottom */
   left: 0;
   right: 0;
   display: flex;

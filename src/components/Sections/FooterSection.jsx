@@ -111,8 +111,7 @@ class FooterSection extends Component {
                 <img src={eamahText} height="24" alt="logo" />
               </Link>
               <p className="mt-4">
-                Start working with us to get everything you need to generate
-                awareness, drive traffic, and connect.
+              Driving innovation in the pharmaceutical industry.
               </p>
               <SocialIconList>
                 {/* "facebook", "instagram", "twitter", */}

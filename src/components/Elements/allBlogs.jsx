@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import FeatherIcon from "feather-icons-react"; // Assuming FeatherIcon is imported
-import contactus from "../../assets/img/products/Packaging/p29.jpg";
+import contactus from "../../assets/img/neuro.png";
+import contactus1 from "../../assets/img/founder/husain.jpg";
+
 // Styled Components
 const Section = styled.section`
   padding: 60px 0;
@@ -29,7 +31,7 @@ const Col = styled.div`
 
 const Img = styled.img`
   width: 100%;
-  height: 450px;
+  height: auto;
   border-radius: 10px;
 `;
 
@@ -108,6 +110,8 @@ class Blog extends Component {
       {
         id: 1,
         image: contactus,
+        image1: contactus1,
+
         title: "Factors influence a neuro-interventionalists (NI) decision ",
         desc: "Due to its widespread use as filler text for layouts, non-readability",
         like: "33",
@@ -288,7 +292,7 @@ class Blog extends Component {
                 <CardBody>
                   <SidebarItem style={{ textAlign: "center" }}>
                     <img
-                      src={contactus}
+                      src={contactus1}
                       className="rounded-circle"
                       alt="Author"
                       style={{

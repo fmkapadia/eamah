@@ -11,7 +11,7 @@ import ClientSlider from "../components/Elements/ClientSlider";
 // import NavBar from "./NavBar";
 
 //Import images
-import contactus from "../assets/img/banner7.png";
+import contactus from "../assets/img/banner/banner2.png";
 import contactus1 from "../assets/img/products/Packaging/p34.jpg";
 
 import p1 from "../assets/img/products/Compression/p1.png";
@@ -66,6 +66,7 @@ const AboutUs = () => {
           background: `url(${contactus})`,
           height: "500px",
           overflow: "hidden",
+          marginTop:"80px"
         }}
       >
         <div className="bg-overlay"></div>
@@ -531,8 +532,7 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
         </div>
         <div style={{ color: "#ccc", marginBottom: "1.5rem" }}>
           <p style={{ color: "#fff", fontSize: "20px" }}>
-            A team of dedicated engineers, creative designers,
-            <br /> and skilled technicians propel this company forward.
+          Driving innovation in the pharmaceutical industry.
           </p>
           <Link
             to="/contactUs"
@@ -558,7 +558,7 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
 };
 const BreadcrumbContainer = styled.div`
   position: absolute;
-  bottom: 110px; /* Adjust this value to control the distance from the bottom */
+  bottom: 30px; /* Adjust this value to control the distance from the bottom */
   left: 0;
   right: 0;
   display: flex;

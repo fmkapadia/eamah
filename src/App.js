@@ -42,6 +42,8 @@ export default function App() {
           <Route path="/" element={<Landing />} /> {/* Landing page */}
           <Route path="/contactUs" element={<ContactUs />} /> {/* New page */}
           <Route path="/careers" element={<Careers />} />
+          <Route path="/contacts" element={<Careers />} />
+
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/products" element={<Products />} />
           <Route path="/blogs" element={<Blogs />} />

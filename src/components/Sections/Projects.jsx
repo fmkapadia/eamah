@@ -41,7 +41,7 @@ export default function Projects() {
               <ProjectBox
                 img={p1}
                 title="Cadmach 8mm-D tooling"
-                text="Lorem ipsum dolor sit amet."
+               // text="Lorem ipsum dolor sit amet."
                 // action={() => alert("clicked")}
               />
             </div>
@@ -49,7 +49,7 @@ export default function Projects() {
               <ProjectBox
                 img={p2}
                 title="Cadmach 12mm-D-BI layer"
-                text="Lorem ipsum dolor sit amet."
+               // text="Lorem ipsum dolor sit amet."
                 // action={() => alert("clicked")}
               />
             </div>
@@ -57,7 +57,7 @@ export default function Projects() {
               <ProjectBox
                 img={p3}
                 title="Cam track"
-                text="Lorem ipsum dolor sit amet."
+              //  text="Lorem ipsum dolor sit amet."
                 // action={() => alert("clicked")}
               />
             </div>
@@ -67,7 +67,7 @@ export default function Projects() {
               <ProjectBox
                 img={p4}
                 title="Fette 3111200_EU1_1350_5"
-                text="Lorem ipsum dolor sit amet, "
+              //  text="Lorem ipsum dolor sit amet, "
                 // action={() => alert("clicked")}
               />
             </div>
@@ -75,7 +75,7 @@ export default function Projects() {
               <ProjectBox
                 img={p5}
                 title="Fette 3117562 EU19"
-                text="Lorem ipsum dolor sit amet, "
+               // text="Lorem ipsum dolor sit amet, "
                 // action={() => alert("clicked")}
               />
             </div>
@@ -83,7 +83,7 @@ export default function Projects() {
               <ProjectBox
                 img={p6}
                 title="IMA Kilian 248359-1"
-                text="Lorem ipsum dolor sit amet, "
+                //text="Lorem ipsum dolor sit amet, "
                 // action={() => alert("clicked")}
               />
             </div>

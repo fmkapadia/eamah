@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import contactus from "../assets/img/banner12.png";
+import contactus from "../assets/img/banner/banner3.png";
 import ServiceBox from "../components/Elements/ServiceBox";
 import TopNavbar from "../components/Nav/TopNavbar";
 import Footer from "../components/Sections/Footer";
@@ -22,6 +22,8 @@ const Blogs = () => {
               backgroundImage: `url(${contactus})`,
               height: "500px", // Set the desired height
               overflow: "hidden",
+              marginTop: "20px",
+
             }}
           >
             <Container>
@@ -95,7 +97,7 @@ const Wrapper = styled.section`
 `;
 const BreadcrumbContainer = styled.div`
   position: absolute;
-  bottom: 110px; /* Adjust this value to control the distance from the bottom */
+  bottom: 30px; /* Adjust this value to control the distance from the bottom */
   left: 0;
   right: 0;
   display: flex;

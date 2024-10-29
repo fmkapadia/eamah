@@ -77,10 +77,7 @@ export default function Services() {
               Engineering Innovation for Seamless Production.
             </h1>
             <p style={{ color: "#000", fontSize: "1.1rem" }}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+            The future of pharmaceutical machinery starts here. Explore our innovative solutions
             </p>
           </HeaderInfo>
           <ServiceBoxRow ref={serviceBoxRef} isVisible={isVisibleServiceBox} className="flex">
@@ -105,14 +102,14 @@ export default function Services() {
               <ServiceBox
                 icon="browser"
                 title="Reliability"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                subtitle="At Eamah Entrepreneur, we understand that reliability is paramount in the pharmaceutical industry. We ensure that our spare parts are not just replacements, but extensions of your machinery's life. Our commitment to quality, timely delivery, and exceptional customer service sets us apart. We source our parts from trusted manufacturers and rigorously test them to guarantee optimal performance and durability. By prioritizing reliability, we help you maintain uninterrupted operations, ensuring the smooth functioning of your pharmaceutical processes."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="printer"
                 title="Packaging"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                subtitle="At Eamah Entrepreneur, we understand the importance of proper packaging in ensuring the safe and timely delivery of your spare parts. We employ robust packaging techniques to safeguard our products during transit, minimizing the risk of damage or loss. Our packaging solutions are designed to withstand the rigors of shipping, protecting your valuable spare parts from external factors such as moisture, shock, and vibration. By prioritizing packaging integrity, we guarantee that your order arrives in perfect condition, ready to be installed and put to use."
               />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
@@ -302,6 +299,8 @@ const Advertising = styled.div`
     flex-direction: column;
     padding: 0 0 30px 0;
     margin: 80px 0 0px 0;
+    animation: ${slideIn} 1s ease forwards;
+
   }
 `;
 const ButtonsRow = styled.div`

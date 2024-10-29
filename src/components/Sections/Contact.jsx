@@ -53,10 +53,7 @@ export default function Contact() {
             </h1>
             {/* 6c757d */}
             <p style={{ color: "#000", fontSize: "1.2rem" }}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+            Have a question? Need assistance? We're here to help!
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>

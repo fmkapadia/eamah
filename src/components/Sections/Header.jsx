@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import FullButton from "../Buttons/FullButton";
 // Assets
 import headerImage from "../../assets/img/headerImage.png";
-import banner1 from "../../assets/img/banner9.png";
-import banner2 from "../../assets/img/banner8.png";
-import banner3 from "../../assets/img/banner7.png";
-import banner4 from "../../assets/img/banner5.png";
+import banner1 from "../../assets/img/banner/banner1.png";
+import banner2 from "../../assets/img/banner/banner2.png";
+import banner3 from "../../assets/img/banner/banner3.png";
+import banner4 from "../../assets/img/banner/banner4.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 import { useNavigate } from "react-router-dom";
@@ -289,6 +289,7 @@ const DotsWrapper = styled.div`
 `;
 const SliderWrapper = styled.div`
   width: 100%;
+  padding-top:80px;
 `;
 
 const ImageSlide = styled.div`
