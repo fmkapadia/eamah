@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-
+import { useState } from "react";
 const ImageTextComponent = ({
   image,
-  text,
+  ftext,
+  sText,
   heading,
   subHeading,
   isImageRight,
   bgStyle,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <Wrapper bgStyle={bgStyle}>
       <ContentWrapper isImageRight={isImageRight}>
@@ -17,8 +19,15 @@ const ImageTextComponent = ({
             <TextWrapper>
               <Heading>{heading}</Heading>
               <SubHeading>{subHeading}</SubHeading>
-              <Text>{text}</Text>
+              <Text>
+                {ftext}
+                {isExpanded && <span>{sText}</span>}
+              </Text>
+              <ShowMoreButton onClick={() => setIsExpanded(!isExpanded)}>
+                {isExpanded ? "Show Less" : "Show More"}
+              </ShowMoreButton>
             </TextWrapper>
+
             <ImageWrapper>
               <StyledImage src={image} alt={heading} />
             </ImageWrapper>
@@ -31,7 +40,13 @@ const ImageTextComponent = ({
             <TextWrapper>
               <Heading>{heading}</Heading>
               <SubHeading>{subHeading}</SubHeading>
-              <Text>{text}</Text>
+              <Text>
+                {ftext}
+                {isExpanded && <span>{sText}</span>}
+              </Text>
+              <ShowMoreButton onClick={() => setIsExpanded(!isExpanded)}>
+                {isExpanded ? "Show Less" : "Show More"}
+              </ShowMoreButton>
             </TextWrapper>
           </>
         )}
@@ -60,9 +75,24 @@ const ContentWrapper = styled.div`
   justify-content: space-between;
   width: 100%;
 `;
-
+const ShowMoreButton = styled.button`
+  background-color: transparent;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+`;
 const ImageWrapper = styled.div`
   width: 50%;
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Spacing between image and text */
+  }
 `;
 
 const StyledImage = styled.img`
@@ -74,6 +104,9 @@ const StyledImage = styled.img`
 const TextWrapper = styled.div`
   width: 50%;
   padding: 20px;
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+  }
 `;
 
 const Heading = styled.h2`

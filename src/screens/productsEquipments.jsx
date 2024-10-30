@@ -9,7 +9,6 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import contactus from "../assets/img/banner/banner4.png";
 
-
 // Styled components
 const BreadcrumbContainer = styled.div`
   position: absolute;
@@ -20,7 +19,7 @@ const BreadcrumbContainer = styled.div`
   justify-content: center; /* Centers breadcrumb horizontally */
   nav {
     background-color: white;
-    padding: 5px 5px 5px 5px;
+    padding: 4px 8px 12px 8px;
     border-radius: 5px;
   }
 
@@ -109,7 +108,6 @@ const ProductsEquipments = () => {
           height: "500px",
           overflow: "hidden",
           marginTop: "80px",
-
         }}
       >
         <div className="bg-overlay"></div>

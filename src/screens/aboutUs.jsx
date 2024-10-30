@@ -66,7 +66,7 @@ const AboutUs = () => {
           background: `url(${contactus})`,
           height: "500px",
           overflow: "hidden",
-          marginTop:"80px"
+          marginTop: "80px",
         }}
       >
         <div className="bg-overlay"></div>
@@ -153,7 +153,7 @@ const AboutUs = () => {
                     }}
                   >
                     <span className="counter-value display-1 fw-bold">
-                      <CountUp start={0} end={15} duration={12} />
+                      <CountUp start={0} end={25} duration={12} />
                     </span>
                     +
                   </span>
@@ -179,7 +179,7 @@ const AboutUs = () => {
                       fontWeight: "600",
                     }}
                   >
-                    Who we are?
+                    Who are we?
                   </h4>
                   <p
                     className="text-muted"
@@ -229,9 +229,10 @@ const AboutUs = () => {
       </section>
       <ImageTextComponent
         image={mustansir}
-        text="With a vision for excellence in pharmaceutical machine manufacturing, Mustansir Sodawalla founded Eamah Entrepreneur in 2011. Under his leadership, Eamah has become a reliable name in the pharmaceutical sector, delivering precise, cost-effective, and time-efficient solutions to leading pharma and nutraceutical companies across the globe. 
+        ftext="With a vision for excellence in pharmaceutical machine manufacturing, Mustansir Sodawalla founded Eamah Entrepreneur in 2011. Under his leadership, Eamah has become a reliable name in the pharmaceutical sector, delivering precise, cost-effective, and time-efficient solutions to leading pharma and nutraceutical companies across the globe. 
 
-Prior to founding Eamah, he served in a leadership role at ACG World, where he spearheaded key projects with Theegarten-Pactec GmbH & Co. KG and Volpack, gaining invaluable insights into the intricacies of industrial machinery. His tenure at Pet Tools further honed his skills in brand building and sales, setting the stage for his entrepreneurial venture. 
+"
+        sText=" Prior to founding Eamah, he served in a leadership role at ACG World, where he spearheaded key projects with Theegarten-Pactec GmbH & Co. KG and Volpack, gaining invaluable insights into the intricacies of industrial machinery. His tenure at Pet Tools further honed his skills in brand building and sales, setting the stage for his entrepreneurial venture. 
 
 A trained Mechanical Engineer from Mumbai, Mustansir has continually sought to enhance his expertise in areas like Effective Personal Productivity, SAP System, and 5S Kaizen. This blend of technical knowledge and managerial acumen has enabled him to lead Eamah Entrepreneur with a focus on product innovation, service excellence, and global market expansion. His leadership style is rooted in integrity, dedication, and a customer-first mindset, reflecting the values that have driven Eamah Entrepreneur to its current success. "
         heading="Mustansir Sodawalla "
@@ -241,7 +242,8 @@ A trained Mechanical Engineer from Mumbai, Mustansir has continually sought to e
       />
       <ImageTextComponent
         image={rehana}
-        text=" Rehana brings a strategic vision and a people-first approach to her role as Co-Founder at Eamah. Leading the Recruiting and Administration functions, she has been instrumental in building the Sales and Logistics teams that drive Eamah’s global operations. Known for her recruiting, Rehana continues to identify top talent ensuring Eamah is driven by a workforce as passionate about business growth as she is. "
+        ftext=" Rehana brings a strategic vision and a people-first approach to her role as Co-Founder at Eamah. Leading the Recruiting and Administration functions, she has been instrumental in building the Sales and Logistics teams that drive Eamah’s global operations. Known for her recruiting, "
+        sText="Rehana continues to identify top talent ensuring Eamah is driven by a workforce as passionate about business growth as she is. "
         heading="Rehana Sodawalla "
         subHeading="Co-Director, Eamah Entrepreneur  "
         isImageRight={true}
@@ -250,9 +252,8 @@ A trained Mechanical Engineer from Mumbai, Mustansir has continually sought to e
 
       <ImageTextComponent
         image={husain}
-        text=" Dr. Husain is a bioengineer working on advancing medical device development by building neurovascular devices. His research on aneurysm modeling has shown potential to significantly impact neurovascular treatments enabling effective long-term testing and clinical adoption of life-saving devices. At Eamah, Husain leads delivery of pharmaceutical accessories and precision equipment to global markets, building cGMP-compliant practices and providing essential logistical support. His ability to identify production challenges and implement solutions during market shifts, including the global pandemic, has been critical to Eamah's success.  
-
-He also leads product development efforts to bring medical devices from concept to clinical use. He is skilled in navigating the complex regulatory landscape, including ISO 13485 and 10993 standards, and 21 CFR 820 medical device regulations. Husain’s expertise in ISO standards and dedication to improving clinical outcomes position him as a driving force in both pharmaceutical and medical device manufacturing. "
+        ftext=" Dr. Husain is a bioengineer working on advancing medical device development by building neurovascular devices. His research on aneurysm modeling has shown potential to significantly impact neurovascular treatments enabling effective long-term testing and clinical adoption of life-saving devices. At Eamah, Husain leads delivery of pharmaceutical accessories and precision equipment to global markets, building cGMP-compliant practices and providing essential logistical support. His ability to identify production challenges and implement solutions during market shifts, including the global pandemic, has been critical to Eamah's success. "
+        sText="He also leads product development efforts to bring medical devices from concept to clinical use. He is skilled in navigating the complex regulatory landscape, including ISO 13485 and 10993 standards, and 21 CFR 820 medical device regulations. Husain’s expertise in ISO standards and dedication to improving clinical outcomes position him as a driving force in both pharmaceutical and medical device manufacturing. "
         heading="Dr. Husain Sodawalla  "
         subHeading="Device development manager, Eamah Entrepreneur   "
         isImageRight={false}
@@ -260,12 +261,11 @@ He also leads product development efforts to bring medical devices from concept 
       />
       <ImageTextComponent
         image={abizer}
-        text=" A person in a suit smiling
+        ftext=" Abizer is a Chemical engineer with a passion for operational efficiency. At Eamah, he has been instrumental in improving production workflow while maintaining the highest standards of quality. His team focuses on improving operational efficiency by reducing lead times and maximizing client satisfaction. 
+"
+        sText="Having worked in small molecule formulation development, he has experience in diagnosing and troubleshooting granulation, compression and encapsulation machine issues to resolve critical production bottlenecks.  
 
-Description automatically generatedBy training, Abizer is a Chemical engineer with a passion for operational efficiency. At Eamah, he has been instrumental in improving production workflow while maintaining the highest standards of quality. His team focuses on improving operational efficiency by reducing lead times and maximizing client satisfaction. 
-Having worked in small molecule formulation development, he has experience in diagnosing and troubleshooting granulation, compression and encapsulation machine issues to resolve critical production bottlenecks.  
-
-Abizer’s commitment to operational excellence extends to his role in customer relations. He has driven business development efforts in Western and Central India, drawing new clients and securing recurring revenue.  
+Abizer’s commitment to operational excellence extends to his role in customer relations.  He has driven business development efforts in Western and Central India, drawing new clients and securing recurring revenue.  
 
 With a master's degree specializing in biotechnology and biopharmaceuticals, Abizer has experience in drug process and product development in the pharmaceutical industry. His work on formulation of biologics for rare diseases demonstrates his dedication to advancing pharmaceutical innovation."
         heading="Abizer Sodawalla  "
@@ -273,14 +273,14 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
         isImageRight={true}
         bgStyle="light"
       />
-      <div className="whiteBg" style={{ padding: "50px 0" }}>
+      {/* <div className="whiteBg" style={{ padding: "50px 0" }}>
         <div className="container">
           <ClientSlider />
         </div>
-      </div>
+      </div> */}
 
-      <div style={{ marginTop: "60px", padding: "20px" }} className="lightBg">
-        {/* Header Row */}
+      {/* <div style={{ marginTop: "60px", padding: "20px" }} className="lightBg">
+        
         <div style={{ marginBottom: "40px", textAlign: "center" }}>
           <h6 style={{ color: "#007bff", fontSize: "40px" }}>Products</h6>
           <h4 style={{ fontSize: "1.75rem", fontWeight: "600" }}>
@@ -293,7 +293,7 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
         </div>
 
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          {/* Tabs Column */}
+        
           <div
             style={{
               width: "30%",
@@ -369,11 +369,10 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
                 }}
               >
                 Web Designing
-              </button> */}
+              </button> 
             </div>
           </div>
 
-          {/* Content Column */}
           <div
             style={{
               width: "65%",
@@ -417,12 +416,12 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
             )}
           </div>
         </div>
-      </div>
+      </div> */}
 
       <section
         style={{
           position: "relative",
-          height: "450px", // Adjust the height as needed
+          height: "450px",
           overflow: "hidden",
           justifyContent: "top",
           background: "linear-gradient(to bottom, transparent 50%,#7ACAEB 50%)",
@@ -532,7 +531,7 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
         </div>
         <div style={{ color: "#ccc", marginBottom: "1.5rem" }}>
           <p style={{ color: "#fff", fontSize: "20px" }}>
-          Driving innovation in the pharmaceutical industry.
+            Driving innovation in the pharmaceutical industry.
           </p>
           <Link
             to="/contactUs"

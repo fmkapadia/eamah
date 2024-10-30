@@ -24,7 +24,7 @@ const ContactUs = () => {
               backgroundImage: `url(${contactus})`,
               height: "500px", // Set the desired height
               overflow: "hidden",
-              marginTop:"80px"
+              marginTop: "80px",
             }}
           >
             <Container>
@@ -41,12 +41,10 @@ const ContactUs = () => {
                       color: "#0b093b", // Text color
                       textAlign: "center", // Center text horizontally
                     }}
-                  >
-                  
-                  </div>
+                  ></div>
                 </Col>
               </Row>
-              <BreadcrumbContainer
+              {/* <BreadcrumbContainer
                 className="position-breadcrumb"
                 style={{ color: "#000" }}
               >
@@ -61,7 +59,7 @@ const ContactUs = () => {
                     <li className="breadcrumb-item">Contact Us</li>
                   </ul>
                 </nav>
-              </BreadcrumbContainer>
+              </BreadcrumbContainer> */}
             </Container>
           </section>
           <div

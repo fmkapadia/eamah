@@ -147,20 +147,20 @@ export default function TopNavbar() {
               </a>
             </li> */}
             <li className="semiBold font15 pointer flexCenter">
-            <RouterLink
+              <RouterLink
                 activeClass="active"
                 style={{
                   padding: "10px 15px",
                   backgroundColor: "#0397DD",
                   color: "#fff",
-                }}               
-                 to="/contactUs"
+                  borderRadius: "1rem",
+                }}
+                to="/contactUs"
                 spy={true}
                 smooth={true}
               >
                 Contact Us
               </RouterLink>
-              
             </li>
           </UlWrapperRight>
         </NavInner>

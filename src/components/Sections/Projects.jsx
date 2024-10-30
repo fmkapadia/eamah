@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 import FullButton from "../Buttons/FullButton";
-
+import ImageCarousel from "./productSlider";
 import { Link } from "react-router-dom";
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
@@ -36,12 +36,13 @@ export default function Projects() {
               products.
             </p>
           </HeaderInfo>
-          <div className="row textCenter">
+          <ImageCarousel />
+          {/* <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={p1}
                 title="Cadmach 8mm-D tooling"
-               // text="Lorem ipsum dolor sit amet."
+                // text="Lorem ipsum dolor sit amet."
                 // action={() => alert("clicked")}
               />
             </div>
@@ -49,7 +50,7 @@ export default function Projects() {
               <ProjectBox
                 img={p2}
                 title="Cadmach 12mm-D-BI layer"
-               // text="Lorem ipsum dolor sit amet."
+                // text="Lorem ipsum dolor sit amet."
                 // action={() => alert("clicked")}
               />
             </div>
@@ -57,7 +58,7 @@ export default function Projects() {
               <ProjectBox
                 img={p3}
                 title="Cam track"
-              //  text="Lorem ipsum dolor sit amet."
+                //  text="Lorem ipsum dolor sit amet."
                 // action={() => alert("clicked")}
               />
             </div>
@@ -67,7 +68,7 @@ export default function Projects() {
               <ProjectBox
                 img={p4}
                 title="Fette 3111200_EU1_1350_5"
-              //  text="Lorem ipsum dolor sit amet, "
+                //  text="Lorem ipsum dolor sit amet, "
                 // action={() => alert("clicked")}
               />
             </div>
@@ -75,7 +76,7 @@ export default function Projects() {
               <ProjectBox
                 img={p5}
                 title="Fette 3117562 EU19"
-               // text="Lorem ipsum dolor sit amet, "
+                // text="Lorem ipsum dolor sit amet, "
                 // action={() => alert("clicked")}
               />
             </div>
@@ -87,10 +88,11 @@ export default function Projects() {
                 // action={() => alert("clicked")}
               />
             </div>
-          </div>
+          </div> */}
+
           <div className="row flexCenter">
             <CTAButton
-              to="/products/equipments"
+              to="/products"
               style={{
                 fontSize: "1rem",
                 backgroundColor: "#0397DD",

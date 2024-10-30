@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import styled, {css, keyframes} from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 // Components
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 // Assets
 import AddImage1 from "../../assets/img/p45.jpg";
 import AddImage2 from "../../assets/img/p44.jpg";
+import p29 from "../../assets/img/products/Packaging/p29.jpg";
+import p32 from "../../assets/img/products/Packaging/p32.jpg";
 import AddImage3 from "../../assets/img/products/Compression/p39.jpg";
 import AddImage4 from "../../assets/img/products/Packaging/p30.jpg";
 import Dots from "../../assets/svg/Dots";
@@ -15,7 +17,7 @@ import Dots from "../../assets/svg/Dots";
 export default function Services() {
   const [isVisibleServiceBox, setIsVisibleServiceBox] = useState(false);
   const [isVisibleAdvertising, setIsVisibleAdvertising] = useState(false);
-  
+
   const serviceBoxRef = useRef();
   const advertisingRef = useRef();
 
@@ -77,18 +79,21 @@ export default function Services() {
               Engineering Innovation for Seamless Production.
             </h1>
             <p style={{ color: "#000", fontSize: "1.1rem" }}>
-            The future of pharmaceutical machinery starts here. Explore our innovative solutions
+              The future of pharmaceutical machinery starts here. Explore our
+              innovative solutions
             </p>
           </HeaderInfo>
-          <ServiceBoxRow ref={serviceBoxRef} isVisible={isVisibleServiceBox} className="flex">
-            <ServiceBoxWrapper  >
+          <ServiceBoxRow
+            ref={serviceBoxRef}
+            isVisible={isVisibleServiceBox}
+            className="flex"
+          >
+            <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
                 title=" Quality Assurance
 "
-                subtitle=" Our state-of-the-art facilities utilize top-tier machinery, enabling us to deliver premium quality replacement parts for your pharmaceutical equipment.
-.
-."
+                subtitle=" Our state-of-the-art facilities utilize top-tier machinery, enabling us to deliver premium quality replacement parts for your pharmaceutical equipment."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
@@ -102,21 +107,31 @@ export default function Services() {
               <ServiceBox
                 icon="browser"
                 title="Reliability"
-                subtitle="At Eamah Entrepreneur, we understand that reliability is paramount in the pharmaceutical industry. We ensure that our spare parts are not just replacements, but extensions of your machinery's life. Our commitment to quality, timely delivery, and exceptional customer service sets us apart. We source our parts from trusted manufacturers and rigorously test them to guarantee optimal performance and durability. By prioritizing reliability, we help you maintain uninterrupted operations, ensuring the smooth functioning of your pharmaceutical processes."
+                subtitle="At Eamah we are committed to providing dependable solutions that minimize downtime,
+enhance productivity, and consistently meet the high standards required in
+the pharmaceutical industry."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="printer"
                 title="Packaging"
-                subtitle="At Eamah Entrepreneur, we understand the importance of proper packaging in ensuring the safe and timely delivery of your spare parts. We employ robust packaging techniques to safeguard our products during transit, minimizing the risk of damage or loss. Our packaging solutions are designed to withstand the rigors of shipping, protecting your valuable spare parts from external factors such as moisture, shock, and vibration. By prioritizing packaging integrity, we guarantee that your order arrives in perfect condition, ready to be installed and put to use."
+                subtitle=" Eamah supports
+manufacturers in achieving safe, efficient, and hygienic product packaging.
+Our machinery is designed to maintain product integrity, ensuring
+pharmaceutical and nutraceutical products are well-protected from production
+to final delivery."
               />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
         <div className="lightBg">
           <div className="container">
-            <Advertising ref={advertisingRef} isVisible={isVisibleAdvertising} className="flexSpaceCenter">
+            <Advertising
+              ref={advertisingRef}
+              isVisible={isVisibleAdvertising}
+              className="flexSpaceCenter"
+            >
               <AddLeft>
                 <h4 style={{ color: "#007bff", fontSize: "40px" }}>
                   A few words about company
@@ -176,12 +191,12 @@ export default function Services() {
                       <img src={AddImage1} alt="office" />
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <img src={AddImage2} alt="office" />
+                      <img src={p32} alt="office" />
                     </AddImgWrapp2>
                   </div>
                   <div className="flexNullCenter">
                     <AddImgWrapp3>
-                      <img src={AddImage3} alt="office" />
+                      <img src={p29} alt="office" />
                     </AddImgWrapp3>
                     <AddImgWrapp4>
                       <img src={AddImage4} alt="office" />
@@ -196,8 +211,6 @@ export default function Services() {
     </Wrapper>
   );
 }
-
-
 
 const slideIn = keyframes`
   0% {
@@ -219,9 +232,6 @@ const slideOut = keyframes`
   }
 `;
 
-
-
-
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -237,23 +247,20 @@ const CTAButton = styled(Link)`
   padding: 10px 30px;
   text-decoration: none;
   border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
     background-color: #1a3dbf;
     color: "#fff" !important;
-        transform: scale(1.05);
-
+    transform: scale(1.05);
   }
 `;
 const Wrapper = styled.section`
   width: 100%;
-
 `;
 const ServiceBoxRow = styled.div`
-
- opacity: ${props => (props.isVisible ? 1 : 0)};
-  ${props =>
+  opacity: ${(props) => (props.isVisible ? 1 : 0)};
+  ${(props) =>
     props.isVisible &&
     css`
       animation: ${slideIn} 3s ease forwards;
@@ -266,7 +273,7 @@ const ServiceBoxWrapper = styled.div`
   width: 20%;
   margin-right: 5%;
   padding: 80px 0;
- 
+
   &:hover {
     transform: translateY(-5px);
   }
@@ -288,8 +295,8 @@ const Advertising = styled.div`
   @media (max-width: 1160px) {
     padding: 0px 0 40px 0;
   }
- opacity: ${props => (props.isVisible ? 1 : 0)};
-  ${props =>
+  opacity: ${(props) => (props.isVisible ? 1 : 0)};
+  ${(props) =>
     props.isVisible &&
     css`
       animation: ${slideOut} 0.5s ease forwards;
@@ -300,7 +307,6 @@ const Advertising = styled.div`
     padding: 0 0 30px 0;
     margin: 80px 0 0px 0;
     animation: ${slideIn} 1s ease forwards;
-
   }
 `;
 const ButtonsRow = styled.div`

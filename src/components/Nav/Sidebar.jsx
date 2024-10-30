@@ -5,16 +5,16 @@ import { Link } from "react-scroll";
 import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
 import AboutUs from "../../screens/aboutUs";
+import Eamah_logo from "../../assets/img/Eamah_logo.png";
+import eamahText from "../../assets/img/eamahText.jpeg";
 import { Link as RouterLink } from "react-router-dom";
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
-    <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
+    <Wrapper className="animate lightBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
-          <LogoIcon />
-          <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            fanatic
-          </h1>
+          <Img src={Eamah_logo} alt="Eamah Entreprenure" />
+          <Img1 src={eamahText} alt="Eamah Entreprenure" />
         </div>
         <CloseBtn
           onClick={() => toggleSidebar(!sidebarOpen)}
@@ -41,8 +41,8 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
+            // className="whiteColor"
+            style={{ padding: "10px 15px", fontSize: "1.2rem" }}
             to="/"
             spy={true}
             smooth={true}
@@ -55,8 +55,8 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
+            // className="whiteColor"
+            style={{ padding: "10px 15px", fontSize: "1.2rem" }}
             to="/aboutUs"
             spy={true}
             smooth={true}
@@ -66,11 +66,11 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           </RouterLink>
         </li>
 
-        <DropdownWrapper className="semiBold font15 pointer">
+        {/* <DropdownWrapper className="semiBold font15 pointer">
           <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
-            className="whiteColor"
+            // className="whiteColor"
             style={{ padding: "10px 15px" }}
             to=""
             spy={true}
@@ -87,13 +87,25 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
               <RouterLink to="/products/company">by Company</RouterLink>
             </DropdownItem>
           </DropdownContent>
-        </DropdownWrapper>
+        </DropdownWrapper> */}
+        <li className="semiBold font15 pointer">
+          <RouterLink
+            activeClass="active"
+            style={{ padding: "10px 15px", fontSize: "1.2rem" }}
+            to="/products"
+            spy={true}
+            smooth={true}
+            offset={-80}
+          >
+            Products
+          </RouterLink>
+        </li>
         <li className="semiBold font15 pointer">
           <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
+            // className="whiteColor"
+            style={{ padding: "10px 15px", fontSize: "1.2rem" }}
             to="/blogs"
             spy={true}
             smooth={true}
@@ -107,8 +119,8 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           <RouterLink
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
+            // className="whiteColor"
+            style={{ padding: "10px 15px", fontSize: "1.2rem" }}
             to="/contactUs"
             spy={true}
             smooth={true}
@@ -141,7 +153,15 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
     </Wrapper>
   );
 }
-
+const Img = styled.img`
+  width: 3rem;
+  height: 30px;
+  border-radius: 10px;
+`;
+const Img1 = styled.img`
+  width: 10rem;
+  height: 2rem;
+`;
 const Wrapper = styled.nav`
   width: 400px;
   height: 100vh;
@@ -162,6 +182,7 @@ const CloseBtn = styled.button`
   outline: none;
   background-color: transparent;
   padding: 10px;
+  color: black;
 `;
 const UlStyle = styled.ul`
   padding: 40px;
@@ -181,7 +202,7 @@ const DropdownWrapper = styled.li`
 const DropdownContent = styled.div`
   display: none;
   position: absolute;
-  background-color: white;
+  // background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 `;
