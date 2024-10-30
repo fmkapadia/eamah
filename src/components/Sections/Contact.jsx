@@ -71,7 +71,8 @@ export default function Contact() {
             </h1>
             {/* 6c757d */}
             <p style={{ color: "#000", fontSize: "1.2rem" }}>
-              Have a Question? Need assistance?We're here to help!
+              For any general queries concerning our company’s product or
+              service, please use this contact form.
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>

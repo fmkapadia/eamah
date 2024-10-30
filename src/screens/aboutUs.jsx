@@ -514,10 +514,10 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
           backgroundColor: "#7ACAEB",
         }}
       >
-        <div style={{}}>
-          <p style={{ color: "#000", fontSize: "30px", fontWeight: "normal" }}>
+        {/* <div style={{}}>
+          {/* <p style={{ color: "#000", fontSize: "30px", fontWeight: "normal" }}>
             Team
-          </p>
+          </p> 
           <h4
             style={{
               color: "#fff",
@@ -526,12 +526,33 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
               fontSize: "20px",
             }}
           >
-            Meet Our <br /> Experienced Team
+            A team of expert engineers, creative designers and efficient
+            technicians is what drives this company to its goals.
           </h4>
-        </div>
-        <div style={{ color: "#ccc", marginBottom: "1.5rem" }}>
-          <p style={{ color: "#fff", fontSize: "20px" }}>
-            Driving innovation in the pharmaceutical industry.
+        </div> */}
+        <div
+          style={{
+            color: "#ccc",
+            marginBottom: "1.5rem",
+            textAlign: "center",
+            padding: "1rem",
+          }}
+        >
+          <p
+            style={{
+              color: "#fff",
+              fontSize: "20px",
+              marginBottom: "0.5rem",
+              lineHeight: "1.6", // Adds better readability
+              margin: "0 auto",
+            }}
+          >
+            Eamah is much more than the modern technology it harbours, it is the
+            people that work here. A team of expert engineers, creative
+            designers and efficient technicians is what drives this company to
+            its goals. They make this company what it is today. Explore what it
+            is like to work in a dynamic workforce and together let’s make a
+            difference.
           </p>
           <Link
             to="/contactUs"
@@ -541,6 +562,18 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
               textDecoration: "none",
               borderBottom: "2px solid #fff",
               fontSize: "20px",
+              display: "inline-block",
+              marginTop: "1rem",
+              padding: "0.5rem 1rem",
+              transition: "transform 0.3s ease, color 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = "scale(1.1)";
+              e.target.style.color = "#ff6347"; // Change color on hover
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = "scale(1)";
+              e.target.style.color = "#000"; // Revert color
             }}
           >
             Contact Us

@@ -609,11 +609,11 @@ class Work extends Component {
                           <Title style={{ fontSize: "1rem", color: "#0397DD" }}>
                             {title}
                           </Title>
-                          <Subtitle
+                          {/* <Subtitle
                             style={{ fontSize: "0.8rem", color: "#0b093b" }}
                           >
                             {subtitle}
-                          </Subtitle>
+                          </Subtitle> */}
                         </Content>
                       </CardBody>
                     </CardWrapper>
