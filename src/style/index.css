@@ -158,7 +158,15 @@ body {
 .extraBold {
   font-weight: 800 !important;
 }
-
+.locationHeading {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  color: #0397dd !important;
+  transition: color 0.3s ease;
+}
+.locationHeading:hover {
+  color: #0b093b !important; /* Desired hover color */
+}
 /* HELLPERS */
 .textCenter {
   text-align: center;
@@ -208,7 +216,6 @@ body {
   @media (max-width: 768px) {
     align-items: start;
   }
-  
 }
 .flexNullCenter {
   display: flex;

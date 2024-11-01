@@ -161,6 +161,10 @@ const Img = styled.img`
 const Img1 = styled.img`
   width: 10rem;
   height: 2rem;
+  @media (max-width: 540px) {
+    width: 6rem; // Adjust width for smaller screens
+    margin-top: 1rem;
+  }
 `;
 const Wrapper = styled.nav`
   width: 400px;

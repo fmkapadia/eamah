@@ -239,7 +239,7 @@ const CarouselSection = styled.div`
 const Heading = styled.h2`
   text-align: center;
   font-size: 2rem;
-  color: #333;
+  color: #0b093b;
   margin-bottom: 1.5rem;
 `;
 
@@ -255,6 +255,9 @@ const Slide = styled.div`
   align-items: center;
   min-width: 25%; /* Four images per slide */
   padding: 10px; /* Space between images */
+  @media (max-width: 768px) {
+    min-width: 50%; /* Two images per slide on smaller screens */
+  }
 `;
 
 const Image = styled.img`
@@ -265,6 +268,7 @@ const Image = styled.img`
 
 const Caption = styled.div`
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
+  color: #6c757d;
 `;

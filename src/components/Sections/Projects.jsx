@@ -94,7 +94,7 @@ export default function Projects() {
             <CTAButton
               to="/products"
               style={{
-                fontSize: "1rem",
+                fontSize: "1.2rem",
                 backgroundColor: "#0397DD",
                 borderRadius: "1rem",
                 color: "#fff",
@@ -144,8 +144,30 @@ const Wrapper = styled.section`
 `;
 const HeaderInfo = styled.div`
   padding: 40px 0;
-  @media (max-width: 860px) {
-    text-align: center;
+  text-align: center;
+
+  h1 {
+    color: #007bff;
+    font-size: 2.5rem;
+    @media (max-width: 860px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 480px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  p {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 600px;
+    @media (max-width: 860px) {
+      font-size: 1rem;
+    }
+    @media (max-width: 480px) {
+      font-size: 0.9rem;
+    }
   }
 `;
 const Advertising = styled.div`
@@ -223,13 +245,22 @@ const ImgWrapper = styled.div`
 `;
 const CTAButton = styled(Link)`
   display: inline-block;
-  background-color: #2b56f5;
+  background-color: #0397dd;
   color: #fff;
   padding: 10px 30px;
+  border-radius: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  border-radius: 5px;
   &:hover {
     background-color: #1a3dbf;
-    color: "#fff" !important;
+  }
+
+  @media (max-width: 860px) {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    padding: 6px 15px;
   }
 `;

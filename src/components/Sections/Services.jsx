@@ -107,9 +107,9 @@ export default function Services() {
               <ServiceBox
                 icon="browser"
                 title="Reliability"
-                subtitle="At Eamah we are committed to providing dependable solutions that minimize downtime,
+                subtitle="We are committed to providing dependable solutions that minimize downtime,
 enhance productivity, and consistently meet the high standards required in
-the pharmaceutical industry."
+the industry."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
@@ -118,8 +118,7 @@ the pharmaceutical industry."
                 title="Packaging"
                 subtitle=" Eamah supports
 manufacturers in achieving safe, efficient, and hygienic product packaging.
-Our machinery is designed to maintain product integrity, ensuring
-pharmaceutical and nutraceutical products are well-protected from production
+Our machinery is designed to maintain product integrity, ensuring products are well-protected from production
 to final delivery."
               />
             </ServiceBoxWrapper>
@@ -137,7 +136,7 @@ to final delivery."
                   A few words about company
                 </h4>
                 {/* <h2 className="font40 extraBold">A Study of Creativity</h2> */}
-                <p style={{ color: "#000", fontSize: "1.1rem" }}>
+                <p style={{ color: "#000", fontSize: "1.2rem" }}>
                   We are a leading manufacturer of spare parts for
                   pharmaceutical machinery, specializing in tablet press and
                   capsule filling technologies. Our expertise empowers our
@@ -169,7 +168,7 @@ to final delivery."
                   <CTAButton
                     to="/contactUs"
                     style={{
-                      fontSize: "1rem",
+                      fontSize: "1.2rem",
                       backgroundColor: "#0397DD",
                       borderRadius: "1rem",
                       color: "#fff",

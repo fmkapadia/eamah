@@ -235,22 +235,18 @@ export default function Contact() {
               </SumbitWrapper>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
-              <div
-                style={{ width: "50%" }}
-                className="flexNullCenter flexColumn"
-              >
+              <ImageContainer>
                 <ContactImgBox>
                   <img src={ContactImg1} alt="office" className="radius6" />
                 </ContactImgBox>
                 <ContactImgBox>
                   <img src={ContactImg2} alt="office" className="radius6" />
                 </ContactImgBox>
-              </div>
-              <div style={{ width: "50%" }}>
-                <div style={{ marginTop: "100px" }}>
+
+                <ContactImgBox>
                   <img src={ContactImg3} alt="office" className="radius6" />
-                </div>
-              </div>
+                </ContactImgBox>
+              </ImageContainer>
             </div>
           </div>
         </div>
@@ -335,7 +331,18 @@ const FormWrapper = styled.form`
     }
   }
 `;
+const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; // Allow items to wrap
 
+  @media (max-width: 768px) {
+    flex-direction: column; // Stack images vertically on smaller screens
+    align-items: center; // Center images
+  }
+`;
 const ErrorText = styled.span`
   color: red;
   font-size: 0.9rem;
@@ -346,11 +353,11 @@ const ButtonInput = styled.input`
   width: 100%;
   padding: 15px;
   outline: none;
-  color: #fff;
+  color: #000;
   :hover {
     background-color: #580cd2;
     border: 1px solid #7620ff;
-    color: #fff;
+    color: #000;
   }
   @media (max-width: 991px) {
     margin: 0 auto;
@@ -360,6 +367,11 @@ const ContactImgBox = styled.div`
   max-width: 180px;
   align-self: flex-end;
   margin: 10px 30px 10px 0;
+
+  @media (max-width: 768px) {
+    max-width: 100%; /* Allow the image to take full width */
+    margin: 10px auto; /* Center the image */
+  }
 `;
 const SumbitWrapper = styled.div`
   @media (max-width: 991px) {

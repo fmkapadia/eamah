@@ -70,6 +70,7 @@ const MetaLink = styled(Link)`
 const SidebarItem = styled.div`
   margin-top: 1rem;
   text-align: center;
+  font-size: 1.2rem;
 `;
 
 const Tagcloud = styled.div`
@@ -206,7 +207,9 @@ class Blog extends Component {
                               <TitleLink to="#">{blog.title}</TitleLink>
                             </h5>
                             {/* <p>{blog.desc}</p> */}
-                            <p style={{ paddingTop: "1rem", fontSize: "1rem" }}>
+                            <p
+                              style={{ paddingTop: "1rem", fontSize: "1.2rem" }}
+                            >
                               <b>
                                 1. Dimensions of a flow diverter (diameter &
                                 length):
@@ -301,12 +304,12 @@ class Blog extends Component {
                         borderRadius: "4rem",
                       }}
                     />
-                    <div style={{ marginTop: "1rem" }}>
+                    <div style={{ marginTop: "1rem", fontSize: "1.2rem" }}>
                       <Link to="#" className="d-block mt-3">
                         Husaain SodaWala
                       </Link>
                     </div>
-                    <div style={{ marginTop: "1rem" }}>
+                    <div style={{ marginTop: "1rem", fontSize: "1.2rem" }}>
                       <small>
                         Device development manager, Eamah Entrepreneur
                       </small>

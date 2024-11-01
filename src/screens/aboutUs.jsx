@@ -20,6 +20,7 @@ import mustansir from "../assets/img/founder/mustansir.jpg";
 import abizer from "../assets/img/founder/abizer.jpg";
 import husain from "../assets/img/founder/husain.jpg";
 import rehana from "../assets/img/founder/rehana.jpg";
+import aboutUs from "../assets/img/aboutUs.jpg";
 import header from "../assets/img/header.png";
 import { useNavigate } from "react-router-dom";
 import { NavItem, NavLink, TabContent, TabPane } from "reactstrap";
@@ -61,14 +62,26 @@ const AboutUs = () => {
     <>
       <TopNavbar />
       <section
-        className="bg-half-170 d-table w-100"
+        className=""
         style={{
-          background: `url(${contactus})`,
-          height: "500px",
-          overflow: "hidden",
+          backgroundImage: `url(${aboutUs})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "400px",
+          width: "100vw",
           marginTop: "80px",
+          position: "relative",
+          color: "#ffffff",
         }}
       >
+        <TextOverlay>
+          <h2>About Us</h2>
+          {/* <h3 style={{ fontSize: "2rem", color: "#000" }}>
+            Global Presence, Local Support
+          </h3> */}
+          <p>Serving pharma leaders across three continents.</p>
+          <div className="row flexCenter"></div>
+        </TextOverlay>
         <div className="bg-overlay"></div>
         <Container>
           {/* <Row className="mt-5 justify-content-center">
@@ -89,9 +102,11 @@ const AboutUs = () => {
                   <Link to="/">Eamah</Link>
                 </li>{" "}
                 <li className="breadcrumb-item">
-                  <>Pages</>
+                  <Link>Pages</Link>
                 </li>{" "}
-                <li className="breadcrumb-item">About Us</li>
+                <li className="breadcrumb-item">
+                  <Link>About Us</Link>
+                </li>
               </ul>
             </nav>
           </BreadcrumbContainer>
@@ -242,8 +257,8 @@ A trained Mechanical Engineer from Mumbai, Mustansir has continually sought to e
       />
       <ImageTextComponent
         image={rehana}
-        ftext=" Rehana brings a strategic vision and a people-first approach to her role as Co-Founder at Eamah. Leading the Recruiting and Administration functions, she has been instrumental in building the Sales and Logistics teams that drive Eamah’s global operations. Known for her recruiting, "
-        sText="Rehana continues to identify top talent ensuring Eamah is driven by a workforce as passionate about business growth as she is. "
+        ftext=" Rehana brings a strategic vision and a people-first approach to her role as Co-Founder at Eamah. Leading the Recruiting and Administration functions, she has been instrumental in building the Sales and Logistics teams that drive Eamah’s global operations. Known for her recruiting,Rehana continues to identify top talent ensuring Eamah is driven by a workforce as passionate about business growth as she is. "
+        sText="With a background in law, Rehana’s expertise extends beyond talent management. Her acumen has been critical in steering the company’s tactical decision-making process; leading client development in North America and the Middle East. Her emphasis on building strong relationships has expanded Eamah’s presence in new markets and has been vital in shaping the company into an agile and client-centered company it is today. "
         heading="Rehana Sodawalla "
         subHeading="Co-Director, Eamah Entrepreneur  "
         isImageRight={true}
@@ -569,7 +584,7 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
             }}
             onMouseEnter={(e) => {
               e.target.style.transform = "scale(1.1)";
-              e.target.style.color = "#ff6347"; // Change color on hover
+              e.target.style.color = "#0b093b"; // Change color on hover
             }}
             onMouseLeave={(e) => {
               e.target.style.transform = "scale(1)";
@@ -589,7 +604,7 @@ With a master's degree specializing in biotechnology and biopharmaceuticals, Abi
   );
 };
 const BreadcrumbContainer = styled.div`
-  position: absolute;
+  position: relative;
   bottom: 30px; /* Adjust this value to control the distance from the bottom */
   left: 0;
   right: 0;
@@ -619,5 +634,55 @@ const BreadcrumbContainer = styled.div`
     padding: 0 10px;
     color: #999;
   }
+`;
+const TextOverlay = styled.div`
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  // background: rgba(0, 0, 0, 0.4); // Semi-transparent black overlay
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  z-index: 10;
+
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+    color:#0b093b;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-top: 10px;
+    color:#000;
+  }
+     @media (max-width: 768px) {
+    padding: 30px;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+},
 `;
 export default AboutUs;
