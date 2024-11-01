@@ -77,8 +77,26 @@ const Row = styled.div`
 
 const Col = styled.div`
   padding: 15px;
-  flex: 0 0 25%; /* You can adjust this for responsiveness */
+  flex: 0 0 25%;
   max-width: 25%;
+
+  @media (max-width: 992px) {
+    flex: 0 0 33.33%; /* Three columns on medium screens */
+    max-width: 33.33%;
+    padding: 15px;
+  }
+
+  @media (max-width: 768px) {
+    flex: 0 0 50%; /* Two columns on small screens */
+    max-width: 50%;
+    padding: 15px;
+  }
+
+  @media (max-width: 576px) {
+    flex: 0 0 100%; /* One column on extra small screens */
+    max-width: 100%;
+    padding: 15px;
+  }
 `;
 
 const CardWrapper = styled.div`
@@ -91,6 +109,11 @@ const CardWrapper = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 1rem; /* Add some spacing between cards */
+  }
 `;
 
 const CardBody = styled.div`
@@ -100,6 +123,9 @@ const CardBody = styled.div`
 const ImageWrapper = styled.img`
   width: 100%;
   height: 200px;
+  @media (max-width: 576px) {
+    height: 150px; /* Smaller image height on small screens */
+  }
 `;
 
 const Content = styled.div`
@@ -112,6 +138,13 @@ const Title = styled.h5`
   // font-family: "Brush Script MT", sans-serif;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const Subtitle = styled.h6`
@@ -150,11 +183,25 @@ const CTATitle = styled.div`
   margin-bottom: 1.5rem;
   font-size: "1.2rem";
   color: "#0397DD" !important;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const CTADescription = styled.p`
   color: #000;
   font-family: "Khula", sans-serif;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const CTAButton = styled(Link)`
@@ -251,19 +298,19 @@ class Work extends Component {
         },
         {
           image: p4,
-          title: "Grip Ledge(Fette)",
+          title: "Grip Ledge",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p5,
-          title: "Fette 3117562 EU19",
+          title: "Fette ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p6,
-          title: "IMA Kilian 248359-1",
+          title: "IMA Kilian ",
           subtitle: "Compression",
           category: "Compression",
         },
@@ -281,7 +328,7 @@ class Work extends Component {
         },
         {
           image: p9,
-          title: "Cam 3(Natoli)",
+          title: "Cam 3",
           subtitle: "Compression",
           category: "Compression",
         },
@@ -371,13 +418,13 @@ class Work extends Component {
         },
         {
           image: p23,
-          title: " Fill-O-Matic Intermediate plate (Fette)",
+          title: " Fill-O-Matic Intermediate plate ",
           subtitle: "Other",
           category: "Other",
         },
         {
           image: p24,
-          title: "  Tight punch control (Fette)",
+          title: "  Tight punch control ",
           subtitle: "Other",
           category: "Other",
         },
@@ -389,37 +436,37 @@ class Work extends Component {
         },
         {
           image: p27,
-          title: " Tablet and Capsule counter magazine (CVC Countec)",
+          title: " Tablet and Capsule counter magazine ",
           subtitle: "Other",
           category: "Other",
         },
         {
           image: p28,
-          title: " Pneumatic spring (Fette)",
+          title: " Pneumatic spring ",
           subtitle: "Other",
           category: "Other",
         },
         {
           image: p29,
-          title: " Draw-off roller (Romaco)",
+          title: " Draw-off roller ",
           subtitle: "Packaging",
           category: "Packaging",
         },
         {
           image: p30,
-          title: "Servo drives and punch blocks (Romaco)",
+          title: "Servo drives and punch blocks ",
           subtitle: "Packaging",
           category: "Packaging",
         },
         {
           image: p31,
-          title: " Press table and conveyor (Romaco)",
+          title: " Press table and conveyor ",
           subtitle: "Packaging",
           category: "Packaging",
         },
         {
           image: p32,
-          title: "Rolling drum with cavity (Romaco)",
+          title: "Rolling drum with cavity ",
           subtitle: "Packaging",
           category: "Packaging",
         },
@@ -437,73 +484,73 @@ class Work extends Component {
         },
         {
           image: p35,
-          title: "Dosing disk (Bosch)",
+          title: "Dosing disk",
           subtitle: "Encapsulation",
           category: "Encapsulation",
         },
         {
           image: p36,
-          title: "Air intake filter (IMA)",
+          title: "Air intake filter",
           subtitle: "Encapsulation",
           category: "Encapsulation",
         },
         {
           image: p37,
-          title: "Fill-O-Matic base plate with scraper (Fette)",
+          title: "Fill-O-Matic base plate with scraper",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p38,
-          title: "Die lock screw (Fette)",
+          title: "Die lock screw ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p39,
-          title: " Dosing wheel for Fill-O-Matic (Fette)",
+          title: " Dosing wheel for Fill-O-Matic ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p40,
-          title: "Lube felt (Fette)",
+          title: "Lube felt",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p41,
-          title: "Fill-O-Matic Intermediate plate (Fette)",
+          title: "Fill-O-Matic Intermediate plate ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p42,
-          title: "Filling wheel for Fill-O-Matic (Fette)",
+          title: "Filling wheel for Fill-O-Matic",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p43,
-          title: "Pneumatic spring (Fette)",
+          title: "Pneumatic spring ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p44,
-          title: "Scraper bar (Fette)",
+          title: "Scraper bar ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p45,
-          title: "Sealing segment (Fette)",
+          title: "Sealing segment ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p46,
-          title: "Tight punch control (Fette)",
+          title: "Tight punch control ",
           subtitle: "Compression",
           category: "Compression",
         },
@@ -515,31 +562,31 @@ class Work extends Component {
         },
         {
           image: p48,
-          title: "Feeder sole plate (Manesty)",
+          title: "Feeder sole plate ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p49,
-          title: "Feed frame (Manesty)",
+          title: "Feed frame ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p50,
-          title: "Bronze fill CAM (Manesty)",
+          title: "Bronze fill CAM ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p51,
-          title: "Fill CAM B tooling (Manesty)",
+          title: "Fill CAM B tooling ",
           subtitle: "Compression",
           category: "Compression",
         },
         {
           image: p52,
-          title: "Upper lowering CAM (Manesty)",
+          title: "Upper lowering CAM ",
           subtitle: "Compression",
           category: "Compression",
         },
@@ -593,7 +640,12 @@ class Work extends Component {
                     this.state.displayCategory === "All"
                 )
                 .map(({ title, image, subtitle }, key) => (
-                  <Col key={key}>
+                  <Col
+                    key={key}
+                    xs={12} // Two columns on small screens
+                    md={4} // Three columns on medium screens
+                    lg={3}
+                  >
                     <CardWrapper>
                       <CardBody>
                         <Link
@@ -609,11 +661,11 @@ class Work extends Component {
                           <Title style={{ fontSize: "1rem", color: "#0397DD" }}>
                             {title}
                           </Title>
-                          <Subtitle
+                          {/* <Subtitle
                             style={{ fontSize: "0.8rem", color: "#0b093b" }}
                           >
                             {subtitle}
-                          </Subtitle>
+                          </Subtitle> */}
                         </Content>
                       </CardBody>
                     </CardWrapper>

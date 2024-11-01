@@ -28,15 +28,17 @@ const FooterHead = styled.h5`
 const FooterList = styled.ul`
   list-style: none;
   padding: 0;
+  fontsize: 1.2rem;
 `;
 
 const FooterListItem = styled.li`
   margin-bottom: 0.75rem;
   a {
-    color: #6c757d;
+    color: #000;
+    fontsize: 1.2rem;
     text-decoration: none;
     &:hover {
-      color: #007bff;
+      color: #0b093b;
     }
   }
 `;
@@ -114,8 +116,8 @@ class FooterSection extends Component {
                   style={{ width: "10rem", height: "2rem" }}
                 />
               </Link>
-              <p className="mt-4">
-              Driving innovation in the pharmaceutical industry.
+              <p className="mt-4" style={{ fontSize: "1.2rem", color: "#000" }}>
+                Driving innovation in the pharmaceutical industry.
               </p>
               <SocialIconList>
                 {/* "facebook", "instagram", "twitter", */}
@@ -135,7 +137,7 @@ class FooterSection extends Component {
             {/* Company Links */}
             <Col lg={3} md={4} className="mt-4">
               <FooterHead>Company</FooterHead>
-              <FooterList>
+              <FooterList style={{ fontSize: "1.2rem" }}>
                 {this.state.companyLinks.map((link, key) => (
                   <FooterListItem key={key}>
                     <Link

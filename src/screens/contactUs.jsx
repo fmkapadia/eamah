@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import contactus from "../assets/img/banner/banner4.png";
+import contact2 from "../assets/img/contact2.avif";
 import ServiceBox from "../components/Elements/ServiceBox";
 import TopNavbar from "../components/Nav/TopNavbar";
 import Footer from "../components/Sections/Footer";
@@ -21,10 +22,17 @@ const ContactUs = () => {
           <section
             className="bg-half-170 bg-primary d-table w-100"
             style={{
-              backgroundImage: `url(${contactus})`,
+              backgroundImage: `url(${contact2})`,
+              backgroundSize:
+                "cover" /* Ensures the image covers the entire viewport */,
+              backgroundPosition: "center",
               height: "500px", // Set the desired height
-              overflow: "hidden",
-              marginTop:"80px"
+              // overflow: "hidden",
+              marginTop: "80px",
+              objectFit: "cover",
+              backgroundRepeat: "no-repeat",
+              width: "100vw",
+              border: "1px solid white",
             }}
           >
             <Container>
@@ -41,12 +49,10 @@ const ContactUs = () => {
                       color: "#0b093b", // Text color
                       textAlign: "center", // Center text horizontally
                     }}
-                  >
-                  
-                  </div>
+                  ></div>
                 </Col>
               </Row>
-              <BreadcrumbContainer
+              {/* <BreadcrumbContainer
                 className="position-breadcrumb"
                 style={{ color: "#000" }}
               >
@@ -61,7 +67,7 @@ const ContactUs = () => {
                     <li className="breadcrumb-item">Contact Us</li>
                   </ul>
                 </nav>
-              </BreadcrumbContainer>
+              </BreadcrumbContainer> */}
             </Container>
           </section>
           <div
@@ -71,7 +77,7 @@ const ContactUs = () => {
               left: "50%", // Align to the center horizontally
               transform: "translate(-50%, -50%)", // Shift to true center
               zIndex: 2, // Ensure the content is above the iframe
-              color: "#0397DD", // Text color
+              // color: "#0397DD", // Text color
               textAlign: "center",
               marginTop: "5rem",
               paddingTop: "2rem",
@@ -79,16 +85,33 @@ const ContactUs = () => {
             }}
           >
             {/* <h1>Contact Us</h1> */}
-            <p style={{ fontSize: "1.8rem", color: "#0b093b" }}>
-              Connect with us regarding job or need assistance with your
-              products Get In Touch with us
+            <Heading>
+              We take pride in serving our clientele, <br />
+              and contribute to making a positive change to the society
+            </Heading>
+            <p
+              style={{
+                marginTop: "1rem",
+                fontSize: "1.5rem",
+                color: "#0397DD",
+                fontWeight: "600",
+              }}
+            >
+              {" "}
+              Have a question? Need assistance? We're here to help!
             </p>
           </div>
           {/* </HeaderInfo> */}
 
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
-              <div style={{ textAlign: "center", padding: "20px" }}>
+              <div
+                style={{
+                  textAlign: "center",
+                  padding: "10px",
+                  fontSize: "1.2rem",
+                }}
+              >
                 {/* SVG Icon */}
                 <div
                   style={{
@@ -108,15 +131,7 @@ const ContactUs = () => {
                 </div>
 
                 {/* Title */}
-                <h3
-                  style={{
-                    fontSize: "1.8rem",
-                    marginTop: "15px",
-                    color: "#0397DD",
-                  }}
-                >
-                  Phone
-                </h3>
+                <StyledHeading>Phone</StyledHeading>
 
                 {/* Subtitle/Content */}
                 <p style={{ marginTop: "10px" }}>Connect with us</p>
@@ -133,7 +148,13 @@ const ContactUs = () => {
               </div>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <div style={{ textAlign: "center", padding: "20px" }}>
+              <div
+                style={{
+                  textAlign: "center",
+                  padding: "20px",
+                  fontSize: "1.2rem",
+                }}
+              >
                 {/* SVG Icon */}
                 <div style={{ marginBottom: "15px" }}>
                   {/* <svg
@@ -149,15 +170,7 @@ const ContactUs = () => {
                 </div>
 
                 {/* Title */}
-                <h3
-                  style={{
-                    fontSize: "1.8rem",
-                    marginTop: "15px",
-                    color: "#0397DD",
-                  }}
-                >
-                  Email
-                </h3>
+                <StyledHeading>Email</StyledHeading>
 
                 {/* Subtitle/Content */}
                 <p style={{ marginTop: "10px" }}>
@@ -189,7 +202,13 @@ const ContactUs = () => {
               </div>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <div style={{ textAlign: "center", padding: "20px" }}>
+              <div
+                style={{
+                  textAlign: "center",
+                  padding: "20px",
+                  fontSize: "1.2rem",
+                }}
+              >
                 {/* SVG Icon */}
                 <div style={{ marginBottom: "15px" }}>
                   {/* <svg
@@ -205,15 +224,7 @@ const ContactUs = () => {
                 </div>
 
                 {/* Title */}
-                <h3
-                  style={{
-                    fontSize: "1.8rem",
-                    marginTop: "15px",
-                    color: "#0397DD",
-                  }}
-                >
-                  Location
-                </h3>
+                <StyledHeading>Location</StyledHeading>
 
                 {/* Subtitle/Content */}
                 <p style={{ marginTop: "10px" }}>
@@ -354,6 +365,23 @@ const ServiceBoxRow = styled.div`
     flex-direction: column; /* Stack the boxes on small screens */
   }
 `;
+const Heading = styled.h2`
+ font-size: 3.75rem,
+                font-weight: 600,
+                color: #0b093b,
+                text-align: center;
+  margin: 2rem 1rem;
+
+  @media (max-width: 768px) {
+  
+    margin: 20rem 5rem 4rem 3rem; /* Increase margin for smaller screens */
+  }
+
+  @media (max-width: 480px) {
+    margin: 20rem 5rem 4rem 3rem; /* Further increase margin for very small screens */
+  }
+
+`;
 const ServiceBoxWrapper = styled.div`
   width: 20%; /* Set a fixed width for larger screens */
   margin-right: 5%; /* Add space between boxes */
@@ -364,6 +392,20 @@ const ServiceBoxWrapper = styled.div`
     margin-right: 0; /* Remove margin on smaller screens */
     text-align: center; /* Center the content */
     padding: 40px 0; /* Reduce padding on smaller screens */
+  }
+  &:hover {
+    color: #2b56f5; // Fade to a new color
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); // Add shadow
+  }
+`;
+const StyledHeading = styled.h3`
+  font-size: 1.8rem;
+  margin-top: 15px;
+  color: #0397dd;
+  transition: color 0.3s ease;
+
+  ${ServiceBoxWrapper}:hover & {
+    color: #0b093b; // Change to your desired hover color
   }
 `;
 export default ContactUs;

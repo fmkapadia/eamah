@@ -74,12 +74,12 @@ export default function ClientSlider() {
         <LogoWrapper className="flexCenter">
           <ImgStyle src={Picture6} alt="client logo" />
         </LogoWrapper>
-        <LogoWrapper className="flexCenter">
+        {/* <LogoWrapper className="flexCenter">
           <ImgStyle src={Picture7} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
           <ImgStyle src={Picture8} alt="client logo" />
-        </LogoWrapper>
+        </LogoWrapper> */}
         <LogoWrapper className="flexCenter">
           <ImgStyle src={Picture9} alt="client logo" />
         </LogoWrapper>
@@ -98,9 +98,9 @@ export default function ClientSlider() {
         <LogoWrapper className="flexCenter">
           <ImgStyle src={Picture14} alt="client logo" />
         </LogoWrapper>
-        <LogoWrapper className="flexCenter">
+        {/* <LogoWrapper className="flexCenter">
           <ImgStyle src={Picture15} alt="client logo" />
-        </LogoWrapper>
+        </LogoWrapper> */}
         <LogoWrapper className="flexCenter">
           <ImgStyle src={Picture16} alt="client logo" />
         </LogoWrapper>

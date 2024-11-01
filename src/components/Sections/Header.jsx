@@ -162,9 +162,11 @@ export default function Header() {
         className="bg-half-170 d-table w-100"
         style={{
           background: `url(${banner})`,
-          height: "500px",
+          height: "00px",
           overflow: "hidden",
-          marginTop:"80px"
+          marginTop:"80px",
+          display: isMob ? "flex" : "none", // Change display based on isMobile
+         
         }}
       >
         <div className="bg-overlay"></div>

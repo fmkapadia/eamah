@@ -9,6 +9,7 @@ import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 import Blog from "../components/Elements/allBlogs";
 import FooterSection from "../components/Sections/FooterSection";
+import banner12 from "../assets/img/banner12.png";
 const Blogs = () => {
   return (
     <Wrapper id="contact">
@@ -17,15 +18,30 @@ const Blogs = () => {
           <TopNavbar />
           {/* <HeaderInfo> */}
           <section
-            className="bg-half-170 bg-primary d-table w-100"
+            className=""
             style={{
-              backgroundImage: `url(${contactus})`,
-              height: "500px", // Set the desired height
-              overflow: "hidden",
-              marginTop: "20px",
-
+              backgroundImage: `url(${banner12})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "400px",
+              width: "100vw",
+              marginTop: "80px",
+              position: "relative",
+              color: "#ffffff",
             }}
           >
+            <TextOverlay>
+              <h2>Blogs</h2>
+              {/* <h3 style={{ fontSize: "2rem", color: "#000" }}>
+            Global Presence, Local Support
+          </h3> */}
+              <p>
+                Precision in Every Tablet/Capsule:
+                <br /> Compression &amp; Encapsulation engineering perfected.
+              </p>
+              <div className="row flexCenter"></div>
+            </TextOverlay>
+            <div className="bg-overlay"></div>
             <Container>
               <Row className="mt-5 justify-content-center">
                 <Col lg={12} className="text-center">
@@ -54,9 +70,11 @@ const Blogs = () => {
                       <Link to="/">Eamah</Link>
                     </li>{" "}
                     <li className="breadcrumb-item">
-                      <>Pages</>
+                      <Link>Pages</Link>
                     </li>{" "}
-                    <li className="breadcrumb-item">Blogs</li>
+                    <li className="breadcrumb-item">
+                      <Link>Blogs</Link>
+                    </li>
                   </ul>
                 </nav>
               </BreadcrumbContainer>
@@ -71,7 +89,7 @@ const Blogs = () => {
               zIndex: 2, // Ensure the content is above the iframe
               color: "#0b093b", // Text color
               textAlign: "center",
-              marginTop: "5rem",
+              marginTop: "10rem",
               paddingTop: "2rem",
               marginBottom: "0", // Center text horizontally
             }}
@@ -100,8 +118,90 @@ export default Blogs;
 const Wrapper = styled.section`
   width: 100%;
 `;
+// const BreadcrumbContainer = styled.div`
+//   position: absolute;
+//   bottom: 30px; /* Adjust this value to control the distance from the bottom */
+//   left: 0;
+//   right: 0;
+//   display: flex;
+//   justify-content: center; /* Centers breadcrumb horizontally */
+//   nav {
+//     background-color: white;
+//     padding: 5px 5px 5px 5px;
+//     border-radius: 5px;
+//   }
+
+//   ul {
+//     display: flex; /* Makes breadcrumb items inline */
+//     justify-content: center;
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+//   }
+
+//   li {
+//     padding: 5px;
+//     font-size: 16px;
+//   }
+
+//   li + li::before {
+//     content: "/";
+//     padding: 0 10px;
+//     color: #999;
+//   }
+// `;
+const TextOverlay = styled.div`
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  // background: rgba(0, 0, 0, 0.4); // Semi-transparent black overlay
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  z-index: 10;
+
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+    color:#0b093b;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-top: 10px;
+    color:#000;
+  }
+     @media (max-width: 768px) {
+    padding: 30px;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+},
+`;
 const BreadcrumbContainer = styled.div`
-  position: absolute;
+  position: relative;
   bottom: 30px; /* Adjust this value to control the distance from the bottom */
   left: 0;
   right: 0;
