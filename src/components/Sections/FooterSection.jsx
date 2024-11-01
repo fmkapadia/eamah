@@ -86,10 +86,10 @@ class FooterSection extends Component {
     this.state = {
       companyLinks: [
         { title: "About us", link: "/aboutUs" },
-        { title: "Products", link: "products" },
+        { title: "Products", link: "/products" },
         // { title: "Team", link: "#" },
         { title: "ContactUs", link: "/contactUs" },
-        { title: "Blogs", link: "blogs" },
+        { title: "Blogs", link: "/blogs" },
       ],
       usefulLinks: [
         { title: "Terms of Services", link: "#" },

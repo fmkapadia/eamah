@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import FullButton from "../Buttons/FullButton";
 // Assets
 import headerImage from "../../assets/img/headerImage.png";
+import banner from "../../assets/img/banner3.png";
+
 import banner1 from "../../assets/img/banner/banner1.png";
 import banner2 from "../../assets/img/banner/banner2.png";
 import banner3 from "../../assets/img/banner/banner3.png";
@@ -13,6 +15,7 @@ import banner4 from "../../assets/img/banner/banner4.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 import { useNavigate } from "react-router-dom";
+import { Container } from "reactstrap";
 // import { Button } from "react-scroll";
 const sliderImages = [
   { src: banner1, alt: "Image 1" },
@@ -37,6 +40,7 @@ export default function Header() {
     navigate("/contactUs"); // Navigate to the AnotherPage
   };
   return (
+    
     <Wrapper>
       {/* <LeftSide className="flexCenter">
         <div>
@@ -154,7 +158,33 @@ export default function Header() {
         </QuoteWrapper> */}
         {/* <GreyDiv className="lightBg"></GreyDiv> */}
       </RightSide>
+      <section
+        className="bg-half-170 d-table w-100"
+        style={{
+          background: `url(${banner})`,
+          height: "500px",
+          overflow: "hidden",
+          marginTop:"80px"
+        }}
+      >
+        <div className="bg-overlay"></div>
+        <Container>
+          {/* <Row className="mt-5 justify-content-center">
+            <Col lg={12} className="text-center">
+              <div className="pages-heading title-heading">
+                <h2 className="text-white title-dark"> Aboutus </h2>
+                <p className="text-white-50 para-desc mb-0 mx-auto">
+                  Start working with Landrick that can provide everything you
+                  need to generate awareness, drive traffic, connect.
+                </p>
+              </div>
+            </Col>
+          </Row> */}
+         
+        </Container>
+      </section>
     </Wrapper>
+    
   );
 }
 
@@ -199,6 +229,7 @@ const RightSide = styled.div`
   @media (max-width: 480px) {
     height :auto;
     width:auto;
+    display:none;
   }
 `;
 const CTAButton = styled(Link)`
