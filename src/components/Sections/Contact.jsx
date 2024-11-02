@@ -46,7 +46,7 @@ export default function Contact() {
           "service_yf9r9g4", // Replace with your EmailJS service ID
           "template_x7uggzo", // Replace with your EmailJS template ID
           formData, // Form data to send
-          "e-dn3HWvT5GHitxiAfwu-" // Replace with your EmailJS user ID
+          "R8lahl78KsGy5i6Mj" // Replace with your EmailJS user ID
         )
         .then(
           (response) => {
