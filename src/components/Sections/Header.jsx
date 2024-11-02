@@ -158,14 +158,17 @@ export default function Header() {
         </QuoteWrapper> */}
         {/* <GreyDiv className="lightBg"></GreyDiv> */}
       </RightSide>
-      <section
+      <MobileDiv
         className="bg-half-170 d-table w-100"
         style={{
           background: `url(${banner})`,
-          height: "00px",
+          height: "400px",
           overflow: "hidden",
           marginTop:"80px",
-          display: isMob ? "flex" : "none", // Change display based on isMobile
+          backgroundRepeat: "no-repeat",
+          backgroundSize:"cover",
+          marginLeft: "5px"
+         // display: isMob ? "flex" : "none", // Change display based on isMobile
          
         }}
       >
@@ -184,7 +187,7 @@ export default function Header() {
           </Row> */}
          
         </Container>
-      </section>
+      </MobileDiv>
     </Wrapper>
     
   );
@@ -232,6 +235,29 @@ const RightSide = styled.div`
     height :auto;
     width:auto;
     display:none;
+  }
+`;
+
+const MobileDiv = styled.div`
+ 
+  position: relative;
+  object-fit: cover;
+      display:none;
+  
+  // padding: 20px;
+  // border: 1px solid black;
+  @media (max-width: 960px) {
+   width:auto;
+    margin-top: 30px;
+  }
+     @media (max-width: 768px) {
+    width:auto;
+  }
+
+  @media (max-width: 480px) {
+    height :400px;
+    width:auto;
+    display:block;
   }
 `;
 const CTAButton = styled(Link)`

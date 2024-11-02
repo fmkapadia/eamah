@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Portfolio from "../assets/img/banner12.png";
 import Work from "../components/Elements/gallery";
@@ -190,6 +190,9 @@ const TextOverlay = styled.div`
 },
 `;
 const ProductsEquipments = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <React.Fragment>
       <TopNavbar />

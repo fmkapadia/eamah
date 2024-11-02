@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import contactus from "../assets/img/banner/banner3.png";
@@ -11,6 +11,9 @@ import Blog from "../components/Elements/allBlogs";
 import FooterSection from "../components/Sections/FooterSection";
 import banner12 from "../assets/img/banner12.png";
 const Blogs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper id="contact">
       <div className="lightBg">

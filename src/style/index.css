@@ -220,6 +220,10 @@ body {
 .flexNullCenter {
   display: flex;
   align-items: center;
+  @media (max-width: 768px) {
+    align-items: start;
+    margin-top: 10px;
+  }
 }
 .flexColumn {
   flex-direction: column;

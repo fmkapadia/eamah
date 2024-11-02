@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // Sections
 import TopNavbar from "../components/Nav/TopNavbar";
 import Header from "../components/Sections/Header";
@@ -13,6 +13,9 @@ import ImageTextComponent from "../components/Elements/ImageTextComponent";
 import header from "../assets/img/header.png";
 import FooterSection from "../components/Sections/FooterSection";
 export default function Landing() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <TopNavbar />

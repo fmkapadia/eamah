@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import contactus from "../assets/img/banner/banner4.png";
@@ -13,6 +13,9 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper id="contact">
       <div className="lightBg">

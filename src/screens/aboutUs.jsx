@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import TopNavbar from "../components/Nav/TopNavbar";
@@ -29,6 +29,9 @@ import FooterSection from "../components/Sections/FooterSection";
 
 const AboutUs = () => {
   const [activeTab, setActiveTab] = useState("1");
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const toggle = (tab) => {
     this.setState({ activeTab: tab });
   };

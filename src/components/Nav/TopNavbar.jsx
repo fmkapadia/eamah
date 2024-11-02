@@ -170,7 +170,6 @@ export default function TopNavbar() {
 }
 const Img = styled.img`
   width: 4rem;
-  height: 40px;
   border-radius: 10px;
 `;
 const Img1 = styled.img`
@@ -193,7 +192,7 @@ const BurderWrapper = styled.button`
   border: 0px;
   background-color: transparent;
   height: 100%;
-  padding: 0 15px;
+  padding: 0 5px;
   display: none;
   @media (max-width: 760px) {
     display: block;

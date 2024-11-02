@@ -66,6 +66,11 @@ const Wrapper = styled.div`
     bgStyle === "dark" ? "#f5f5f5" : "#fff"};
   color: ${({ bgStyle }) => (bgStyle === "dark" ? "#000" : "#6c757d")};
   padding: 60px;
+   @media (max-width: 960px) {
+    flex-direction: column;
+      padding: 20px;
+
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -74,6 +79,9 @@ const ContentWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+   @media (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 const ShowMoreButton = styled.button`
   background-color: transparent;
