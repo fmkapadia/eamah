@@ -8,9 +8,6 @@ import contactus1 from "../../assets/img/founder/husain.jpg";
 // Styled Components
 const Section = styled.section`
   padding: 60px 0;
-    @media (max-width: 860px) {
-  padding: 0px 0;
-  }
 `;
 
 const StyledContainer = styled.div`
@@ -32,11 +29,7 @@ const Col = styled.div`
   padding-right: 15px;
   padding-left: 15px;
   flex: ${(props) => (props.lg ? `0 0 ${(props.lg / 12) * 100}%` : "100%")};
-  max-width: ${(props) => (props.lg ? `${(props.lg / 12) * 100}%` : "100%")}
-   @media (max-width: 860px) {
-    max-width:100%
-  }
-
+  max-width: ${(props) => (props.lg ? `${(props.lg / 12) * 100}%` : "100%")};
 `;
 
 const Img = styled.img`
@@ -81,6 +74,9 @@ const SidebarItem = styled.div`
   margin-top: 1rem;
   text-align: center;
   font-size: 1.2rem;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const Tagcloud = styled.div`
@@ -94,6 +90,10 @@ const Tagcloud = styled.div`
     border-radius: 3px;
     text-decoration: none;
     color: #000;
+    @media (max-width: 768px) {
+      padding: 0.3rem 0.8rem;
+      font-size: 0.9rem;
+    }
   }
 `;
 
@@ -384,6 +384,10 @@ const Card = styled.div`
 const Sidebar = styled(Card)`
   position: sticky;
   top: 20px;
+  @media (max-width: 768px) {
+    position: static;
+    margin-top: 20px;
+  }
 `;
 const Author = styled.div`
   position: absolute;

@@ -175,6 +175,9 @@ const Img = styled.img`
 const Img1 = styled.img`
   width: 16rem;
   height: 3rem;
+  
+   @media (max-width: 540px) {
+    width: 10rem;
 `;
 const Wrapper = styled.nav`
   width: 100%;
@@ -182,10 +185,16 @@ const Wrapper = styled.nav`
   top: 0;
   left: 0;
   z-index: 999;
+  @media (max-width: 760px) {
+    margin-right: 2rem;
+  }
 `;
 const NavInner = styled.div`
   position: relative;
   height: 100%;
+  @media (max-width: 760px) {
+    margin-right: 1rem;
+  }
 `;
 const BurderWrapper = styled.button`
   outline: none;
