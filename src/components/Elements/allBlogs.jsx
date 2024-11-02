@@ -8,6 +8,9 @@ import contactus1 from "../../assets/img/founder/husain.jpg";
 // Styled Components
 const Section = styled.section`
   padding: 60px 0;
+  @media (max-width: 768px) {
+    padding: 40px 10px;
+  }
 `;
 
 const StyledContainer = styled.div`
@@ -20,8 +23,8 @@ const Row = styled.div`
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-   @media (max-width: 860px) {
-    flex-direction:column
+  @media (max-width: 860px) {
+    flex-direction: column;
   }
 `;
 
@@ -30,6 +33,10 @@ const Col = styled.div`
   padding-left: 15px;
   flex: ${(props) => (props.lg ? `0 0 ${(props.lg / 12) * 100}%` : "100%")};
   max-width: ${(props) => (props.lg ? `${(props.lg / 12) * 100}%` : "100%")};
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 `;
 
 const Img = styled.img`

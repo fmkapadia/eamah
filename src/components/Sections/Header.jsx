@@ -7,7 +7,11 @@ import FullButton from "../Buttons/FullButton";
 // Assets
 import headerImage from "../../assets/img/headerImage.png";
 import banner from "../../assets/img/banner3.png";
-
+import b4 from "../../assets/img/banner/b4.jpg";
+import b3 from "../../assets/img/banner/b3.jpg";
+import b8 from "../../assets/img/banner/b8.jpg";
+import b9 from "../../assets/img/banner/b9.jpg";
+import b10 from "../../assets/img/banner/b10.jpg";
 import banner1 from "../../assets/img/banner/banner1.png";
 import banner2 from "../../assets/img/banner/banner2.png";
 import banner3 from "../../assets/img/banner/banner3.png";
@@ -18,10 +22,36 @@ import { useNavigate } from "react-router-dom";
 import { Container } from "reactstrap";
 // import { Button } from "react-scroll";
 const sliderImages = [
-  { src: banner1, alt: "Image 1" },
-  { src: banner2, alt: "Image 2" },
-  { src: banner3, alt: "Image 3" },
-  { src: banner4, alt: "Image 4" },
+  {
+    src: b8,
+    alt: "Image 1",
+    tagLine: "Efficient, Scalable, and On-time",
+    subHead: "Solutions that fit your production needs and times perfectly.",
+  },
+  {
+    src: b9,
+    alt: "Image 2",
+    tagLine: "Shortest Lead Times, Highest Quality:",
+    subHead: "Delivering cost-effective solutions, Fast.",
+  },
+  {
+    src: b10,
+    alt: "Image 3",
+    tagLine: "Global Presence, Local Support:",
+    subHead: "Serving pharma leaders across three continents.",
+  },
+  {
+    src: b4,
+    alt: "Image 4",
+    tagLine: "Local experts, Global reach:",
+    subHead: "Enhanced client support with our US-based LLC.",
+  },
+  {
+    src: b3,
+    alt: "Image 5",
+    tagLine: "Elite support empowering innovation:",
+    subHead: "Dedicated engineering for every stage of production.",
+  },
 ];
 export default function Header() {
   const sliderSettings = {
@@ -40,7 +70,6 @@ export default function Header() {
     navigate("/contactUs"); // Navigate to the AnotherPage
   };
   return (
-    
     <Wrapper>
       {/* <LeftSide className="flexCenter">
         <div>
@@ -77,32 +106,7 @@ export default function Header() {
               ))}
             </Slider>
 
-            {/* <img src="HeaderImage" alt="" /> 
-            <QuoteWrapper className="flexCenter darkBg radius8">
-              <QuotesWrapper>
-                <QuotesIcon />
-              </QuotesWrapper>
-              <div>
-                <p className="font15 whiteColor">
-                  <em>
-                    Friends, such as we desire, are dreams and fables.
-                    Friendship demands the ability to do without it.
-                  </em>
-                </p>
-                <p
-                  className="font13 orangeColor textRight"
-                  style={{ marginTop: "10px" }}
-                >
-                  Ralph Waldo Emerson
-                </p>
-              </div>
-            </QuoteWrapper>
-            <DotsWrapper>
-              <Dots />
-            </DotsWrapper>
-          </SliderWrapper>
-        </ImageWrapper>
-        <GreyDiv className="lightBg"></GreyDiv>
+            
       </RightSide> */}
       <RightSide>
         <SliderWrapper>
@@ -110,7 +114,26 @@ export default function Header() {
             {sliderImages.map((image, index) => (
               <div key={index}>
                 <ImageSlide>
-                  <Img className="radius8"  src={image.src} alt={image.alt} />
+                  <Img className="radius8" src={image.src} alt={image.alt} />
+                  <TextOverlay>
+                    <h2>Eamah Entreprenuer</h2>
+                    <h3>{image.tagLine}</h3>
+                    <p>{image.subHead}</p>
+                    <div className="row flexCenter">
+                      <CTAButton
+                        to="/products"
+                        style={{
+                          fontSize: "1rem",
+                          backgroundColor: "#0397DD",
+                          borderRadius: "1rem",
+                          color: "#fff",
+                          margin: "1rem",
+                        }}
+                      >
+                        Explore Our Products...
+                      </CTAButton>
+                    </div>
+                  </TextOverlay>
                   {/* <TextOverlay>
                     <h2>Eamah Entrepreneur</h2>
                     <p>
@@ -137,43 +160,74 @@ export default function Header() {
             ))}
           </Slider>
         </SliderWrapper>
-        {/* <QuoteWrapper className="flexCenter darkBg radius8">
-          <QuotesWrapper>
-            <QuotesIcon />
-          </QuotesWrapper> */}
-        {/* <div>
-            <p className="font15 whiteColor">
-              <em>
-                Friends, such as we desire, are dreams and fables. Friendship
-                demands the ability to do without it.
-              </em>
-            </p>
-            <p
-              className="font13 orangeColor textRight"
-              style={{ marginTop: "10px" }}
-            >
-              Ralph Waldo Emerson
-            </p>
-          </div>
-        </QuoteWrapper> */}
-        {/* <GreyDiv className="lightBg"></GreyDiv> */}
       </RightSide>
       <MobileDiv
         className="bg-half-170 d-table w-100"
         style={{
-          background: `url(${banner})`,
+          // background: `url(${banner})`,
           height: "400px",
           overflow: "hidden",
-          marginTop:"80px",
+          // marginTop: "80px",
           backgroundRepeat: "no-repeat",
-          backgroundSize:"cover",
-          marginLeft: "5px"
-         // display: isMob ? "flex" : "none", // Change display based on isMobile
-         
+          backgroundSize: "cover",
+          marginLeft: "1px",
+          marginRight: "1px",
+          // display: isMob ? "flex" : "none", // Change display based on isMobile
         }}
       >
         <div className="bg-overlay"></div>
         <Container>
+          <SliderWrapper>
+            <Slider {...sliderSettings}>
+              {sliderImages.map((image, index) => (
+                <div key={index}>
+                  <ImageSlide>
+                    <Img className="radius8" src={image.src} alt={image.alt} />
+                    <TextOverlay>
+                      <h2>Eamah Entreprenuer</h2>
+                      <h3>{image.tagLine}</h3>
+                      <p>{image.subHead}</p>
+                      <div className="row flexCenter">
+                        <CTAButton
+                          to="/products"
+                          style={{
+                            fontSize: "1rem",
+                            backgroundColor: "#0397DD",
+                            borderRadius: "1rem",
+                            color: "#fff",
+                            margin: "1rem",
+                          }}
+                        >
+                          Explore Our Products...
+                        </CTAButton>
+                      </div>
+                    </TextOverlay>
+                    {/* <TextOverlay>
+                    <h2>Eamah Entrepreneur</h2>
+                    <p>
+                      Your Trusted Partner for Pharmaceutical Equipment
+                      Components(Machinery Spare Parts)
+                    </p>
+                    <div className="row flexCenter">
+                      <CTAButton
+                        to="/products/equipments"
+                        style={{
+                          fontSize: "1rem",
+                          backgroundColor: "#0397DD",
+                          borderRadius: "1rem",
+                          color: "#fff",
+                          margin: "1rem",
+                        }}
+                      >
+                        Explore Our Products...
+                      </CTAButton>
+                    </div>
+                  </TextOverlay> */}
+                  </ImageSlide>
+                </div>
+              ))}
+            </Slider>
+          </SliderWrapper>
           {/* <Row className="mt-5 justify-content-center">
             <Col lg={12} className="text-center">
               <div className="pages-heading title-heading">
@@ -185,11 +239,9 @@ export default function Header() {
               </div>
             </Col>
           </Row> */}
-         
         </Container>
       </MobileDiv>
     </Wrapper>
-    
   );
 }
 
@@ -216,48 +268,46 @@ const LeftSide = styled.div`
   }
 `;
 const RightSide = styled.div`
- 
   position: relative;
   object-fit: cover;
   // padding: 20px;
   // border: 1px solid black;
   @media (max-width: 960px) {
-   width:auto;
-  height: auto;
+    width: auto;
+    height: auto;
     margin-top: 30px;
   }
-     @media (max-width: 768px) {
-    height :auto;
-    width:auto;
+  @media (max-width: 768px) {
+    height: auto;
+    width: auto;
   }
 
   @media (max-width: 480px) {
-    height :auto;
-    width:auto;
-    display:none;
+    height: auto;
+    width: auto;
+    display: none;
   }
 `;
 
 const MobileDiv = styled.div`
- 
   position: relative;
   object-fit: cover;
-      display:none;
-  
+  display: none;
+
   // padding: 20px;
   // border: 1px solid black;
   @media (max-width: 960px) {
-   width:auto;
+    width: auto;
     margin-top: 30px;
   }
-     @media (max-width: 768px) {
-    width:auto;
+  @media (max-width: 768px) {
+    width: auto;
   }
 
   @media (max-width: 480px) {
-    height :400px;
-    width:auto;
-    display:block;
+    height: 400px;
+    width: auto;
+    display: block;
   }
 `;
 const CTAButton = styled(Link)`
@@ -348,21 +398,21 @@ const DotsWrapper = styled.div`
 `;
 const SliderWrapper = styled.div`
   width: 100%;
-  padding-top:80px;
+  padding-top: 80px;
 `;
 
 const ImageSlide = styled.div`
   position: relative;
   width: 100vw;
   height: 500px;
-    @media (max-width: 768px) {
-    height :auto;
-    width:auto;
+  @media (max-width: 768px) {
+    height: auto;
+    width: auto;
   }
 
   @media (max-width: 480px) {
-    height :auto;
-    width:auto;
+    height: auto;
+    width: auto;
   }
 `;
 
@@ -370,14 +420,14 @@ const Img = styled.img`
   width: 100vw;
   height: 500px;
   object-fit: fill;
-    @media (max-width: 768px) {
-    height :auto;
-    width:auto;
+  @media (max-width: 768px) {
+    height: 400px;
+    width: auto;
   }
 
   @media (max-width: 480px) {
-    height :auto;
-    width:auto;
+    height: 400px;
+    width: auto;
   }
 `;
 
@@ -405,4 +455,22 @@ const TextOverlay = styled.div`
     font-size: 1.2rem;
     margin-top: 10px;
   }
+    @media (max-width: 768px) {
+    padding: 30px;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 480px) {
+    padding: 20px;
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+},
 `;
