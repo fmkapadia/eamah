@@ -319,7 +319,7 @@ const AddLeft = styled.div`
     max-width: 475px;
   }
   @media (max-width: 860px) {
-    width: 80%;
+    width: 100%;
     order: 2;
     text-align: center;
     h2 {

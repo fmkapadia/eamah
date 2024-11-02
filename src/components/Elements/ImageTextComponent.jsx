@@ -66,6 +66,13 @@ const Wrapper = styled.div`
     bgStyle === "dark" ? "#f5f5f5" : "#fff"};
   color: ${({ bgStyle }) => (bgStyle === "dark" ? "#000" : "#6c757d")};
   padding: 60px;
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -74,6 +81,10 @@ const ContentWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const ShowMoreButton = styled.button`
   background-color: transparent;
@@ -99,6 +110,17 @@ const StyledImage = styled.img`
   width: 100%;
   height: 600px;
   object-fit: contain;
+  @media (max-width: 768px) {
+    // max-height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  @media (max-width: 480px) {
+    // max-height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -107,20 +129,44 @@ const TextWrapper = styled.div`
   @media (max-width: 768px) {
     width: 100%; /* Full width on smaller screens */
   }
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
 `;
 
 const Heading = styled.h2`
   font-size: 24px;
   font-weight: bold;
   color: #000;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 const SubHeading = styled.h4`
   font-size: 18px;
   color: #007bff;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const Text = styled.p`
   font-size: 1.2rem;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 export default ImageTextComponent;
