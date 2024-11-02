@@ -6,48 +6,22 @@ import { Link } from "react-router-dom";
 import FullButton from "../Buttons/FullButton";
 // Assets
 import headerImage from "../../assets/img/headerImage.png";
-import b4 from "../../assets/img/banner/b4.jpg";
-import b3 from "../../assets/img/banner/b3.jpg";
+import banner from "../../assets/img/banner3.png";
+
+import banner1 from "../../assets/img/banner/banner1.png";
+import banner2 from "../../assets/img/banner/banner2.png";
 import banner3 from "../../assets/img/banner/banner3.png";
 import banner4 from "../../assets/img/banner/banner4.png";
-import b8 from "../../assets/img/banner/b8.jpg";
-import b9 from "../../assets/img/banner/b9.jpg";
-import b10 from "../../assets/img/banner/b10.jpg";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 import { useNavigate } from "react-router-dom";
+import { Container } from "reactstrap";
 // import { Button } from "react-scroll";
 const sliderImages = [
-  {
-    src: b8,
-    alt: "Image 1",
-    tagLine: "Efficient, Scalable, and On-time",
-    subHead: "Solutions that fit your production needs and times perfectly.",
-  },
-  {
-    src: b9,
-    alt: "Image 2",
-    tagLine: "Shortest Lead Times, Highest Quality:",
-    subHead: "Delivering cost-effective solutions, Fast.",
-  },
-  {
-    src: b10,
-    alt: "Image 3",
-    tagLine: "Global Presence, Local Support:",
-    subHead: "Serving pharma leaders across three continents.",
-  },
-  {
-    src: b4,
-    alt: "Image 4",
-    tagLine: "Local experts, Global reach:",
-    subHead: "Enhanced client support with our US-based LLC.",
-  },
-  {
-    src: b3,
-    alt: "Image 5",
-    tagLine: "Elite support empowering innovation:",
-    subHead: "Dedicated engineering for every stage of production.",
-  },
+  { src: banner1, alt: "Image 1" },
+  { src: banner2, alt: "Image 2" },
+  { src: banner3, alt: "Image 3" },
+  { src: banner4, alt: "Image 4" },
 ];
 export default function Header() {
   const sliderSettings = {
@@ -66,6 +40,7 @@ export default function Header() {
     navigate("/contactUs"); // Navigate to the AnotherPage
   };
   return (
+    
     <Wrapper>
       {/* <LeftSide className="flexCenter">
         <div>
@@ -135,14 +110,16 @@ export default function Header() {
             {sliderImages.map((image, index) => (
               <div key={index}>
                 <ImageSlide>
-                  <Img className="radius8" src={image.src} alt={image.alt} />
-                  <TextOverlay>
-                    <h2>Eamah Entreprenuer</h2>
-                    <h3>{image.tagLine}</h3>
-                    <p>{image.subHead}</p>
+                  <Img className="radius8"  src={image.src} alt={image.alt} />
+                  {/* <TextOverlay>
+                    <h2>Eamah Entrepreneur</h2>
+                    <p>
+                      Your Trusted Partner for Pharmaceutical Equipment
+                      Components(Machinery Spare Parts)
+                    </p>
                     <div className="row flexCenter">
                       <CTAButton
-                        to="/products"
+                        to="/products/equipments"
                         style={{
                           fontSize: "1rem",
                           backgroundColor: "#0397DD",
@@ -154,7 +131,7 @@ export default function Header() {
                         Explore Our Products...
                       </CTAButton>
                     </div>
-                  </TextOverlay>
+                  </TextOverlay> */}
                 </ImageSlide>
               </div>
             ))}
@@ -181,7 +158,35 @@ export default function Header() {
         </QuoteWrapper> */}
         {/* <GreyDiv className="lightBg"></GreyDiv> */}
       </RightSide>
+      <section
+        className="bg-half-170 d-table w-100"
+        style={{
+          background: `url(${banner})`,
+          height: "00px",
+          overflow: "hidden",
+          marginTop:"80px",
+          display: isMob ? "flex" : "none", // Change display based on isMobile
+         
+        }}
+      >
+        <div className="bg-overlay"></div>
+        <Container>
+          {/* <Row className="mt-5 justify-content-center">
+            <Col lg={12} className="text-center">
+              <div className="pages-heading title-heading">
+                <h2 className="text-white title-dark"> Aboutus </h2>
+                <p className="text-white-50 para-desc mb-0 mx-auto">
+                  Start working with Landrick that can provide everything you
+                  need to generate awareness, drive traffic, connect.
+                </p>
+              </div>
+            </Col>
+          </Row> */}
+         
+        </Container>
+      </section>
     </Wrapper>
+    
   );
 }
 
@@ -208,23 +213,25 @@ const LeftSide = styled.div`
   }
 `;
 const RightSide = styled.div`
+ 
   position: relative;
   object-fit: cover;
   // padding: 20px;
   // border: 1px solid black;
   @media (max-width: 960px) {
-    width: auto;
-    height: auto;
+   width:auto;
+  height: auto;
     margin-top: 30px;
   }
-  @media (max-width: 768px) {
-    height: auto;
-    width: auto;
+     @media (max-width: 768px) {
+    height :auto;
+    width:auto;
   }
 
   @media (max-width: 480px) {
-    height: auto;
-    width: auto;
+    height :auto;
+    width:auto;
+    display:none;
   }
 `;
 const CTAButton = styled(Link)`
@@ -315,36 +322,36 @@ const DotsWrapper = styled.div`
 `;
 const SliderWrapper = styled.div`
   width: 100%;
-  padding-top: 80px;
+  padding-top:80px;
 `;
 
 const ImageSlide = styled.div`
   position: relative;
   width: 100vw;
   height: 500px;
-  @media (max-width: 768px) {
-    height: 400px;
-    width: 100%;
+    @media (max-width: 768px) {
+    height :auto;
+    width:auto;
   }
 
   @media (max-width: 480px) {
-    height: 400px;
-    width: 100%;
+    height :auto;
+    width:auto;
   }
 `;
 
 const Img = styled.img`
   width: 100vw;
   height: 500px;
-  object-fit: cover;
-  @media (max-width: 768px) {
-    height: 400px;
-    width: 100%;
+  object-fit: fill;
+    @media (max-width: 768px) {
+    height :auto;
+    width:auto;
   }
 
   @media (max-width: 480px) {
-    height: 400px;
-    width: 100%;
+    height :auto;
+    width:auto;
   }
 `;
 
@@ -372,27 +379,4 @@ const TextOverlay = styled.div`
     font-size: 1.2rem;
     margin-top: 10px;
   }
-     @media (max-width: 768px) {
-    padding: 30px;
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    padding: 20px;
-
-    h2 {
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-    }
-},
 `;
