@@ -9,7 +9,7 @@ import Backdrop from "../Elements/Backdrop";
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 import Eamah_logo from "../../assets/img/Eamah_logo.png";
-import eamahText from "../../assets/img/eamahText.jpeg";
+import eamah_text from "../../assets/img/eamah_text.png";
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
   const [sidebarOpen, toggleSidebar] = useState(false);
@@ -34,7 +34,7 @@ export default function TopNavbar() {
             {/* <LogoIcon />
              */}
             <Img src={Eamah_logo} alt="Eamah Entreprenure" />
-            <Img1 src={eamahText} alt="Eamah Entreprenure" />
+            <Img1 src={eamah_text} alt="Eamah Entreprenure" />
             {/* <h1
               style={{
                 marginLeft: "15px",
@@ -52,7 +52,7 @@ export default function TopNavbar() {
             <BurgerIcon />
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
-            <li className="semiBold font15 pointer">
+            <li className="semiBold  pointer">
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -64,7 +64,7 @@ export default function TopNavbar() {
                 Home
               </RouterLink>
             </li>
-            <li className="semiBold font15 pointer">
+            <li className="semiBold  pointer">
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -91,7 +91,7 @@ export default function TopNavbar() {
                 </DropdownItem>
               </DropdownContent>
             </DropdownWrapper> */}
-            <li className="semiBold font15 pointer">
+            <li className="semiBold  pointer">
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -115,7 +115,7 @@ export default function TopNavbar() {
                 Clients
               </RouterLink>
             </li> */}
-            <li className="semiBold font15 pointer">
+            <li className="semiBold  pointer">
               <RouterLink
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -154,6 +154,7 @@ export default function TopNavbar() {
                   backgroundColor: "#0397DD",
                   color: "#fff",
                   borderRadius: "1rem",
+                  fontSize: "1rem",
                 }}
                 to="/contactUs"
                 spy={true}
@@ -209,6 +210,7 @@ const BurderWrapper = styled.button`
 `;
 const UlWrapper = styled.ul`
   display: flex;
+  font-size: 1.2rem;
   @media (max-width: 760px) {
     display: none;
   }

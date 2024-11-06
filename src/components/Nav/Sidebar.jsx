@@ -6,7 +6,7 @@ import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
 import AboutUs from "../../screens/aboutUs";
 import Eamah_logo from "../../assets/img/Eamah_logo.png";
-import eamahText from "../../assets/img/eamahText.jpeg";
+import eamah_text from "../../assets/img/eamah_text.png";
 import { Link as RouterLink } from "react-router-dom";
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
@@ -14,7 +14,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
           <Img src={Eamah_logo} alt="Eamah Entreprenure" />
-          <Img1 src={eamahText} alt="Eamah Entreprenure" />
+          <Img1 src={eamah_text} alt="Eamah Entreprenure" />
         </div>
         <CloseBtn
           onClick={() => toggleSidebar(!sidebarOpen)}

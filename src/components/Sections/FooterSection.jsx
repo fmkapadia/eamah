@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Container, Row, Form, Label, Input } from "reactstrap";
 import FeatherIcon from "feather-icons-react";
 import styled from "styled-components";
-import eamahText from "../../assets/img/eamahText.jpeg";
+import eamah_text from "../../assets/img/eamah_text.png";
 
 // Styled-components
 const FooterWrapper = styled.div`
@@ -108,10 +108,10 @@ class FooterSection extends Component {
         <Container>
           <Row>
             {/* Company Info */}
-            <Col lg={9} xs={12} className="mb-4">
+            <Col lg={5} xs={12} className="mb-4">
               <Link to="#" className="logo-footer">
                 <img
-                  src={eamahText}
+                  src={eamah_text}
                   alt="logo"
                   style={{ width: "10rem", height: "2rem" }}
                 />
@@ -135,7 +135,7 @@ class FooterSection extends Component {
             </Col>
 
             {/* Company Links */}
-            <Col lg={3} md={4} className="mt-4">
+            <Col lg={2} md={4} className="mt-4">
               <FooterHead>Company</FooterHead>
               <FooterList style={{ fontSize: "1.2rem" }}>
                 {this.state.companyLinks.map((link, key) => (
@@ -152,6 +152,19 @@ class FooterSection extends Component {
                   </FooterListItem>
                 ))}
               </FooterList>
+            </Col>
+            <Col lg={4} md={4} className="mt-4">
+              <FooterHead>Contact Information</FooterHead>
+              <p style={{ fontSize: "1.2rem", color: "#000" }}>
+                A-032, 04th Floor, Dosa, Sandhurst Road (West), Mumbai 400 009
+              </p>
+              <p style={{ fontSize: "1.2rem", color: "#000" }}>
+                <strong>Email:</strong> purchase@eamahent.com /
+                saleseamah@gmail.com / info@eamahent.com
+              </p>
+              <p style={{ fontSize: "1.2rem", color: "#000" }}>
+                <strong>Phone:</strong> +91-22-23744952 / +91-9870601200
+              </p>
             </Col>
 
             {/* Useful Links */}
