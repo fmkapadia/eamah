@@ -614,7 +614,7 @@ class Work extends Component {
               <FilterGroup>
                 <ul className="filter-options">
                   {[
-                    "All",
+                    // "All",
                     "Compression",
                     "Encapsulation",
                     "Other",

@@ -3,7 +3,8 @@ import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 import FullButton from "../Buttons/FullButton";
-import ImageCarousel from "./productSlider";
+// import ImageCarousel from "./productSlider";
+import Carousel from "./productSilder1";
 import { Link } from "react-router-dom";
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
@@ -36,7 +37,8 @@ export default function Projects() {
               products.
             </p>
           </HeaderInfo>
-          <ImageCarousel />
+          {/* <ImageCarousel /> */}
+          <Carousel />
           {/* <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
