@@ -223,6 +223,7 @@ class FooterSection extends Component {
             </Col> */}
           </Row>
         </Container>
+        <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=sP3wLDRo7A9IgTyvsrEcC4oj7BStybWiW2XTydqfX2RdOMv1q3H4GQBTsKjs"></script></span>
       </FooterWrapper>
     );
   }
