@@ -7,10 +7,10 @@ import FullButton from "../Buttons/FullButton";
 // Assets
 import headerImage from "../../assets/img/headerImage.png";
 import banner from "../../assets/img/banner3.png";
-import b4 from "../../assets/img/banner/b4.jpg";
-import b3 from "../../assets/img/banner/b3.jpg";
-import b8 from "../../assets/img/banner/b8.jpg";
-import b9 from "../../assets/img/banner/b9.jpg";
+import b4 from "../../assets/img/banner/Home - carousel banner 1.png";
+import b3 from "../../assets/img/banner/Home - carousel banner 2.png";
+import b8 from "../../assets/img/banner/Home - carousel banner 3.png";
+import b9 from "../../assets/img/banner/Home - carousel banner 4.png";
 import b10 from "../../assets/img/banner/b10.jpg";
 import banner1 from "../../assets/img/banner/banner1.png";
 import banner2 from "../../assets/img/banner/banner2.png";
@@ -272,6 +272,7 @@ const RightSide = styled.div`
   object-fit: cover;
   // padding: 20px;
   // border: 1px solid black;
+  
   @media (max-width: 960px) {
     width: auto;
     height: auto;
@@ -286,6 +287,11 @@ const RightSide = styled.div`
     height: auto;
     width: auto;
     display: none;
+  }
+  @media (min-width: 1200px) {
+    height: auto;
+    width: auto;
+    padding: 30px
   }
 `;
 
@@ -399,6 +405,11 @@ const DotsWrapper = styled.div`
 const SliderWrapper = styled.div`
   width: 100%;
   padding-top: 80px;
+    @media (min-width: 1000px) {
+    height: auto;
+    margin-top: 30px;
+    padding: 0 30px;
+  }
 `;
 
 const ImageSlide = styled.div`
@@ -414,6 +425,11 @@ const ImageSlide = styled.div`
     height: auto;
     width: auto;
   }
+    @media (min-width: 1200px) {
+    height: auto;
+    width: auto;
+    padding: 30px
+  }
 `;
 
 const Img = styled.img`
@@ -428,6 +444,10 @@ const Img = styled.img`
   @media (max-width: 480px) {
     height: 400px;
     width: auto;
+  }
+    @media (min-width: 1200px) {
+    height: auto;
+   
   }
 `;
 

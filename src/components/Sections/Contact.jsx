@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 // Assets
-import ContactImg1 from "../../assets/img/filling-cam-track.png";
+import ContactImg1 from "../../assets/img/add/contactus.png";
 import ContactImg2 from "../../assets/img/p33.png";
 import ContactImg3 from "../../assets/img/TURRET.jpg";
 
@@ -237,15 +237,15 @@ export default function Contact() {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
               <ImageContainer>
                 <ContactImgBox>
-                  <img src={ContactImg1} alt="office" className="radius6" />
+                  <img src={ContactImg1} alt="office" className="radius6 contactus" />
                 </ContactImgBox>
-                <ContactImgBox>
+               {/*  <ContactImgBox>
                   <img src={ContactImg2} alt="office" className="radius6" />
                 </ContactImgBox>
 
                 <ContactImgBox>
                   <img src={ContactImg3} alt="office" className="radius6" />
-                </ContactImgBox>
+                </ContactImgBox> */}
               </ImageContainer>
             </div>
           </div>
@@ -366,7 +366,7 @@ const ButtonInput = styled.input`
 const ContactImgBox = styled.div`
   max-width: 180px;
   align-self: flex-end;
-  margin: 10px 30px 10px 0;
+  margin: 10px 30px 10px 50px;
 
   @media (max-width: 768px) {
     max-width: 100%; /* Allow the image to take full width */
