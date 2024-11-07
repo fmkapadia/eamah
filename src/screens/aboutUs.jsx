@@ -12,7 +12,7 @@ import ClientSlider from "../components/Elements/ClientSlider";
 
 //Import images
 import contactus from "../assets/img/banner/banner2.png";
-import contactus1 from "../assets/img/products/Packaging/p34.jpg";
+import contactus1 from "../assets/img/add/add2.png"
 
 import p1 from "../assets/img/products/Compression/p1.png";
 import p2 from "../assets/img/products/Compression/p2.png";
@@ -20,12 +20,13 @@ import mustansir from "../assets/img/founder/mustansir.jpg";
 import abizer from "../assets/img/founder/abizer.jpg";
 import husain from "../assets/img/founder/husain.jpg";
 import rehana from "../assets/img/founder/rehana.jpg";
-import aboutUs from "../assets/img/aboutUs.jpg";
+import aboutUs from "../assets/img/banner/aboutusbanner.png";
 import header from "../assets/img/header.png";
 import { useNavigate } from "react-router-dom";
 import { NavItem, NavLink, TabContent, TabPane } from "reactstrap";
 import ImageTextComponent from "../components/Elements/ImageTextComponent";
 import FooterSection from "../components/Sections/FooterSection";
+
 
 const AboutUs = () => {
   const [activeTab, setActiveTab] = useState("1");
@@ -98,21 +99,7 @@ const AboutUs = () => {
               </div>
             </Col>
           </Row> */}
-          <BreadcrumbContainer className="position-breadcrumb">
-            <nav>
-              <ul>
-                <li className="breadcrumb-item">
-                  <Link to="/">Eamah</Link>
-                </li>{" "}
-                <li className="breadcrumb-item">
-                  <Link>Pages</Link>
-                </li>{" "}
-                <li className="breadcrumb-item">
-                  <Link>About Us</Link>
-                </li>
-              </ul>
-            </nav>
-          </BreadcrumbContainer>
+        
         </Container>
       </section>
       <section
