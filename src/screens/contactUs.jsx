@@ -112,6 +112,37 @@ const ContactUs = () => {
               <div
                 style={{
                   textAlign: "center",
+                  padding: "40px",
+                  fontSize: "1.2rem",
+                }}
+              >
+                {/* SVG Icon */}
+                <div style={{ marginBottom: "15px" }}>
+                  {/* <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="48" // Customize size
+                    height="48"
+                    fill="currentColor" // Use color based on your theme
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
+                  </svg> */}
+                  <FaLocationDot size={28} />
+                </div>
+
+                {/* Title */}
+                <StyledHeading>Location</StyledHeading>
+
+                {/* Subtitle/Content */}
+                <p style={{ marginTop: "10px" }}>
+                  45 Sheldon Terrace,New Haven
+                </p>
+              </div>
+            </ServiceBoxWrapper>
+            <ServiceBoxWrapper>
+              <div
+                style={{
+                  textAlign: "center",
                   padding: "10px",
                   fontSize: "1.2rem",
                 }}
@@ -120,6 +151,7 @@ const ContactUs = () => {
                 <div
                   style={{
                     marginBottom: "15px",
+                    marginTop: "30px",
                   }}
                 >
                   {/* <svg
@@ -157,10 +189,16 @@ const ContactUs = () => {
                   textAlign: "center",
                   padding: "20px",
                   fontSize: "1.2rem",
+                  marginTop: "2.5rem",
                 }}
               >
                 {/* SVG Icon */}
-                <div style={{ marginBottom: "15px" }}>
+                <div
+                  style={{
+                    marginBottom: "15px",
+                    marginTop: "20px",
+                  }}
+                >
                   {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -214,7 +252,12 @@ const ContactUs = () => {
                 }}
               >
                 {/* SVG Icon */}
-                <div style={{ marginBottom: "15px" }}>
+                <div
+                  style={{
+                    marginBottom: "15px",
+                    marginTop: "30px",
+                  }}
+                >
                   {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -247,21 +290,7 @@ const ContactUs = () => {
             }}
           >
             {/* Iframe as Background */}
-            {/* <iframe
-              title="test"
-              src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
-              style={{
-                position: "relative",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%", // Full height of section
-                zIndex: 1, // Ensure the iframe is behind the content
-                border: 0,
-              }}
-              allowFullScreen=""
-              className="rounded"
-            ></iframe> */}
+
             <iframe
               title="address"
               src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d235.83168317672215!2d72.83847269610492!3d18.962047552890507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDosa%20Plaza%20near%20Sandhurst%20Road%2C%20Noor%20Baug%2C%20Dongri%2C%20Umerkhadi%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1731087694867!5m2!1sen!2sin"
@@ -403,7 +432,7 @@ const Heading = styled.h2`
 
 `;
 const ServiceBoxWrapper = styled.div`
-  width: 20%; /* Set a fixed width for larger screens */
+  width: 18%; /* Set a fixed width for larger screens */
   margin-right: 5%; /* Add space between boxes */
   // padding: 80px 0; /* Vertical padding */
 
@@ -415,7 +444,9 @@ const ServiceBoxWrapper = styled.div`
   }
   &:hover {
     color: #2b56f5; // Fade to a new color
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); // Add shadow
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: color 0.3s, transform 0.3s;
   }
 `;
 const StyledHeading = styled.h3`
