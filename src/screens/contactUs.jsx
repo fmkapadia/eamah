@@ -14,8 +14,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 const ContactUs = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Wrapper id="contact">
       <div className="lightBg">
@@ -246,7 +247,7 @@ const ContactUs = () => {
             }}
           >
             {/* Iframe as Background */}
-            <iframe
+            {/* <iframe
               title="test"
               src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
               style={{
@@ -260,6 +261,22 @@ const ContactUs = () => {
               }}
               allowFullScreen=""
               className="rounded"
+            ></iframe> */}
+            <iframe
+              title="address"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d235.83168317672215!2d72.83847269610492!3d18.962047552890507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDosa%20Plaza%20near%20Sandhurst%20Road%2C%20Noor%20Baug%2C%20Dongri%2C%20Umerkhadi%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1731087694867!5m2!1sen!2sin"
+              style={{
+                position: "relative",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%", // Full height of section
+                zIndex: 1, // Ensure the iframe is behind the content
+                border: 0,
+              }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </section>
 
