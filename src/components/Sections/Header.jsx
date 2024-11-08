@@ -11,7 +11,7 @@ import b4 from "../../assets/img/banner/Home - carousel banner 1.png";
 import b3 from "../../assets/img/banner/Home - carousel banner 2.png";
 import b8 from "../../assets/img/banner/Home - carousel banner 3.png";
 import b9 from "../../assets/img/banner/Home - carousel banner 4.png";
-import b10 from "../../assets/img/banner/b10.jpg";
+import b10 from "../../assets/img/banner/aboutusbanner3.png";
 import banner1 from "../../assets/img/banner/banner1.png";
 import banner2 from "../../assets/img/banner/banner2.png";
 import banner3 from "../../assets/img/banner/banner3.png";
@@ -291,7 +291,7 @@ const RightSide = styled.div`
   @media (min-width: 1200px) {
     height: auto;
     width: auto;
-    padding: 30px
+    padding: 0px
   }
 `;
 
@@ -408,7 +408,7 @@ const SliderWrapper = styled.div`
     @media (min-width: 1000px) {
     height: auto;
     margin-top: 30px;
-    padding: 0 30px;
+    padding: 0 0px;
   }
 `;
 
@@ -428,7 +428,7 @@ const ImageSlide = styled.div`
     @media (min-width: 1200px) {
     height: auto;
     width: auto;
-    padding: 30px
+    padding: 0px
   }
 `;
 

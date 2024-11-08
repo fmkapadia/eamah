@@ -23,6 +23,7 @@ import p6 from "../../assets/img/products/Compression/p6.png";
 import p7 from "../../assets/img/products/Compression/p7.jpg";
 import p8 from "../../assets/img/products/Compression/p8.jpg";
 import AddImage2 from "../../assets/img/add/add2.png";
+import HomeGallery from "../Elements/home_gallery";
 
 export default function Projects() {
   return (
@@ -39,7 +40,7 @@ export default function Projects() {
             </p>
           </HeaderInfo>
           {/* <ImageCarousel /> */}
-          <Work />
+          <HomeGallery />
           {/* <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox

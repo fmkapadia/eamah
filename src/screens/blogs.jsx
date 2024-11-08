@@ -66,21 +66,7 @@ const Blogs = () => {
                   </div>
                 </Col>
               </Row>
-              <BreadcrumbContainer className="position-breadcrumb">
-                <nav>
-                  <ul>
-                    <li className="breadcrumb-item">
-                      <Link to="/">Eamah</Link>
-                    </li>{" "}
-                    <li className="breadcrumb-item">
-                      <Link>Pages</Link>
-                    </li>{" "}
-                    <li className="breadcrumb-item">
-                      <Link>Blogs</Link>
-                    </li>
-                  </ul>
-                </nav>
-              </BreadcrumbContainer>
+            
             </Container>
           </section>
           <div
@@ -171,13 +157,13 @@ const TextOverlay = styled.div`
   h2 {
     font-size: 3rem;
     margin: 0;
-    color:#0b093b;
+    color:#fff;
   }
 
   p {
     font-size: 2rem;
     margin-top: 10px;
-    color:#000;
+    color:#f2f2f2;
   }
      @media (max-width: 768px) {
     padding: 30px;

@@ -7,7 +7,7 @@ import eamah_text from "../../assets/img/eamah_text.png";
 
 // Styled-components
 const FooterWrapper = styled.div`
-  background-color: #f8f9fa;
+  background-color: #ebebeb;
   padding: 2rem 0;
   border-top: 1px solid #e9ecef;
   @media (max-width: 768px) {

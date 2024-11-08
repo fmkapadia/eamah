@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 // Assets
 import AddImage1 from "../../assets/img/p45.jpg";
 import AddImage2 from "../../assets/img/p44.jpg";
-import p29 from "../../assets/img/products/Packaging/p29.jpg";
-import p32 from "../../assets/img/products/Packaging/p32.jpg";
+import p29 from "../../assets/img/banner/company1.png";
+import p32 from "../../assets/img/banner/company3.png";
 import AddImage3 from "../../assets/img/products/Compression/p39.jpg";
 import AddImage4 from "../../assets/img/products/Packaging/p30.jpg";
 import Dots from "../../assets/svg/Dots";
