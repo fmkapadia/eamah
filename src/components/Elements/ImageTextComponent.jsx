@@ -5,6 +5,7 @@ const ImageTextComponent = ({
   image,
   ftext,
   sText,
+  lText,
   heading,
   subHeading,
   isImageRight,
@@ -21,7 +22,9 @@ const ImageTextComponent = ({
               <SubHeading>{subHeading}</SubHeading>
               <Text>
                 {ftext}
-                {isExpanded && <span>{sText}</span>}
+                {isExpanded && <span><br/><br/><p>{sText}</p></span>}
+                {isExpanded && <span><br/><br/><p>{lText}</p></span>}
+
               </Text>
               <ShowMoreButton onClick={() => setIsExpanded(!isExpanded)}>
                 {isExpanded ? "Show Less" : "Show More"}
@@ -42,7 +45,9 @@ const ImageTextComponent = ({
               <SubHeading>{subHeading}</SubHeading>
               <Text>
                 {ftext}
-                {isExpanded && <span>{sText}</span>}
+                {isExpanded && <span><br/><p>{sText}</p></span>}
+                {isExpanded && <span><br/><p>{lText}</p></span>}
+
               </Text>
               <ShowMoreButton onClick={() => setIsExpanded(!isExpanded)}>
                 {isExpanded ? "Show Less" : "Show More"}
@@ -80,6 +85,7 @@ const ContentWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width:1220px;
   @media (max-width: 768px) {
     flex-direction: column;
   }

@@ -8,7 +8,7 @@ import FooterSection from "../components/Sections/FooterSection";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import contactus from "../assets/img/banner/banner4.png";
-import banner8 from "../assets/img/banner8.png";
+import banner8 from "../assets/img/banner/productbanner.png";
 // Styled components
 // const BreadcrumbContainer = styled.div`
 //   position: absolute;
@@ -157,13 +157,13 @@ const TextOverlay = styled.div`
   h2 {
     font-size: 3rem;
     margin: 0;
-    color:#0b093b;
+    color:#fff;
   }
 
   p {
     font-size: 2rem;
     margin-top: 10px;
-    color:#000;
+    color:#f2f2f2;
   }
      @media (max-width: 768px) {
     padding: 30px;
@@ -202,7 +202,7 @@ const ProductsEquipments = () => {
           backgroundImage: `url(${banner8})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "400px",
+          height: "600px",
           width: "100vw",
           marginTop: "80px",
           position: "relative",
@@ -243,21 +243,7 @@ const ProductsEquipments = () => {
               </ul>
             </nav>
           </BreadcrumbContainer> */}
-          <BreadcrumbContainer className="position-breadcrumb">
-            <nav>
-              <ul>
-                <li className="breadcrumb-item">
-                  <Link to="/">Eamah</Link>
-                </li>{" "}
-                <li className="breadcrumb-item">
-                  <Link>Pages</Link>
-                </li>{" "}
-                <li className="breadcrumb-item">
-                  <Link>Products</Link>
-                </li>
-              </ul>
-            </nav>
-          </BreadcrumbContainer>
+        
         </Container>
       </section>
 

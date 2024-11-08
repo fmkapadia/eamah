@@ -6,18 +6,18 @@ import Picture1 from "../../assets/img/clients/Picture1.jpg";
 import Picture6 from "../../assets/img/clients/Picture6.png";
 import Picture2 from "../../assets/img/clients/Picture2.png";
 import Picture3 from "../../assets/img/clients/Picture3.jpg";
-import Picture4 from "../../assets/img/clients/Picture4.jpg";
-import Picture5 from "../../assets/img/clients/Picture5.jpg";
+import Picture4 from "../../assets/img/clients/logo5.png";
+import Picture5 from "../../assets/img/clients/InvaGen.jpg";
 import Picture7 from "../../assets/img/clients/Picture7.png";
 import Picture8 from "../../assets/img/clients/Picture8.jpg";
 import Picture9 from "../../assets/img/clients/Picture9.png";
-import Picture10 from "../../assets/img/clients/Picture10.png";
-import Picture11 from "../../assets/img/clients/Picture11.png";
+import Picture10 from "../../assets/img/clients/logo4.png";
+import Picture11 from "../../assets/img/clients/logo2.png";
 import Picture12 from "../../assets/img/clients/Picture12.png";
 import Picture13 from "../../assets/img/clients/Picture13.jpg";
 import Picture14 from "../../assets/img/clients/Picture14.png";
 import Picture15 from "../../assets/img/clients/Picture15.png";
-import Picture16 from "../../assets/img/clients/Picture16.png";
+import Picture16 from "../../assets/img/clients/logoM.png";
 import Picture17 from "../../assets/img/clients/Picture17.jpg";
 
 export default function ClientSlider() {
@@ -114,7 +114,6 @@ export default function ClientSlider() {
 
 const LogoWrapper = styled.div`
   width: 100%;
-  height: 100px;
   cursor: pointer;
   :focus-visible {
     outline: none;

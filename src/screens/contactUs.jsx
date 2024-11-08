@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import contactus from "../assets/img/banner/banner4.png";
-import contact2 from "../assets/img/contact2.avif";
+import contact2 from "../assets/img/banner/contactbanner.png";
 import ServiceBox from "../components/Elements/ServiceBox";
 import TopNavbar from "../components/Nav/TopNavbar";
 import Footer from "../components/Sections/Footer";
@@ -29,7 +29,7 @@ const ContactUs = () => {
               backgroundSize:
                 "cover" /* Ensures the image covers the entire viewport */,
               backgroundPosition: "center",
-              height: "500px", // Set the desired height
+              height: "600px", // Set the desired height
               // overflow: "hidden",
               marginTop: "80px",
               objectFit: "cover",

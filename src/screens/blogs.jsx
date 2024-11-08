@@ -9,7 +9,7 @@ import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 import Blog from "../components/Elements/allBlogs";
 import FooterSection from "../components/Sections/FooterSection";
-import banner12 from "../assets/img/banner12.png";
+import banner12 from "../assets/img/banner/blogs.png";
 const Blogs = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -26,7 +26,7 @@ const Blogs = () => {
               backgroundImage: `url(${banner12})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              height: "400px",
+              height: "600px",
               width: "100vw",
               marginTop: "80px",
               position: "relative",
