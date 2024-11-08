@@ -174,49 +174,6 @@ const FilterItem = styled.li`
   }
 `;
 
-const CTASection = styled.div`
-  text-align: center;
-  margin-top: 60px;
-`;
-
-const CTATitle = styled.div`
-  margin-bottom: 1.5rem;
-  font-size: "1.2rem";
-  color: "#0397DD" !important;
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: 576px) {
-    font-size: 1.2rem;
-  }
-`;
-
-const CTADescription = styled.p`
-  color: #000;
-  font-family: "Khula", sans-serif;
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 576px) {
-    font-size: 0.9rem;
-  }
-`;
-
-const CTAButton = styled(Link)`
-  display: inline-block;
-  background-color: #2b56f5;
-  color: #fff;
-  padding: 10px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  &:hover {
-    background-color: #1a3dbf;
-    color: "#fff" !important;
-  }
-`;
-
 //creating array of images for image portfolio
 const images = [
   p1,
@@ -591,7 +548,7 @@ class Work extends Component {
           category: "Compression",
         },
       ],
-      displayCategory: "All",
+      displayCategory: "Compression",
       photoIndex: 0,
       isOpen: false,
     };
@@ -694,36 +651,6 @@ class Work extends Component {
                 }
               />
             )}
-          </Container>
-
-          <Container>
-            <CTASection>
-              <CTATitle style={{ fontSize: "2rem", color: "#0397DD" }}>
-                We get you the parts you need at the price you require and on
-                time.
-              </CTATitle>
-              <CTADescription
-                style={{
-                  fontSize: "1.2rem",
-                  marginBottom: "1rem",
-                  color: "#000",
-                }}
-              >
-                Our passion lies in producing top-quality parts at exceptional
-                speeds, minimizing downtime for our clients.
-              </CTADescription>
-              <CTAButton
-                to="/contactUs"
-                style={{
-                  fontSize: "1rem",
-                  backgroundColor: "#0397DD",
-                  borderRadius: "1rem",
-                  color: "#fff",
-                }}
-              >
-                Get In Touch Now
-              </CTAButton>
-            </CTASection>
           </Container>
         </SectionWrapper>
       </React.Fragment>

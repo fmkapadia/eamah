@@ -9,13 +9,14 @@ import Pricing from "../components/Sections/Pricing";
 import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
 import FAQSection from "../components/Sections/FAQSection";
+import FAQTabs from "../components/Sections/FAQTabs";
 import ImageTextComponent from "../components/Elements/ImageTextComponent";
 import header from "../assets/img/header.png";
 import FooterSection from "../components/Sections/FooterSection";
 export default function Landing() {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <TopNavbar />
@@ -35,7 +36,7 @@ export default function Landing() {
         isImageRight="true"
         bgStyle="dark"
       /> */}
-      <FAQSection />
+      <FAQTabs />
       <FooterSection />
     </>
   );
