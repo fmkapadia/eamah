@@ -157,11 +157,12 @@ const Img = styled.img`
   width: 3rem;
   height: 30px;
   border-radius: 10px;
+  margin-top: 5px;
 `;
 const Img1 = styled.img`
-  width: 10rem;
-  height: 2rem;
- 
+  width: 11rem;
+  height: 2.2rem;
+  align-items:center;
   }
 `;
 const Wrapper = styled.nav`
