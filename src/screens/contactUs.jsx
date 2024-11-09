@@ -106,7 +106,7 @@ const ContactUs = () => {
             </p>
           </div>
           {/* </HeaderInfo> */}
-
+ <ServiceBox1 className="flex">
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <div
@@ -139,6 +139,7 @@ const ContactUs = () => {
                 </p>
               </div>
             </ServiceBoxWrapper>
+          
             <ServiceBoxWrapper>
               <div
                 style={{
@@ -151,7 +152,7 @@ const ContactUs = () => {
                 <div
                   style={{
                     marginBottom: "15px",
-                    marginTop: "30px",
+                   // marginTop: "30px",
                   }}
                 >
                   {/* <svg
@@ -179,7 +180,7 @@ const ContactUs = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  +91-22-23744952/+91-9870601200
+                  +1(347)-414-6859/+1(4245)499-9867
                 </span>
               </div>
             </ServiceBoxWrapper>
@@ -243,7 +244,10 @@ const ContactUs = () => {
                 </p>
               </div>
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
+          
+          </ServiceBoxRow>
+          <ServiceBoxRow className="flex">
+          <ServiceBoxWrapper>
               <div
                 style={{
                   textAlign: "center",
@@ -255,7 +259,7 @@ const ContactUs = () => {
                 <div
                   style={{
                     marginBottom: "15px",
-                    marginTop: "30px",
+                   // marginTop: "30px",
                   }}
                 >
                   {/* <svg
@@ -279,10 +283,116 @@ const ContactUs = () => {
                 </p>
               </div>
             </ServiceBoxWrapper>
-          </ServiceBoxRow>
+            <ServiceBoxWrapper>
+              <div
+                style={{
+                  textAlign: "center",
+                  padding: "10px",
+                  fontSize: "1.2rem",
+                }}
+              >
+                {/* SVG Icon */}
+                <div
+                  style={{
+                    marginBottom: "15px",
+                  //  marginTop: "30px",
+                  }}
+                >
+                  {/* <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="48" // Customize size
+                    height="48"
+                    fill="currentColor" // Use color based on your theme
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
+                  </svg> */}
+                  <FaPhoneVolume size={25} />
+                </div>
 
+                {/* Title */}
+                <StyledHeading>Phone</StyledHeading>
+
+                {/* Subtitle/Content */}
+                <p style={{ marginTop: "10px" }}>Connect with us</p>
+                <span
+                  style={{
+                    marginTop: "10px",
+                    color: "#000",
+                    fontSize: "1.2rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  +91-22-23744952/+91-9870601200
+                </span>
+              </div>
+            </ServiceBoxWrapper>
+       
+            <ServiceBoxWrapper>
+              <div
+                style={{
+                  textAlign: "center",
+                  padding: "20px",
+                  fontSize: "1.2rem",
+                  marginTop: "2.5rem",
+                }}
+              >
+                {/* SVG Icon */}
+                <div
+                  style={{
+                    marginBottom: "15px",
+                  //  marginTop: "20px",
+                  }}
+                >
+                  {/* <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="48" // Customize size
+                    height="48"
+                    fill="currentColor" // Use color based on your theme
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
+                  </svg> */}
+                  <MdMarkEmailRead size={30} />
+                </div>
+
+                {/* Title */}
+                <StyledHeading>Email</StyledHeading>
+
+                {/* Subtitle/Content */}
+                <p style={{ marginTop: "10px" }}>
+                  Purchase Inquiry:
+                  <br />
+                  <span
+                    style={{
+                      color: "#000",
+                      fontWeight: "bold",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    purchase@eamahent.com
+                  </span>
+                </p>
+                <p style={{ marginTop: "1px" }}>
+                  Sales Inquiry:
+                  <br />
+                  <span
+                    style={{
+                      color: "#000",
+                      fontWeight: "bold",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    saleseamah@gmail.com
+                  </span>
+                </p>
+              </div>
+            </ServiceBoxWrapper>
+          
+          </ServiceBoxRow>
+          </ServiceBox1>
           <div className="row" style={{ paddingBottom: "30px" }}></div>
-          <section
+          <ServiceBox1
             className="bg-half-170 bg-light d-flex align-items-center justify-content-center position-relative w-100"
             style={{
               height: "470px", // Set the desired height
@@ -290,7 +400,7 @@ const ContactUs = () => {
             }}
           >
             {/* Iframe as Background */}
-
+            <ServiceBoxRow>
             <iframe
               title="address"
               src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d235.83168317672215!2d72.83847269610492!3d18.962047552890507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDosa%20Plaza%20near%20Sandhurst%20Road%2C%20Noor%20Baug%2C%20Dongri%2C%20Umerkhadi%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1731087694867!5m2!1sen!2sin"
@@ -306,8 +416,29 @@ const ContactUs = () => {
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </section>
+            ></iframe>   
+                     </ServiceBoxRow>
+
+                     <ServiceBoxRow>
+            <iframe
+              title="address"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d235.83168317672215!2d72.83847269610492!3d18.962047552890507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDosa%20Plaza%20near%20Sandhurst%20Road%2C%20Noor%20Baug%2C%20Dongri%2C%20Umerkhadi%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1731087694867!5m2!1sen!2sin"
+              style={{
+                position: "relative",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%", // Full height of section
+                zIndex: 1, // Ensure the iframe is behind the content
+                border: 0,
+              }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>   
+                     </ServiceBoxRow>
+        
+          </ServiceBox1>
 
           <FooterSection />
         </div>
@@ -405,11 +536,25 @@ const SumbitWrapper = styled.div`
 `;
 const ServiceBoxRow = styled.div`
   display: flex;
-  justify-content: center; /* Center the boxes horizontally */
+      background-color: #fff;
+height:100%;
+padding:10px;
+  justify-content: space-evenly; /* Center the boxes horizontally */
   align-items: center; /* Vertically center content */
   gap: 20px; /* Space between boxes */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
-
+  width: 45%;
+  @media (max-width: 860px) {
+    flex-direction: column; /* Stack the boxes on small screens */
+  }
+`;
+const ServiceBox1 = styled.div`
+  display: flex;
+  justify-content: center; /* Center the boxes horizontally */
+  align-items: center; /* Vertically center content */
+  gap: 10px; /* Space between boxes */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 100%;
   @media (max-width: 860px) {
     flex-direction: column; /* Stack the boxes on small screens */
   }

@@ -63,7 +63,7 @@ export default function Contact() {
 
   return (
     <Wrapper id="contact">
-      <div className="lightBg">
+      <div className="contactBg">
         <div className="container">
           <HeaderInfo>
             <h1 style={{ color: "#007bff", fontSize: "40px" }}>
