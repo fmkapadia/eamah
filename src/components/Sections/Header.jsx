@@ -53,6 +53,7 @@ const sliderImages = [
     subHead: "Dedicated engineering for every stage of production.",
   },
 ];
+// {sliderImages}
 export default function Header() {
   const sliderSettings = {
     dots: true,
@@ -272,7 +273,7 @@ const RightSide = styled.div`
   object-fit: cover;
   // padding: 20px;
   // border: 1px solid black;
-  
+
   @media (max-width: 960px) {
     width: auto;
     height: auto;
@@ -291,7 +292,7 @@ const RightSide = styled.div`
   @media (min-width: 1200px) {
     height: auto;
     width: auto;
-    padding: 0px
+    padding: 0px;
   }
 `;
 
@@ -405,7 +406,7 @@ const DotsWrapper = styled.div`
 const SliderWrapper = styled.div`
   width: 100%;
   padding-top: 80px;
-    @media (min-width: 1000px) {
+  @media (min-width: 1000px) {
     height: auto;
     margin-top: 30px;
     padding: 0 0px;
@@ -425,10 +426,10 @@ const ImageSlide = styled.div`
     height: auto;
     width: auto;
   }
-    @media (min-width: 1200px) {
+  @media (min-width: 1200px) {
     height: auto;
     width: auto;
-    padding: 0px
+    padding: 0px;
   }
 `;
 
@@ -445,9 +446,8 @@ const Img = styled.img`
     height: 400px;
     width: auto;
   }
-    @media (min-width: 1200px) {
+  @media (min-width: 1200px) {
     height: auto;
-   
   }
 `;
 

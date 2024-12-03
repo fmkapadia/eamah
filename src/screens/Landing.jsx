@@ -13,6 +13,11 @@ import FAQTabs from "../components/Sections/FAQTabs";
 import ImageTextComponent from "../components/Elements/ImageTextComponent";
 import header from "../assets/img/header.png";
 import FooterSection from "../components/Sections/FooterSection";
+import b4 from "../assets/img/banner/Home - carousel banner 1.png";
+import b3 from "../assets/img/banner/Home - carousel banner 2.png";
+import b8 from "../assets/img/banner/Home - carousel banner 3.png";
+import b9 from "../assets/img/banner/Home - carousel banner 4.png";
+import b10 from "../assets/img/banner/aboutusbanner3.png";
 export default function Landing() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,7 +25,41 @@ export default function Landing() {
   return (
     <>
       <TopNavbar />
-      <Header />
+      <Header
+      // sliderImages={[
+      //   {
+      //     src: b8,
+      //     alt: "Image 1",
+      //     tagLine: "Efficient, Scalable, and On-time",
+      //     subHead:
+      //       "Solutions that fit your production needs and times perfectly.",
+      //   },
+      //   {
+      //     src: b9,
+      //     alt: "Image 2",
+      //     tagLine: "Shortest Lead Times, Highest Quality:",
+      //     subHead: "Delivering cost-effective solutions, Fast.",
+      //   },
+      //   {
+      //     src: b10,
+      //     alt: "Image 3",
+      //     tagLine: "Global Presence, Local Support:",
+      //     subHead: "Serving pharma leaders across three continents.",
+      //   },
+      //   {
+      //     src: b4,
+      //     alt: "Image 4",
+      //     tagLine: "Local experts, Global reach:",
+      //     subHead: "Enhanced client support with our US-based LLC.",
+      //   },
+      //   {
+      //     src: b3,
+      //     alt: "Image 5",
+      //     tagLine: "Elite support empowering innovation:",
+      //     subHead: "Dedicated engineering for every stage of production.",
+      //   },
+      // ]}
+      />
       <Services />
       <Projects />
 

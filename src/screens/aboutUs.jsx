@@ -11,8 +11,13 @@ import ClientSlider from "../components/Elements/ClientSlider";
 // import NavBar from "./NavBar";
 
 //Import images
+import b4 from "../assets/img/banner/AboutUsBanner1.png";
+import b3 from "../assets/img/banner/AboutUsBanner2.png";
+import b8 from "../assets/img/banner/AboutUsBanne-3.png";
+import b9 from "../assets/img/banner/AboutUsBanner-4.png";
+import b10 from "../assets/img/banner/aboutusbanner3.png";
 import contactus from "../assets/img/banner/banner2.png";
-import contactus1 from "../assets/img/add/aboutusexp1.png"
+import contactus1 from "../assets/img/add/aboutusexp1.png";
 
 import p1 from "../assets/img/products/Compression/p1.png";
 import p2 from "../assets/img/products/Compression/p2.png";
@@ -26,13 +31,13 @@ import { useNavigate } from "react-router-dom";
 import { NavItem, NavLink, TabContent, TabPane } from "reactstrap";
 import ImageTextComponent from "../components/Elements/ImageTextComponent";
 import FooterSection from "../components/Sections/FooterSection";
-
+import SliderImage from "../components/Elements/sliderImages";
 
 const AboutUs = () => {
   const [activeTab, setActiveTab] = useState("1");
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   const toggle = (tab) => {
     this.setState({ activeTab: tab });
   };
@@ -65,7 +70,7 @@ const AboutUs = () => {
   return (
     <>
       <TopNavbar />
-      <section
+      {/* <section
         className=""
         style={{
           backgroundImage: `url(${aboutUs})`,
@@ -82,7 +87,7 @@ const AboutUs = () => {
           <h2>About Us</h2>
           {/* <h3 style={{ fontSize: "2rem", color: "#000" }}>
             Global Presence, Local Support
-          </h3> */}
+          </h3> 
           <p>Serving pharma leaders across three continents.</p>
           <div className="row flexCenter"></div>
         </TextOverlay>
@@ -98,10 +103,39 @@ const AboutUs = () => {
                 </p>
               </div>
             </Col>
-          </Row> */}
+          </Row> 
         
         </Container>
-      </section>
+      </section> */}
+      <SliderImage
+        sliderImages={[
+          {
+            src: b8,
+            alt: "Image 1",
+            tagLine: "About Us",
+            subHead: "Serving pharma leaders across three continents.",
+          },
+          {
+            src: b9,
+            alt: "Image 2",
+            tagLine: "About Us",
+            subHead: "Serving pharma leaders across three continents.",
+          },
+
+          {
+            src: b4,
+            alt: "Image 4",
+            tagLine: "About Us",
+            subHead: "Serving pharma leaders across three continents.",
+          },
+          {
+            src: b3,
+            alt: "Image 5",
+            tagLine: "About Us",
+            subHead: "Serving pharma leaders across three continents.",
+          },
+        ]}
+      />
       <section
         className="section"
         style={{
@@ -239,8 +273,8 @@ const AboutUs = () => {
 "
         sText=" Prior to founding Eamah, he served in a leadership role at ACG World, where he spearheaded key projects with Theegarten-Pactec GmbH & Co. KG and Volpack, gaining invaluable insights into the intricacies of
          industrial machinery. His tenure at Pet Tools further honed his skills in brand 
-         building and sales, setting the stage for his entrepreneurial venture." 
-         ltext = "A trained Mechanical Engineer from Mumbai, Mustansir has continually sought to enhance his expertise in areas like Effective Personal Productivity, SAP System, and 5S Kaizen. This blend of technical knowledge and managerial acumen has enabled him to lead Eamah Entrepreneur with a focus on product innovation, service excellence, and global market expansion. His leadership style is rooted in integrity, dedication, and a customer-first mindset, reflecting the values that have driven Eamah Entrepreneur to its current success. "
+         building and sales, setting the stage for his entrepreneurial venture."
+        ltext="A trained Mechanical Engineer from Mumbai, Mustansir has continually sought to enhance his expertise in areas like Effective Personal Productivity, SAP System, and 5S Kaizen. This blend of technical knowledge and managerial acumen has enabled him to lead Eamah Entrepreneur with a focus on product innovation, service excellence, and global market expansion. His leadership style is rooted in integrity, dedication, and a customer-first mindset, reflecting the values that have driven Eamah Entrepreneur to its current success. "
         heading="Mustansir Sodawalla "
         subHeading="Founder & Director, Eamah Entrepreneur "
         isImageRight={false}
@@ -260,7 +294,7 @@ const AboutUs = () => {
       <ImageTextComponent
         image={husain}
         ftext=" Dr. Husain is a bioengineer working on advancing medical device development by building neurovascular devices. His research on aneurysm modeling has shown potential to significantly impact neurovascular treatments enabling effective long-term testing and clinical adoption of life-saving devices."
-        sText ="At Eamah, Husain leads delivery of pharmaceutical accessories and precision equipment to global markets, building cGMP-compliant practices and providing essential logistical support. His ability to identify production challenges and implement solutions during market shifts, including the global pandemic, has been critical to Eamah's success. "
+        sText="At Eamah, Husain leads delivery of pharmaceutical accessories and precision equipment to global markets, building cGMP-compliant practices and providing essential logistical support. His ability to identify production challenges and implement solutions during market shifts, including the global pandemic, has been critical to Eamah's success. "
         lText="He also leads product development efforts to bring medical devices from concept to clinical use. He is skilled in navigating the complex regulatory landscape, including ISO 13485 and 10993 standards, and 21 CFR 820 medical device regulations. Husain’s expertise in ISO standards and dedication to improving clinical outcomes position him as a driving force in both pharmaceutical and medical device manufacturing. "
         heading="Dr. Husain Sodawalla  "
         subHeading="Device development manager, Eamah Entrepreneur   "
@@ -273,9 +307,8 @@ const AboutUs = () => {
 "
         sText="Having worked in small molecule formulation development, he has experience in diagnosing and troubleshooting granulation, compression and encapsulation machine issues to resolve critical production bottlenecks.  
 
-Abizer’s commitment to operational excellence extends to his role in customer relations.  He has driven business development efforts in Western and Central India, drawing new clients and securing recurring revenue."  
-
-         ltext="With a master's degree specializing in biotechnology and biopharmaceuticals, Abizer has experience in drug process and product development in the pharmaceutical industry. His work on formulation of biologics for rare diseases demonstrates his dedication to advancing pharmaceutical innovation."
+Abizer’s commitment to operational excellence extends to his role in customer relations.  He has driven business development efforts in Western and Central India, drawing new clients and securing recurring revenue."
+        ltext="With a master's degree specializing in biotechnology and biopharmaceuticals, Abizer has experience in drug process and product development in the pharmaceutical industry. His work on formulation of biologics for rare diseases demonstrates his dedication to advancing pharmaceutical innovation."
         heading="Abizer Sodawalla  "
         subHeading="Operations engineer, Eamah Entrepreneur"
         isImageRight={true}
@@ -544,7 +577,6 @@ Abizer’s commitment to operational excellence extends to his role in customer 
             textAlign: "center",
             padding: "1rem",
             maxWidth: "1220px",
-
           }}
         >
           <p

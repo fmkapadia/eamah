@@ -56,22 +56,6 @@ const ContactUs = () => {
                   ></div>
                 </Col>
               </Row>
-              {/* <BreadcrumbContainer
-                className="position-breadcrumb"
-                style={{ color: "#000" }}
-              >
-                <nav>
-                  <ul>
-                    <li className="breadcrumb-item">
-                      <Link to="/">Eamah</Link>
-                    </li>{" "}
-                    <li className="breadcrumb-item">
-                      <>Pages</>
-                    </li>{" "}
-                    <li className="breadcrumb-item">Contact Us</li>
-                  </ul>
-                </nav>
-              </BreadcrumbContainer> */}
             </Container>
           </section>
           <div
@@ -86,6 +70,8 @@ const ContactUs = () => {
               marginTop: "5rem",
               paddingTop: "2rem",
               marginBottom: "0", // Center text horizontally
+              marginLeft: "10px",
+              marginRight: "10px",
             }}
           >
             {/* <h1>Contact Us</h1> */}
@@ -104,30 +90,44 @@ const ContactUs = () => {
               {" "}
               Have a question? Need assistance? We're here to help!
             </p>
+            <p style={{ fontSize: "1.2rem" }}>
+              Purchase Inquiry:
+              <span
+                style={{
+                  color: "#000",
+                  fontWeight: "bold",
+                  fontSize: "1.2rem",
+                }}
+              >
+                purchase@eamahent.com
+              </span>
+            </p>
+            <p style={{ fontSize: "1.2rem" }}>
+              Sales Inquiry:
+              <span
+                style={{
+                  color: "#000",
+                  fontWeight: "bold",
+                  fontSize: "1.2rem",
+                }}
+              >
+                sales@eamahent.com
+              </span>
+            </p>
           </div>
           {/* </HeaderInfo> */}
-          <ServiceBox1 className="flex">
-            <ServiceBoxRow className="flex">
+          <ServiceBox1>
+            <ServiceBoxRow>
               <ServiceBoxWrapper>
                 <div
                   style={{
                     textAlign: "center",
                     // padding: "5px",
                     fontSize: "1.2rem",
-                    marginBottom: "5.5rem",
                   }}
                 >
                   {/* SVG Icon */}
-                  <div style={{ marginBottom: "15px" }}>
-                    {/* <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="48" // Customize size
-                    height="48"
-                    fill="currentColor" // Use color based on your theme
-                  >
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
-                  </svg> */}
+                  <div style={{ marginBottom: "15px", marginTop: "2rem" }}>
                     <FaLocationDot size={28} />
                   </div>
 
@@ -146,7 +146,7 @@ const ContactUs = () => {
                   style={{
                     textAlign: "center",
                     // padding: "10px",
-                    fontSize: "1.2rem",
+                    fontSize: "1.5rem",
                   }}
                 >
                   {/* SVG Icon */}
@@ -156,15 +156,6 @@ const ContactUs = () => {
                       // marginTop: "30px",
                     }}
                   >
-                    {/* <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="48" // Customize size
-                    height="48"
-                    fill="currentColor" // Use color based on your theme
-                  >
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
-                  </svg> */}
                     <FaPhoneVolume size={25} />
                   </div>
 
@@ -172,7 +163,9 @@ const ContactUs = () => {
                   <StyledHeading>Phone</StyledHeading>
 
                   {/* Subtitle/Content */}
-                  <p style={{ marginTop: "10px" }}>Connect with us</p>
+                  <p style={{ marginTop: "10px", fontSize: "1.2rem" }}>
+                    Connect with us
+                  </p>
                   <span
                     style={{
                       marginTop: "10px",
@@ -185,7 +178,7 @@ const ContactUs = () => {
                   </span>
                 </div>
               </ServiceBoxWrapper>
-              <ServiceBoxWrapper>
+              {/* <ServiceBoxWrapper>
                 <div
                   style={{
                     textAlign: "center",
@@ -194,7 +187,7 @@ const ContactUs = () => {
                     marginTop: "2rem",
                   }}
                 >
-                  {/* SVG Icon */}
+                   SVG Icon 
                   <div
                     style={{
                       marginBottom: "15px",
@@ -209,14 +202,14 @@ const ContactUs = () => {
                     fill="currentColor" // Use color based on your theme
                   >
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
-                  </svg> */}
+                  </svg> 
                     <MdMarkEmailRead size={30} />
                   </div>
 
                   {/* Title */}
-                  <StyledHeading>Email</StyledHeading>
+              {/* <StyledHeading>Email</StyledHeading> */}
 
-                  {/* Subtitle/Content */}
+              {/* Subtitle/Content 
                   <p style={{ marginTop: "10px" }}>
                     Purchase Inquiry:
                     <br />
@@ -242,15 +235,13 @@ const ContactUs = () => {
                         fontSize: "1rem",
                       }}
                     >
-                      saleseamah@gmail
-                      <br />
-                      .com
+                      sales@eamahent.com
                     </span>
                   </p>
                 </div>
-              </ServiceBoxWrapper>
+              </ServiceBoxWrapper> */}
             </ServiceBoxRow>
-            <ServiceBoxRow className="flex">
+            <ServiceBoxRow className="flex" style={{}}>
               <ServiceBoxWrapper>
                 <div
                   style={{
@@ -300,7 +291,7 @@ const ContactUs = () => {
                   <div
                     style={{
                       marginBottom: "15px",
-                      //  marginTop: "30px",
+                      marginTop: "30px",
                     }}
                   >
                     {/* <svg
@@ -319,7 +310,9 @@ const ContactUs = () => {
                   <StyledHeading>Phone</StyledHeading>
 
                   {/* Subtitle/Content */}
-                  <p style={{ marginTop: "10px" }}>Connect with us</p>
+                  <p style={{ marginTop: "10px", fontSize: "1.2rem" }}>
+                    Connect with us
+                  </p>
                   <span
                     style={{
                       marginTop: "10px",
@@ -333,7 +326,7 @@ const ContactUs = () => {
                 </div>
               </ServiceBoxWrapper>
 
-              <ServiceBoxWrapper>
+              {/* <ServiceBoxWrapper>
                 <div
                   style={{
                     textAlign: "center",
@@ -342,7 +335,7 @@ const ContactUs = () => {
                     marginTop: "2.5rem",
                   }}
                 >
-                  {/* SVG Icon */}
+                  {/* SVG Icon 
                   <div
                     style={{
                       marginBottom: "15px",
@@ -357,14 +350,14 @@ const ContactUs = () => {
                     fill="currentColor" // Use color based on your theme
                   >
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.45-.48-4.5-2.53-4.98-4.98H5v-2h3.02C8.5 9.6 10.55 7.55 13 7.07V5h2v2.07c2.45.48 4.5 2.53 4.98 4.98H19v2h-3.02c-.48 2.45-2.53 4.5-4.98 4.93v2.93h-2V19.93zm0-15.93c-2.76 0-5 2.24-5 5h-2c0-3.87 3.13-7 7-7V2h2v2.07c2.76.48 5 2.53 5 5h-2c0-2.76-2.24-5-5-5z" />
-                  </svg> */}
+                  </svg> 
                     <MdMarkEmailRead size={30} />
                   </div>
 
-                  {/* Title */}
+                  {/* Title 
                   <StyledHeading>Email</StyledHeading>
 
-                  {/* Subtitle/Content */}
+                  {/* Subtitle/Content 
                   <p style={{ marginTop: "10px" }}>
                     Purchase Inquiry:
                     <br />
@@ -390,18 +383,16 @@ const ContactUs = () => {
                         fontSize: "1rem",
                       }}
                     >
-                      saleseamah@gmail
-                      <br />
-                      .com
+                      sales@eamahent.com
                     </span>
                   </p>
                 </div>
-              </ServiceBoxWrapper>
+              </ServiceBoxWrapper> */}
             </ServiceBoxRow>
           </ServiceBox1>
           <div className="row" style={{ paddingBottom: "30px" }}></div>
           <ServiceBox1
-            className="bg-half-170 bg-light d-flex align-items-center justify-content-center position-relative w-100"
+            className=""
             style={{
               height: "470px", // Set the desired height
               overflow: "hidden", // Hide any overflow from iframe
@@ -453,38 +444,7 @@ const ContactUs = () => {
     </Wrapper>
   );
 };
-const BreadcrumbContainer = styled.div`
-  position: absolute;
-  bottom: 30px; /* Adjust this value to control the distance from the bottom */
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center; /* Centers breadcrumb horizontally */
-  nav {
-    background-color: white;
-    padding: 5px 5px 5px 5px;
-    border-radius: 5px;
-  }
 
-  ul {
-    display: flex; /* Makes breadcrumb items inline */
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  li {
-    padding: 5px;
-    font-size: 16px;
-  }
-
-  li + li::before {
-    content: "/";
-    padding: 0 10px;
-    color: #999;
-  }
-`;
 const Wrapper = styled.section`
   width: 100%;
 `;
@@ -544,15 +504,20 @@ const SumbitWrapper = styled.div`
 const ServiceBoxRow = styled.div`
   display: flex;
   background-color: #fff;
-  height: 100%;
+  height: 380px;
   padding: 10px;
   justify-content: space-evenly; /* Center the boxes horizontally */
   align-items: center; /* Vertically center content */
   gap: 20px; /* Space between boxes */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   width: 45%;
+
   @media (max-width: 860px) {
     flex-direction: column; /* Stack the boxes on small screens */
+    width: 85%;
+    height: auto;
+    padding: 10px;
+    margin-top: 2rem;
   }
 `;
 const ServiceBox1 = styled.div`
@@ -564,6 +529,7 @@ const ServiceBox1 = styled.div`
   width: 100%;
   @media (max-width: 860px) {
     flex-direction: column; /* Stack the boxes on small screens */
+    height: auto;
   }
 `;
 const Heading = styled.h2`
@@ -574,20 +540,20 @@ const Heading = styled.h2`
   margin: 2rem 1rem;
 
   @media (max-width: 768px) {
-  
-    margin: 20rem 5rem 4rem 3rem; /* Increase margin for smaller screens */
+    margin: 22rem 5rem 4rem 3rem; /* Increase margin for smaller screens */
   }
 
   @media (max-width: 480px) {
-    margin: 20rem 5rem 4rem 3rem; /* Further increase margin for very small screens */
+    margin: 22rem 5rem 4rem 3rem; /* Further increase margin for very small screens */
   }
 
 `;
 const ServiceBoxWrapper = styled.div`
-  width: 20%; /* Set a fixed width for larger screens */
+  width: 40%; /* Set a fixed width for larger screens */
   margin-right: 2%; /* Add space between boxes */
-  // border: 1px solid black;
-  @media (max-width: 860px) {
+  margin-bottom: 5rem,
+    // border: 1px solid black;
+    @media (max-width: 860px) {
     width: 100%; /* Full width on small screens */
     margin-right: 0; /* Remove margin on smaller screens */
     text-align: center; /* Center the content */

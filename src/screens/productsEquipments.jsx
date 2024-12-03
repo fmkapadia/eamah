@@ -9,6 +9,11 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import contactus from "../assets/img/banner/banner4.png";
 import banner8 from "../assets/img/banner/productbanner.png";
+import b4 from "../assets/img/banner/Productsbanner1.png";
+import b3 from "../assets/img/banner/Productsbanner2.png";
+import b8 from "../assets/img/banner/Productsbanner3.png";
+import b9 from "../assets/img/banner/Productsbanner4.png";
+import SliderImage from "../components/Elements/sliderImages";
 // Styled components
 // const BreadcrumbContainer = styled.div`
 //   position: absolute;
@@ -191,12 +196,12 @@ const TextOverlay = styled.div`
 `;
 const ProductsEquipments = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <React.Fragment>
       <TopNavbar />
-      <section
+      {/* <section
         className=""
         style={{
           backgroundImage: `url(${banner8})`,
@@ -213,7 +218,7 @@ const ProductsEquipments = () => {
           <h2>Products</h2>
           {/* <h3 style={{ fontSize: "2rem", color: "#000" }}>
             Global Presence, Local Support
-          </h3> */}
+          </h3> 
           <p>Exceptional solutions for high-volume, high-speed needs</p>
           <div className="row flexCenter"></div>
         </TextOverlay>
@@ -230,7 +235,7 @@ const ProductsEquipments = () => {
               </div>
             </Col>
           </Row> */}
-          {/* <BreadcrumbContainer className="position-breadcrumb">
+      {/* <BreadcrumbContainer className="position-breadcrumb">
             <nav>
               <ul>
                 <li className="breadcrumb-item">
@@ -242,11 +247,43 @@ const ProductsEquipments = () => {
                 <li className="breadcrumb-item">Products</li>
               </ul>
             </nav>
-          </BreadcrumbContainer> */}
+          </BreadcrumbContainer> 
         
         </Container>
-      </section>
+      </section> */}
+      <SliderImage
+        sliderImages={[
+          {
+            src: b8,
+            alt: "Image 1",
+            tagLine: "Our Products",
+            subHead:
+              "Exceptional solutions for high-volume and high-speed needs",
+          },
+          {
+            src: b9,
+            alt: "Image 2",
+            tagLine: "Our Products",
+            subHead:
+              "Exceptional solutions for high-volume and high-speed needs",
+          },
 
+          {
+            src: b4,
+            alt: "Image 4",
+            tagLine: "Our Products",
+            subHead:
+              "Exceptional solutions for high-volume and high-speed needs",
+          },
+          {
+            src: b3,
+            alt: "Image 5",
+            tagLine: "Our Products",
+            subHead:
+              "Exceptional solutions for high-volume and high-speed needs",
+          },
+        ]}
+      />
       <SvgWrapper>
         <Shape
           viewBox="0 0 2880 48"

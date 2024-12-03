@@ -49,7 +49,7 @@ const SocialIconList = styled.ul`
   margin-top: 1rem;
   li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 15px;
   }
 `;
 
@@ -81,7 +81,36 @@ const ButtonPrimary = styled.input`
     background-color: #0056b3;
   }
 `;
+const ContactInfo = styled.p`
+  font-size: 1.2rem;
+  color: #000;
 
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    strong {
+      margin-bottom: 0.5rem;
+    }
+  }
+`;
+const ContactDetails = styled.div`
+  font-size: 1.2rem;
+  color: #000;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Add some spacing between each item */
+  }
+
+  p {
+    margin: 0; /* Reset margin for better alignment */
+  }
+
+  strong {
+    margin-bottom: 0.5rem;
+  }
+`;
 class FooterSection extends Component {
   constructor(props) {
     super(props);
@@ -94,10 +123,13 @@ class FooterSection extends Component {
         { title: "Blogs", link: "/blogs" },
       ],
       usefulLinks: [
-        { title: "Terms of Services", link: "#" },
-        { title: "Privacy Policy", link: "#" },
-        { title: "Documentation", link: "#" },
-        { title: "Changelog", link: "#" },
+        {
+          icon: "linkedin",
+          url: "https://www.linkedin.com/company/eamah-entrepreneur/",
+        },
+        { icon: "facebook", url: "#" },
+        { icon: "instagram", url: "#" },
+        { icon: "twitter", url: "#" },
       ],
     };
   }
@@ -121,13 +153,10 @@ class FooterSection extends Component {
               </p>
               <SocialIconList>
                 {/* "facebook", "instagram", "twitter", */}
-                {["linkedin"].map((icon, index) => (
+                {this.state.usefulLinks.map((social, index) => (
                   <li key={index}>
-                    <Link
-                      to="https://www.linkedin.com/company/eamah-entrepreneur/"
-                      className="rounded me-1"
-                    >
-                      <FeatherIcon icon={icon} className="icon-sm" />
+                    <Link to={social.url} className="rounded me-1">
+                      <FeatherIcon icon={social.icon} className="icon-sm" />
                     </Link>
                   </li>
                 ))}
@@ -135,8 +164,8 @@ class FooterSection extends Component {
             </Col>
 
             {/* Company Links */}
-            <Col lg={2} md={4} className="mt-4">
-              <FooterHead>Company</FooterHead>
+            <Col lg={3} md={4} className="mt-4">
+              <FooterHead style={{ paddingLeft: "10px" }}>Company</FooterHead>
               <FooterList style={{ fontSize: "1.2rem" }}>
                 {this.state.companyLinks.map((link, key) => (
                   <FooterListItem key={key}>
@@ -155,16 +184,42 @@ class FooterSection extends Component {
             </Col>
             <Col lg={4} md={4} className="mt-4">
               <FooterHead>Contact Information</FooterHead>
-              <p style={{ fontSize: "1.2rem", color: "#000" }}>
+              {/* <p style={{ fontSize: "1.2rem", color: "#000" }}>
                 A-032, 04th Floor, Dosa, Sandhurst Road (West), Mumbai 400 009
               </p>
+              <ContactInfo>
+                <strong>Email:</strong>
+                purchase@eamahent.com /
+                <br />
+                sales@eamahent.com/
+                <br />
+                info@eamahent.com
+              </ContactInfo>
               <p style={{ fontSize: "1.2rem", color: "#000" }}>
-                <strong>Email:</strong> purchase@eamahent.com /
-                saleseamah@gmail.com / info@eamahent.com
+                <strong>Email:</strong> purchase@eamahent.com/sales@eamahent.com
+                / info@eamahent.com
               </p>
+
               <p style={{ fontSize: "1.2rem", color: "#000" }}>
-                <strong>Phone:</strong> +91-22-23744952 / +91-9870601200
-              </p>
+                <strong>Phone:</strong> +91-22-23744952/+91-9870601200
+              </p> */}
+              <ContactDetails>
+                <p>
+                  <strong>Address: </strong>
+                  A-032, 04th Floor, Dosa, Sandhurst Road (West), Mumbai 400 009
+                </p>
+                <p>
+                  <strong>Email: </strong>
+                  purchase@eamahent.com
+                  <br />
+                  sales@eamahent.com
+                  <br />
+                  info@eamahent.com
+                </p>
+                <p>
+                  <strong>Phone: </strong> +91-22-23744952 / +91-9870601200
+                </p>
+              </ContactDetails>
             </Col>
 
             {/* Useful Links */}
@@ -223,7 +278,13 @@ class FooterSection extends Component {
             </Col> */}
           </Row>
         </Container>
-        <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=sP3wLDRo7A9IgTyvsrEcC4oj7BStybWiW2XTydqfX2RdOMv1q3H4GQBTsKjs"></script></span>
+        <span id="siteseal">
+          <script
+            async
+            type="text/javascript"
+            src="https://seal.godaddy.com/getSeal?sealID=sP3wLDRo7A9IgTyvsrEcC4oj7BStybWiW2XTydqfX2RdOMv1q3H4GQBTsKjs"
+          ></script>
+        </span>
       </FooterWrapper>
     );
   }
