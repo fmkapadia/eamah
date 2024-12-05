@@ -240,312 +240,364 @@ class Work extends Component {
           title: "Cadmach 8mm-D tooling",
           subtitle: "Compression",
           category: "Compression",
+          index: 17,
         },
         {
           image: p2,
           title: "Cadmach 12mm-D-BI layer",
           subtitle: "Compression",
           category: "Compression",
+          index: 5,
         },
         {
           image: p3,
           title: "Cam track",
           subtitle: "Compression",
           category: "Compression",
+          index: 13,
         },
         {
           image: p4,
           title: "Grip Ledge",
           subtitle: "Compression",
           category: "Compression",
+          index: 12,
         },
         {
           image: p5,
-          title: "Fette ",
+          title: "EU19 CAM ",
           subtitle: "Compression",
           category: "Compression",
+          index: 7,
         },
         {
           image: p6,
           title: "IMA Kilian ",
           subtitle: "Compression",
           category: "Compression",
+          index: 3,
         },
         {
           image: p7,
           title: "Cam 1",
           subtitle: "Compression",
           category: "Compression",
+          index: 14,
         },
         {
           image: p8,
           title: "Cam 2",
           subtitle: "Compression",
           category: "Compression",
+          index: 15,
         },
         {
           image: p9,
           title: "Cam 3",
           subtitle: "Compression",
           category: "Compression",
+          index: 16,
         },
         {
           image: p10,
           title: "Capsule filling finger",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+          index: 10,
         },
         {
           image: p11,
           title: "Capsule sorter",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+          index: 3,
         },
         {
           image: p12,
           title: "Dosing disc",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+          index: 4,
         },
         {
           image: p13,
           title: "Drum sorter",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+          index: 1,
         },
         {
           image: p14,
-          title: "Exit chut",
+          title: "Exit chute",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+          index: 5,
         },
         {
           image: p15,
           title: "Magzine assembly",
           subtitle: "Encapsulation",
-          category: "Encapsulation66",
+          category: "Encapsulation",
+          index: 2,
         },
         {
           image: p16,
           title: "Rectifier block",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+          index: 6,
         },
         {
           image: p17,
           title: "IMG_20201028_174701",
           subtitle: "Other",
           category: "Other",
+          index: 8,
         },
         {
           image: p18,
           title: "IMG_20201028_181419",
           subtitle: "Other",
           category: "Other",
+          index: 9,
         },
         {
           image: p19,
           title: "Punch seals",
           subtitle: "Other",
           category: "Other",
+          index: 5,
         },
         {
           image: p20,
-          title: "WA0000",
+          title: "Sanitary tube fittings",
           subtitle: "Other",
           category: "Other",
+          index: 4,
         },
         {
           image: p21,
           title: "disc image",
           subtitle: "Packaging",
           category: "Packaging",
+          index: 7,
         },
         {
           image: p22,
           title: "Picture1",
           subtitle: "Packaging",
           category: "Packaging",
+          index: 8,
         },
         {
           image: p25,
           title: "Vertical finger",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+          index: 7,
         },
         {
           image: p23,
           title: " Fill-O-Matic Intermediate plate ",
           subtitle: "Other",
           category: "Other",
+          index: 1,
         },
         {
           image: p24,
           title: "  Tight punch control ",
           subtitle: "Other",
           category: "Other",
+          index: 6,
         },
         {
           image: p26,
           title: "  Sorter container",
           subtitle: "Other",
           category: "Other",
+          index: 7,
         },
         {
           image: p27,
           title: " Tablet and Capsule counter magazine ",
           subtitle: "Other",
           category: "Other",
+          index: 2,
         },
         {
           image: p28,
           title: " Pneumatic spring ",
           subtitle: "Other",
           category: "Other",
+          index: 3,
         },
         {
           image: p29,
           title: " Draw-off roller ",
           subtitle: "Packaging",
           category: "Packaging",
+          index: 1,
         },
         {
           image: p30,
           title: "Servo drives and punch blocks ",
           subtitle: "Packaging",
           category: "Packaging",
+          index: 2,
         },
         {
           image: p31,
           title: " Press table and conveyor ",
           subtitle: "Packaging",
           category: "Packaging",
+          index: 3,
         },
         {
           image: p32,
           title: "Rolling drum with cavity ",
           subtitle: "Packaging",
           category: "Packaging",
+          index: 4,
         },
         {
           image: p33,
           title: "Filling block assembly and railing",
           subtitle: "Packaging",
           category: "Packaging",
+          index: 5,
         },
         {
           image: p34,
           title: " Heating plates",
           subtitle: "Packaging",
           category: "Packaging",
+          index: 6,
         },
         {
           image: p35,
           title: "Dosing disk",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+          index: 8,
         },
         {
           image: p36,
           title: "Air intake filter",
           subtitle: "Encapsulation",
           category: "Encapsulation",
+          index: 9,
         },
         {
           image: p37,
           title: "Fill-O-Matic base plate with scraper",
           subtitle: "Compression",
           category: "Compression",
+          index: 2,
         },
         {
           image: p38,
           title: "Die lock screw ",
           subtitle: "Compression",
           category: "Compression",
+          index: 6,
         },
         {
           image: p39,
           title: " Dosing wheel for Fill-O-Matic ",
           subtitle: "Compression",
           category: "Compression",
+          index: 8,
         },
         {
           image: p40,
           title: "Lube felt",
           subtitle: "Compression",
           category: "Compression",
+          index: 11,
         },
         {
           image: p41,
           title: "Fill-O-Matic Intermediate plate ",
           subtitle: "Compression",
           category: "Compression",
+          index: 20,
         },
         {
           image: p42,
           title: "Filling wheel for Fill-O-Matic",
           subtitle: "Compression",
           category: "Compression",
+          index: 19,
         },
         {
           image: p43,
           title: "Pneumatic spring ",
           subtitle: "Compression",
           category: "Compression",
+          index: 21,
         },
         {
           image: p44,
           title: "Scraper bar ",
           subtitle: "Compression",
           category: "Compression",
+          index: 22,
         },
         {
           image: p45,
           title: "Sealing segment ",
           subtitle: "Compression",
           category: "Compression",
+          index: 23,
         },
         {
           image: p46,
           title: "Tight punch control ",
           subtitle: "Compression",
           category: "Compression",
+          index: 24,
         },
         {
           image: p47,
           title: "Feeder paddle (Korsch)",
           subtitle: "Compression",
           category: "Compression",
+          index: 10,
         },
         {
           image: p48,
           title: "Feeder sole plate ",
           subtitle: "Compression",
           category: "Compression",
+          index: 9,
         },
         {
           image: p49,
           title: "Feed frame ",
           subtitle: "Compression",
           category: "Compression",
+          index: 4,
         },
         {
           image: p50,
           title: "Bronze fill CAM ",
           subtitle: "Compression",
           category: "Compression",
+          index: 1,
         },
         {
           image: p51,
           title: "Fill CAM B tooling ",
           subtitle: "Compression",
           category: "Compression",
+          index: 18,
         },
         {
           image: p52,
           title: "Upper lowering CAM ",
           subtitle: "Compression",
           category: "Compression",
+          index: 25,
         },
       ],
       displayCategory: "Compression",
@@ -589,7 +641,7 @@ class Work extends Component {
               </FilterGroup>
             </Row>
 
-            <Row style={{ paddingBottom: "10px" }}>
+            {/* <Row style={{ paddingBottom: "10px" }}>
               {this.state.projects
                 .filter(
                   ({ category }) =>
@@ -618,11 +670,60 @@ class Work extends Component {
                           <Title style={{ fontSize: "1rem", color: "#0397DD" }}>
                             {title}
                           </Title>
+                          // {/* <Subtitle
+                          //   style={{ fontSize: "0.8rem", color: "#0b093b" }}
+                          // >
+                          //   {subtitle}
+                          // </Subtitle> 
+                        </Content>
+                      </CardBody>
+                    </CardWrapper>
+                  </Col>
+                ))}
+            </Row> */}
+            <Row style={{ paddingBottom: "10px" }}>
+              {this.state.projects
+                // Group and sort projects by category and then by index
+                .sort((a, b) => {
+                  if (a.category === b.category) {
+                    return a.index - b.index; // Sort by index within the same category
+                  }
+                  console.log(a, b, a.index, b.index);
+                  return a.category.localeCompare(b.category); // Sort by category
+                })
+                .filter(
+                  ({ category }) =>
+                    this.state.displayCategory === category ||
+                    this.state.displayCategory === "All"
+                )
+                .map(({ title, image, subtitle }, key) => (
+                  <Col
+                    key={key}
+                    xs={12} // Two columns on small screens
+                    md={4} // Three columns on medium screens
+                    lg={3} // Four columns on large screens
+                  >
+                    <CardWrapper>
+                      <CardBody>
+                        <Link
+                          to="#"
+                          onClick={(event) => {
+                            event.preventDefault();
+                            this.setState({ isOpen: true, photoIndex: key });
+                          }}
+                        >
+                          <ImageWrapper src={image} alt="work" />
+                        </Link>
+                        <Content>
+                          <Title style={{ fontSize: "1rem", color: "#0397DD" }}>
+                            {title}
+                          </Title>
+                          {/* Uncomment if subtitle is needed */}
                           {/* <Subtitle
-                            style={{ fontSize: "0.8rem", color: "#0b093b" }}
-                          >
-                            {subtitle}
-                          </Subtitle> */}
+                style={{ fontSize: "0.8rem", color: "#0b093b" }}
+              >
+                {subtitle}
+              </Subtitle> */}
                         </Content>
                       </CardBody>
                     </CardWrapper>

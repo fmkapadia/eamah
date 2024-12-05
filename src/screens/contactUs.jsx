@@ -68,7 +68,7 @@ const ContactUs = () => {
               // color: "#0397DD", // Text color
               textAlign: "center",
               marginTop: "5rem",
-              paddingTop: "2rem",
+              // paddingTop: "2rem",
               marginBottom: "0", // Center text horizontally
               marginLeft: "10px",
               marginRight: "10px",
@@ -79,41 +79,41 @@ const ContactUs = () => {
               We take pride in serving our clientele, <br />
               and contribute to making a positive change to the society
             </Heading>
-            <p
-              style={{
-                marginTop: "1rem",
-                fontSize: "1.5rem",
-                color: "#0397DD",
-                fontWeight: "600",
-              }}
-            >
-              {" "}
-              Have a question? Need assistance? We're here to help!
-            </p>
-            <p style={{ fontSize: "1.2rem" }}>
-              Purchase Inquiry:
-              <span
+            <div style={{ marginBottom: "0" }}>
+              <p
                 style={{
-                  color: "#000",
-                  fontWeight: "bold",
-                  fontSize: "1.2rem",
+                  marginTop: "1rem",
+                  fontSize: "1.5rem",
+                  color: "#0397DD",
+                  fontWeight: "600",
                 }}
               >
-                purchase@eamahent.com
-              </span>
-            </p>
-            <p style={{ fontSize: "1.2rem" }}>
-              Sales Inquiry:
-              <span
-                style={{
-                  color: "#000",
-                  fontWeight: "bold",
-                  fontSize: "1.2rem",
-                }}
-              >
-                sales@eamahent.com
-              </span>
-            </p>
+                {" "}
+                Have a question? Need assistance? We're here to help!
+              </p>
+              <p style={{ fontSize: "1.2rem" }}>
+                Purchase Inquiry:
+                <span
+                  style={{
+                    color: "#000",
+                    fontWeight: "bold",
+                  }}
+                >
+                  purchase@eamahent.com
+                </span>
+              </p>
+              <p style={{ fontSize: "1.2rem" }}>
+                Sales Inquiry:
+                <span
+                  style={{
+                    color: "#000",
+                    fontWeight: "bold",
+                  }}
+                >
+                  sales@eamahent.com
+                </span>
+              </p>
+            </div>
           </div>
           {/* </HeaderInfo> */}
           <ServiceBox1>
@@ -127,7 +127,7 @@ const ContactUs = () => {
                   }}
                 >
                   {/* SVG Icon */}
-                  <div style={{ marginBottom: "15px", marginTop: "2rem" }}>
+                  <div style={{ marginBottom: "15px", marginTop: "0" }}>
                     <FaLocationDot size={28} />
                   </div>
 
@@ -135,7 +135,7 @@ const ContactUs = () => {
                   <StyledHeading>Location</StyledHeading>
 
                   {/* Subtitle/Content */}
-                  <p style={{ marginTop: "10px" }}>
+                  <p style={{ marginTop: "10px", marginBottom: "3rem" }}>
                     45 Sheldon Terrace,New Haven
                   </p>
                 </div>
@@ -537,7 +537,7 @@ const Heading = styled.h2`
                 font-weight: 600,
                 color: #0b093b,
                 text-align: center;
-  margin: 2rem 1rem;
+  margin-top:10rem;
 
   @media (max-width: 768px) {
     margin: 22rem 5rem 4rem 3rem; /* Increase margin for smaller screens */

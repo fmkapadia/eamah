@@ -236,33 +236,39 @@ class HomeGallery extends Component {
     this.state = {
       projects: [
         {
-          image: p1,
-          title: "Cadmach 8mm-D tooling",
+          image: p50,
+          title: "Bronze fill CAM",
           subtitle: "Compression",
           category: "Compression",
         },
         {
-          image: p2,
-          title: "Cadmach 12mm-D-BI layer",
+          image: p37,
+          title: "Fill-O-Matic base plate with scraper",
           subtitle: "Compression",
           category: "Compression",
         },
         {
-          image: p3,
-          title: "Cam track",
+          image: p6,
+          title: "IMA Kilian",
           subtitle: "Compression",
           category: "Compression",
         },
         {
-          image: p4,
-          title: "Grip Ledge",
+          image: p49,
+          title: "Feed frame",
           subtitle: "Compression",
           category: "Compression",
         },
-       
+
         {
-          image: p10,
-          title: "Capsule filling finger",
+          image: p13,
+          title: "Drum sorter",
+          subtitle: "Encapsulation",
+          category: "Encapsulation",
+        },
+        {
+          image: p15,
+          title: "Magzine assembly",
           subtitle: "Encapsulation",
           category: "Encapsulation",
         },
@@ -278,65 +284,57 @@ class HomeGallery extends Component {
           subtitle: "Encapsulation",
           category: "Encapsulation",
         },
+
         {
-          image: p13,
-          title: "Drum sorter",
-          subtitle: "Encapsulation",
-          category: "Encapsulation",
-        },
-       
-        {
-          image: p17,
-          title: "IMG_20201028_174701",
+          image: p23,
+          title: "Fill-O-Matic Intermediate plate",
           subtitle: "Other",
           category: "Other",
         },
         {
-          image: p18,
-          title: "IMG_20201028_181419",
+          image: p27,
+          title: "ablet and Capsule counter magazine",
           subtitle: "Other",
           category: "Other",
         },
         {
-          image: p19,
-          title: "Punch seals",
+          image: p28,
+          title: "Pneumatic spring",
           subtitle: "Other",
           category: "Other",
         },
         {
           image: p20,
-          title: "WA0000",
+          title: "Sanitary tube fittings",
           subtitle: "Other",
           category: "Other",
         },
         {
-          image: p21,
-          title: "disc image",
-          subtitle: "Packaging",
-          category: "Packaging",
-        },
-        {
-          image: p22,
-          title: "Picture1",
-          subtitle: "Packaging",
-          category: "Packaging",
-        },
-      
-        {
-            image: p30,
-            title: "Servo drives and punch blocks ",
-            subtitle: "Packaging",
-            category: "Packaging",
-          },
-       
-       
-        {
           image: p29,
-          title: " Draw-off roller ",
+          title: "Draw-off roller",
           subtitle: "Packaging",
           category: "Packaging",
         },
-       
+        {
+          image: p30,
+          title: "Servo drives and punch blocks ",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+
+        {
+          image: p31,
+          title: "Press table and conveyor",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
+
+        {
+          image: p32,
+          title: " Rolling drum with cavity",
+          subtitle: "Packaging",
+          category: "Packaging",
+        },
       ],
       displayCategory: "Compression",
       photoIndex: 0,

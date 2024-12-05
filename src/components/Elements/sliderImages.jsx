@@ -140,43 +140,11 @@ export default function SliderImage({ sliderImages }) {
                         </CTAButton>
                       </div> */}
                     </TextOverlay>
-                    {/* <TextOverlay>
-                    <h2>Eamah Entrepreneur</h2>
-                    <p>
-                      Your Trusted Partner for Pharmaceutical Equipment
-                      Components(Machinery Spare Parts)
-                    </p>
-                    <div className="row flexCenter">
-                      <CTAButton
-                        to="/products/equipments"
-                        style={{
-                          fontSize: "1rem",
-                          backgroundColor: "#0397DD",
-                          borderRadius: "1rem",
-                          color: "#fff",
-                          margin: "1rem",
-                        }}
-                      >
-                        Explore Our Products...
-                      </CTAButton>
-                    </div>
-                  </TextOverlay> */}
                   </ImageSlide>
                 </div>
               ))}
             </Slider>
           </SliderWrapper>
-          {/* <Row className="mt-5 justify-content-center">
-            <Col lg={12} className="text-center">
-              <div className="pages-heading title-heading">
-                <h2 className="text-white title-dark"> Aboutus </h2>
-                <p className="text-white-50 para-desc mb-0 mx-auto">
-                  Start working with Landrick that can provide everything you
-                  need to generate awareness, drive traffic, connect.
-                </p>
-              </div>
-            </Col>
-          </Row> */}
         </Container>
       </MobileDiv>
     </Wrapper>
