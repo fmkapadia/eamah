@@ -11,10 +11,10 @@ import ClientSlider from "../components/Elements/ClientSlider";
 // import NavBar from "./NavBar";
 
 //Import images
-import b4 from "../assets/img/banner/AboutUsBanner1.png";
-import b3 from "../assets/img/banner/AboutUsBanner2.png";
-import b8 from "../assets/img/banner/AboutUsBanne-3.png";
-import b9 from "../assets/img/banner/AboutUsBanner-4.png";
+import b4 from "../assets/img/banner/AboutUsBanner1.jpeg";
+import b3 from "../assets/img/banner/AboutUsBanner2.jpg";
+import b8 from "../assets/img/banner/AboutUsBanner3.jpeg";
+import b9 from "../assets/img/banner/AboutUsBanner-4.jpg";
 import b10 from "../assets/img/banner/aboutusbanner3.png";
 import contactus from "../assets/img/banner/banner2.png";
 import contactus1 from "../assets/img/add/aboutusexp1.png";
