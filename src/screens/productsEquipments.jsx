@@ -9,10 +9,10 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import contactus from "../assets/img/banner/banner4.png";
 import banner8 from "../assets/img/banner/productbanner.png";
-import b4 from "../assets/img/banner/Productsbanner1.png";
-import b3 from "../assets/img/banner/Productsbanner2.png";
-import b8 from "../assets/img/banner/Productsbanner3.png";
-import b9 from "../assets/img/banner/Productsbanner4.png";
+import b4 from "../assets/img/banner/Productsbanner1.jpeg";
+import b3 from "../assets/img/banner/Productsbanner2.jpeg";
+import b8 from "../assets/img/banner/Productsbanner3.jpeg";
+import b9 from "../assets/img/banner/Productsbanner4.jpeg";
 import SliderImage from "../components/Elements/sliderImages";
 // Styled components
 // const BreadcrumbContainer = styled.div`
