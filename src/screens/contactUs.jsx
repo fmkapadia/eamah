@@ -23,12 +23,12 @@ const ContactUs = () => {
         <div>
           <TopNavbar />
           {/* <HeaderInfo> */}
-          <section
+          {/* <section
             // className="bg-half-170 bg-primary d-table w-100"
             style={{
               backgroundImage: `url(${image5})`,
               backgroundSize:
-                "cover" /* Ensures the image covers the entire viewport */,
+                "cover" /* Ensures the image covers the entire viewport ,
               backgroundPosition: "center",
               height: "750px", // Set the desired height
               // overflow: "hidden",
@@ -58,7 +58,10 @@ const ContactUs = () => {
                 </Col>
               </Row>
             </Container>
-          </section>
+          </section> */}
+          <BackgroundImageWrapper>
+            <img src={image5} alt="Background" />
+          </BackgroundImageWrapper>
           <div
             style={{
               position: "relative", // Absolutely position to overlap the iframe
@@ -445,7 +448,34 @@ const ContactUs = () => {
     </Wrapper>
   );
 };
+const BackgroundImageWrapper = styled.div`
+  position: relative;
+  height: 600px;
+  margin-top: 80px;
+  width: 100vw;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    height: 400px;
+  }
 
+  @media (max-width: 480px) {
+    height: 400px;
+  }
+  img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    @media (max-width: 768px) {
+      height: 400px; /* Allow the image to maintain its aspect ratio */
+      // object-fit: contain; /* Adjust how the image fits */
+    }
+
+    @media (max-width: 480px) {
+      height: 400px;
+      object-position: top; /* Focus on the top of the image for smaller screens */
+    }
+  }
+`;
 const Wrapper = styled.section`
   width: 100%;
 `;
