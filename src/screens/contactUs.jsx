@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import contactus from "../assets/img/banner/banner4.png";
+import image5 from "../assets/img/banner/image5.jpg";
 import contact2 from "../assets/img/banner/contactbanner.png";
 import ServiceBox from "../components/Elements/ServiceBox";
 import TopNavbar from "../components/Nav/TopNavbar";
@@ -24,13 +24,13 @@ const ContactUs = () => {
           <TopNavbar />
           {/* <HeaderInfo> */}
           <section
-            className="bg-half-170 bg-primary d-table w-100"
+            // className="bg-half-170 bg-primary d-table w-100"
             style={{
-              backgroundImage: `url(${contact2})`,
+              backgroundImage: `url(${image5})`,
               backgroundSize:
                 "cover" /* Ensures the image covers the entire viewport */,
               backgroundPosition: "center",
-              height: "600px", // Set the desired height
+              height: "750px", // Set the desired height
               // overflow: "hidden",
               marginTop: "80px",
               objectFit: "cover",
@@ -38,6 +38,7 @@ const ContactUs = () => {
               width: "100vw",
               border: "1px solid white",
             }}
+            className="responsive-section"
           >
             <Container>
               <Row className="mt-5 justify-content-center">
